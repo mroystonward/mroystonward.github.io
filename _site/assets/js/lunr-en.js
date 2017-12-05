@@ -11,11 +11,23 @@ var idx = lunr(function () {
   
   
     idx.add({
-      title: "Welcome to Jekyll!",
-      excerpt: "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your...",
-      categories: ["jekyll","update"],
+      title: "The Memory Project",
+      excerpt: "A realisation of the score ‘Do You Want To Expand Your Parameters Or Play Museums Like Some Dilettante’ is played...",
+      categories: [],
       tags: [],
       id: 0
+    });
+    
+  
+
+  
+  
+    idx.add({
+      title: "Hello World",
+      excerpt: "Obligatory first post. Portfolio and more to follow.\n",
+      categories: ["update","new","hello-world"],
+      tags: [],
+      id: 1
     });
     
   
@@ -30,12 +42,27 @@ var store = [
     
       
       {
-        "title": "Welcome to Jekyll!",
-        "url": "http://localhost:4000/jekyll/update/welcome-to-jekyll/",
-        "excerpt": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your...",
+        "title": "The Memory Project",
+        "url": "http://localhost:4000/portfolio/the-memory-project/",
+        "excerpt": "A realisation of the score ‘Do You Want To Expand Your Parameters Or Play Museums Like Some Dilettante’ is played...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/the-memory-project-001.jpg"
+          
+      },
+    
+  
+    
+    
+    
+      
+      {
+        "title": "Hello World",
+        "url": "http://localhost:4000/update/new/hello-world/welcome-to-jekyll/",
+        "excerpt": "Obligatory first post. Portfolio and more to follow.\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/teaser500x300.jpg"
           
       }
     
