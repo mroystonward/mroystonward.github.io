@@ -1,23 +1,27 @@
 ---
 title: "The Memory Project"
 excerpt: "A realisation of the score ‘Do You Want To Expand Your Parameters Or Play Museums Like Some Dilettante’ is played back using vibrations to activate the window as a speaker."
+date: 2014-03-01
 header:
-  image: /assets/images/the-memory-project-001.jpg
-  teaser: /assets/images/the-memory-project-001.jpg
+  image: /assets/images/portfolio/the-memory-project-001.jpg
+  teaser: /assets/images/portfolio/the-memory-project-001.jpg
 sidebar:
   - text: "Nottingham Contemporary"
   - text: "March 2014"
   - text: "Raspberry Pi, DIY Audio Transducer and Amplifier Circuit, Handouts."
 gallery:
-  - url: /assets/images/the-memory-project-002.jpg
-    image_path: assets/images/the-memory-project-002.jpg
+  - url: /assets/images/portfolio/the-memory-project-002.jpg
+    image_path: assets/images/portfolio/the-memory-project-002.jpg
     alt: "The Memory Project - Installation View"
-  - url: /assets/images/the-memory-project-003.jpg
-    image_path: assets/images/the-memory-project-003.jpg
+    title: "The Memory Project - Installation View"
+  - url: /assets/images/portfolio/the-memory-project-003.jpg
+    image_path: assets/images/portfolio/the-memory-project-003.jpg
     alt: "The Memory Project - Installation View (Detail)"
-  - url: /assets/images/the-memory-project-004.jpg
-    image_path: assets/images/the-memory-project-004.jpg
+    title: "The Memory Project - Installation View (Detail)"
+  - url: /assets/images/portfolio/the-memory-project-004.jpg
+    image_path: assets/images/portfolio/the-memory-project-004.jpg
     alt: "The Memory Project - Flyer"
+    title: "The Memory Project - Flyer"
 ---
 A realisation of the score ‘Do You Want To Expand Your Parameters Or Play Museums Like Some Dilettante’ is played back using vibrations to activate the window as a speaker.
 

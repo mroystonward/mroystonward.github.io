@@ -13,7 +13,7 @@ title                    : ":coffee: Hot Contents"
 title_separator          : "|"
 name                     : "Murray Royston-Ward"
 description              : >
-  London based artist: Improvised "musicking", workshops and "things" leaking out into the world.
+  Improvised "musicking", workshops and "things" leaking out into the world.
 # url                      : http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 url                      : https://mroystonward.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -87,9 +87,9 @@ author:
   name             : "Murray Royston-Ward"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : >
-    London based artist: improvised 'musicking', workshops and 'things' leaking out into the world; ☕️🍟🍸🌱💻🔊🏴
+    Improvised 'musicking', workshops and 'things' leaking out into the world ☕️🍟🍸🌱💻🔊🏴
   location         : "London, UK"
-  email            : murray.s.roystonward@posteo.net
+  email            :
   pgp              :
   ricochet         :
   uri              :
@@ -117,7 +117,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  archive          : mroystonward
+  archive          :
   shop             : mroystonward.bigcartel.com
   bitcoin          :
 
@@ -267,7 +267,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -283,7 +283,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-      share: true
+      share: false
 
 webrick:
   headers:
