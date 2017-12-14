@@ -145,6 +145,24 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Bitto Arts Trust: Gasworks Residency",
+      excerpt: "A Triangle Network Fellowship at Britto Arts Trust in Dhaka, Bangladesh in 2015 Exploring improvised ‘musicking’ and socially engaged arts...",
+      categories: [],
+      tags: [],
+      id: 15
+    });
+    
+  
+    idx.add({
+      title: "UNIT(e) 2016",
+      excerpt: "10 week UNIT(e) Residency at g39 in Cardiff. For UNIT(e) I wanted to take the installations I’d previously been working...",
+      categories: [],
+      tags: [],
+      id: 16
+    });
+    
+  
 
   
   
@@ -153,7 +171,7 @@ var idx = lunr(function () {
       excerpt: "Obligatory first post. Portfolio and more to follow.\n",
       categories: ["update","new","hello-world"],
       tags: [],
-      id: 15
+      id: 17
     });
     
   
@@ -328,6 +346,28 @@ var store = [
         "teaser":
           
             "http://localhost:4000/assets/images/portfolio/contact-mic-surgery-001.jpg"
+          
+      },
+    
+      
+      {
+        "title": "Bitto Arts Trust: Gasworks Residency",
+        "url": "http://localhost:4000/portfolio/britto/",
+        "excerpt": "A Triangle Network Fellowship at Britto Arts Trust in Dhaka, Bangladesh in 2015 Exploring improvised ‘musicking’ and socially engaged arts...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/portfolio/britto-001.jpg"
+          
+      },
+    
+      
+      {
+        "title": "UNIT(e) 2016",
+        "url": "http://localhost:4000/portfolio/unite/",
+        "excerpt": "10 week UNIT(e) Residency at g39 in Cardiff. For UNIT(e) I wanted to take the installations I’d previously been working...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/portfolio/unite-001.jpg"
           
       },
     
