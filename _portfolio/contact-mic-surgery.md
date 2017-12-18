@@ -35,3 +35,5 @@ Drop in/out surgery for contact mics. From building and improving through to dif
 A selection of materials were availible for soldering and testing contact microphones along with various instruments and objects for exploring their possibilities.
 
 Passers-by were invited to take part in an informal setting with many then going on to use contact mics as part of the 'ANT Attack' Noise Jam workshop.
+
+[http://www.weareprimary.org/2015/02/reactor-halls-e12-14/](http://www.weareprimary.org/2015/02/reactor-halls-e12-14/)

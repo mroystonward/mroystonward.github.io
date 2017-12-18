@@ -41,3 +41,5 @@ gallery:
 For UNIT(e) I wanted to take the installations I’d previously been working with out of the gallery and into the community. Portable and battery powered.
 
 I experimented with circuitry to connect memories and spaces from previous projects to new locales and situations through temporary and portable sound installations.
+
+[g39](http://www.g39.org/cgi-bin/website.cgi?place=exhibitions&id=4975)
