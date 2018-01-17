@@ -30,8 +30,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : #true
-search_full_content      : #true
+search                   : true
+search_full_content      : true
 
 # SEO Related
 google_site_verification :
