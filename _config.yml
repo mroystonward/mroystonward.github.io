@@ -22,7 +22,7 @@ teaser                   : "/assets/images/teaser500x300.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -34,7 +34,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
+  branch                 : "master"
   commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
   format                 : # "yml"
@@ -53,6 +53,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+search                   : #true
+search_full_content      : #true
 
 # SEO Related
 google_site_verification :
