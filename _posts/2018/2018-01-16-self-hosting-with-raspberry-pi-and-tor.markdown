@@ -1,7 +1,6 @@
 ---
 title:  "Self Hosting with Raspberry Pi and Tor"
 date:   2018-01-16 21:00:00 +1724
-categories: DIY RaspberryPi Tor
 toc: true
 excerpt: "A rough guide to setting up a Tor hidden service, on a Raspberry Pi, at home."
 header:
