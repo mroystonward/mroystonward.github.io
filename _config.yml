@@ -26,8 +26,8 @@ comments:
 staticman:
   branch                 : "master"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : 6LcBfUEUAAAAADxxC1PKcolRx9H3-EJ7izVMsoFX
+  secret                 : Hm9+nIv6HrkvtPM+9oOQ+30QJ3tAiAKe7/HrWeAt1h4mOLgFYK84wBDyyS7IY2bug8HePvF92TjM59kgc06vG/G5g0dDamYxRT7VhA71gDUy+0EMobv1+TR2so7P6gK+AoJlzvzkf4L3uqnKDWzCVWMMrEIBSQ0CxjIUZc0biXw=
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
