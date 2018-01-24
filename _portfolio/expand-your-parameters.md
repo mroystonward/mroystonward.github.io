@@ -25,4 +25,3 @@ Composed in response to Marvin Gaye Chetwynd’s exhibition at Nottingham Contem
 The score attempts to sonify the anonymous and largely voluntary labour required to animate the exhibition throughout its run.
 
 [Download Score](https://archive.org/download/DoYouWantToExpandYourParametersOrPlayMuseumsLikeSomeDilettante/Do%20You%20Want%20To%20Expand%20Your%20Parameters%20Or%20Play%20Museums%20Like%20Some%20Dilettante.zip)
-[Upload Download Perform](http://uploaddownloadperform.net/MurrayRoystonWard/DoYouWantToExpandYourParametersOrPlayMuseumsLikeSomeDilettante)

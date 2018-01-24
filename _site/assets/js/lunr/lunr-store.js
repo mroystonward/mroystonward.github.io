@@ -30,7 +30,7 @@ var store = [{
         "url": "http://localhost:4000/portfolio/audio-transducers-nepal/",
         "teaser":"http://localhost:4000/assets/images/portfolio/audio-transducers-nepal-001.jpg"},{
         "title": "Do You Want To Expand Your Parameters Or Play Museums Like Some Dilettante",
-        "excerpt":"Composed in response to Marvin Gaye Chetwynd’s exhibition at Nottingham Contemporary as part of their ‘Memory’ project and permanent collection.                                                                The score attempts to sonify the anonymous and largely voluntary labour required to animate the exhibition throughout its run.Download ScoreUpload Download Perform","categories": [],
+        "excerpt":"Composed in response to Marvin Gaye Chetwynd’s exhibition at Nottingham Contemporary as part of their ‘Memory’ project and permanent collection.                                                                The score attempts to sonify the anonymous and largely voluntary labour required to animate the exhibition throughout its run.Download Score","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/expand-your-parameters/",
         "teaser":"http://localhost:4000/assets/images/portfolio/expand-your-parameters-001.jpg"},{
