@@ -6,7 +6,7 @@ install:
  - gem install jekyll html-proofer
  - bundle install
 
-script: bundle exec jekyll build ./_site
+script: bundle exec jekyll build && htmlproofer ./_site
 
 branches:
   only:
