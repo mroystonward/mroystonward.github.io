@@ -63,7 +63,7 @@ Exploring improvised ‘musicking’ and socially engaged arts practices I made 
 
 I also undertook citizen noise level readings as part of a critical investigation into 'noise' and its cultural interconnections.
 
-Much of this work is collected in this artist's book - [My Neighbor Who Lives in the City of Mirrors near My House](http://mroystonward.bigcartel.com/product/my-neighbor-who-lives-in-the-city-of-mirrors-near-my-house-artists-books-cd)
+Much of this work is collected in this artist's book - [My Neighbor Who Lives in the City of Mirrors near My House](https://mroystonward.bigcartel.com/product/my-neighbor-who-lives-in-the-city-of-mirrors-near-my-house-artists-books-cd)
 
 {% include gallery id="book" %}
 

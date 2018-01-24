@@ -42,4 +42,4 @@ For UNIT(e) I wanted to take the installations I’d previously been working wit
 
 I experimented with circuitry to connect memories and spaces from previous projects to new locales and situations through temporary and portable sound installations.
 
-[g39](http://www.g39.org/cgi-bin/website.cgi?place=exhibitions&id=4975)
+[g39](https://web.archive.org/web/20170303065336/http://www.g39.org/cgi-bin/website.cgi?place=exhibitions&id=4975) (Wayback Machine Link as site doesn't support HTTPS)

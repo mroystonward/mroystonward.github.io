@@ -32,8 +32,8 @@ For 'Cables' I will be drawing upon recent workshops in Uganda, Nepal, Sheffield
 
 Drop in/out surgery for contact mics. From building and improving through to different ways of using them for recording or live work.
 
-A selection of materials were availible for soldering and testing contact microphones along with various instruments and objects for exploring their possibilities.
+A selection of materials were available for soldering and testing contact microphones along with various instruments and objects for exploring their possibilities.
 
 Passers-by were invited to take part in an informal setting with many then going on to use contact mics as part of the 'ANT Attack' Noise Jam workshop.
 
-[http://www.weareprimary.org/2015/02/reactor-halls-e12-14/](http://www.weareprimary.org/2015/02/reactor-halls-e12-14/)
+[Reactor Halls](https://web.archive.org/web/20180124213857/http://www.weareprimary.org/2015/02/reactor-halls-e12-14/) (Wayback Machine Link as site doesn't support HTTPS)

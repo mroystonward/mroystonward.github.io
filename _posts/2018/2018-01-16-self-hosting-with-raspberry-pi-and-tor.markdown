@@ -29,7 +29,7 @@ A few notes on this:
 5. Technically, we're setting up a web server which probably violates your home ISP terms of service. If you started attracting much traffic your ISP might look at this more closely. Theoretically you could bump up to a business plan if needed but please just be aware of any risks you are placing upon yourself.
 6. As you're setting up a mini-web-server at home and exposing services to the outside world you should take precautions to ensure these don't get hacked etc. Setting up passwordless login is a very good idea. It sounds like a bad idea but it relies on a cryptographic key for login so it's a lot harder to hack than a password is. Setting up a firewall is essential and only expose the ports/services needed. Software such as fail2ban is worth implementing too, so as to block any suspicious activity.
 
-So, caveats and notes out of the way I'd recommend this guide - [http://blog.self.li/post/63281257339/raspberry-pi-part-1-basic-setup-without-cables](http://blog.self.li/post/63281257339/raspberry-pi-part-1-basic-setup-without-cables) - is easy to follow and covers basic security such as setting up a firewall and passwordless login.
+So, caveats and notes out of the way I'd recommend this guide - [RRaspberry Pi 2: Basic setup without any cables (headless)](https://web.archive.org/web/20180111082324/http://blog.self.li/post/63281257339/raspberry-pi-part-1-basic-setup-without-cables) (Wayback Machine Link as site doesn't support HTTPS) - is easy to follow and covers basic security such as setting up a firewall and passwordless login.
 
 It's likely getting a bit old now so do check the official Raspberry Pi guides etc. too.
 
