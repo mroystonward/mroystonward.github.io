@@ -6,11 +6,14 @@ install:
  - gem install jekyll html-proofer
  - bundle install
 
-script: bundle exec jekyll build && htmlproofer ./_site
+script: bundle exec jekyll build &&  htmlproofer --url-ignore "/.onion/" ./_site
 
 branches:
   only:
   - master
+
+cache:
+  bundler: true
 
 env:
   global:
