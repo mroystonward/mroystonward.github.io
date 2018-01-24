@@ -6,7 +6,7 @@ install:
  - gem install jekyll html-proofer
  - bundle install
 
-script: bundle exec jekyll build &&  htmlproofer --allow_hash_href --url-ignore "/.onion/" ./_site
+script: bundle exec jekyll build && htmlproofer --allow_hash_href --url-ignore "/.onion/" ./_site
 
 branches:
   only:
