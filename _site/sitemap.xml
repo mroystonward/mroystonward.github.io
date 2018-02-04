@@ -89,6 +89,10 @@
 <lastmod>2018-01-30T16:36:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/epoxy-backed-contact-mics/</loc>
+<lastmod>2018-02-03T21:36:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404/</loc>
 </url>
 <url>
@@ -108,5 +112,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/year-archive/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>
