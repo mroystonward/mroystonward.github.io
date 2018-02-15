@@ -1,5 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-04T14:39:43+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
-</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Testing Epoxy Backed Contact Mic’s</title><link href="http://localhost:4000/epoxy-backed-contact-mics/" rel="alternate" type="text/html" title="Testing Epoxy Backed Contact Mic's" /><published>2018-02-03T21:36:00+00:00</published><updated>2018-02-03T21:36:00+00:00</updated><id>http://localhost:4000/epoxy-backed-contact-mics</id><content type="html" xml:base="http://localhost:4000/epoxy-backed-contact-mics/">&lt;p&gt;I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. &lt;em&gt;(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-15T15:20:21+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
+</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Onionised Bandcamp</title><link href="http://localhost:4000/onionised-bandcamp/" rel="alternate" type="text/html" title="Onionised Bandcamp" /><published>2018-02-15T03:36:00+00:00</published><updated>2018-02-15T03:36:00+00:00</updated><id>http://localhost:4000/onionised-bandcamp</id><content type="html" xml:base="http://localhost:4000/onionised-bandcamp/">&lt;p&gt;I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.&lt;/p&gt;
+
+&lt;p&gt;If you want to see it in action it’s here &lt;a href=&quot;https://bandc2v6rbqrn6vx.onion/&quot;&gt;bandc2v6rbqrn6vx.onion&lt;/a&gt; (You need the Tor browser to visit .onion links - &lt;a href=&quot;https://www.torproject.org/&quot;&gt;https://www.torproject.org/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;A word of warning though, you need to jump through some hoops due to HTTPS over Tor. If you know what you’re doing check out this ‘landing’ page - &lt;a href=&quot;https://gist.github.com/mroystonward/aec1fa678186fe62c692b1d5b9d129c2&quot;&gt;https://gist.github.com/mroystonward/aec1fa678186fe62c692b1d5b9d129c2&lt;/a&gt; / &lt;a href=&quot;http://bctorowb7blvvryo.onion&quot;&gt;bctorowb7blvvryo.onion&lt;/a&gt; - if not, read on.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/Screen%20Shot%202018-02-14%20at%2016.41.06.jpg&quot; alt=&quot;Bandcamp Onion Address in Tor Browser&quot; /&gt;
+  
+    &lt;figcaption&gt;Bandcamp Onion Address in Tor Browser
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;platforms-surveilance-and-commercialisation-of-data&quot;&gt;Platforms, Surveilance and Commercialisation of Data&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Independent artists, punk labels, and do-it-yourself (DIY) organizers have long suggested that the means through which music is created and distributed carries as much political weight as the content of the songs—by subverting the status quo, making their own platforms, and creating alternative worlds.&lt;/p&gt;
+
+  &lt;p&gt;What do these ideologies mean in today’s hyper-mediated, corporate digital culture? New enemies of agency now surround music communities in the form of centralized and exploitative platforms that musicians and listeners increasingly grow beholden to.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://shadowproof.com/2017/11/01/protest-platforms-resonate-streaming-co-op-agency-to-artists/&quot;&gt;https://shadowproof.com/2017/11/01/protest-platforms-resonate-streaming-co-op-agency-to-artists/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Many platforms are exploiting your ‘content’ for corporate, commercial advantage. Driving engagement to maximise advertising revenues served alongside your work. Tracking and harvesting massive troves of data to train AI algorithms which can later be commercialised further or just selling it on via data-brokers. The political/societal ramifications spread wider, just consider the dynamics of power and capital associated with Facebook and Cambridge Analytica’s role in Brexit/Trump victories (consider the various investigative links here - &lt;a href=&quot;https://en.wikipedia.org/wiki/Cambridge_Analytica#Criticism&quot;&gt;https://en.wikipedia.org/wiki/Cambridge_Analytica#Criticism&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The terms are frequently inequitable for artists (i.e. Spotify streaming payment rates) yet there seem to be few viable alternatives for engaging with audiences and the successful platforms have monopolised their spaces with little room for small independent publishing. Rather, the only way to ‘compete’ is to go in and ‘disrupt’ with rounds of angel backing to try and build something even bigger (though this pessimism is somewhat disingenuous as I do believe that collectively we can build better systems).&lt;/p&gt;
+
+&lt;p&gt;Some of the worst excesses of such platforms seem to be thankfully absent from Bandcamp. They’re not profiting from advertising alongside your content and instead it’s in their interest to drive your sales for their business model. They’re not claiming undue license over the work you put online through their platform. Their fees certainly don’t seem unreasonable. PWYL embodies a tension along a continuum of exploitative benefits to the platform from music moving around itself easily and freely vs. an artistic desire to make sounds available widely and to try and engender forms of sharing and ‘patronage’ rather than a pure sales focus. There are options and consent (though sometimes requiring a premium subscription for maximum control over one’s own work within the limited options given by the platform).&lt;/p&gt;
+
+&lt;p&gt;Bandcamp does however use Quantcast tracking and Google Analytics. I won’t labour this other than to say that Google Analytics, for most average users, is probably not of concern (however there should be broader public debate on the implications of state level surveillance programs and their access to such data), whereas Quantcast provide machine learning, demographic tracking and shopping insights etc. (&lt;a href=&quot;https://www.quantcast.com/&quot;&gt;https://www.quantcast.com/&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Quantcast&quot;&gt;https://en.wikipedia.org/wiki/Quantcast&lt;/a&gt;). I don’t know ‘how’ Bandcamp is using this. It may be driving recommendations (which for many has tangible benefits to ‘us’ as well as ‘them’) or other insights for optimising the platform. It may be part of a much larger data gathering exercise that provides Bandcamp with additional revenue. Either way, our browser activity is being tracked and commercialised both as ‘artits’ and ‘fans’ and the equitability of this relationship is unclear.&lt;/p&gt;
+
+&lt;p&gt;I don’t know about how and how much Bandcamp engages in forms of censorship. They presumably have to deal with copyright infringement, issues around free and hate speech, they may have to engage different filtering depending upon geopolitical requirements. I can’t say I’ve heard about blocking, banning, spam etc. on Bandcamp the way it pervades other platforms and networks. That this &lt;em&gt;could&lt;/em&gt; be done though still enters into the debate I wish to raise.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Beyond a certain tipping point, platforms become difficult not to use. All this means that power, and a conservative form of power at that, is deeply involved in platforms within the human world. But I think it is also important to emphasize that the reason platforms become successful is partly because they enable you to do things; they are productive, generative. Those seeking to oppose a given platform—a technical one, like Microsoft, Google, or Apple, or a political one, like Neoliberalism, or an aesthetic one, like conservative genre boundaries or tuning systems—have to remember that. It implies that a purely negative or transgressive project will be unlikely to be able to seriously disrupt the functioning of existing malignant platforms. Only the building of new, better ones, will suffice. Or perhaps the re-engineering of those already in existence.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(&lt;a href=&quot;http://www.glass-bead.org/article/reengineering-hegemony/&quot;&gt;http://www.glass-bead.org/article/reengineering-hegemony/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I say all this because the desire to ‘onionise’ Bandcamp isn’t one of being anti-Bandcamp. Rather it’s one of engaging with broader debate and scrutiny around content/market/social platforms, especially as they relate to power dynamics in publishing and sharing creative content.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/Just_yellow_paint_(12645841144).jpg&quot; alt=&quot;Yellow paint on a piece of film wrap over a bass speaker playing very loud music&quot; /&gt;
+  
+    &lt;figcaption&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/31/Just_yellow_paint_%2812645841144%29.jpg&quot;&gt;By aceebee from Camberley, UK (Just yellow paint) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons&lt;/a&gt;
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;the-onion-routing-network&quot;&gt;The Onion Routing network&lt;/h2&gt;
+
+&lt;p&gt;If you don’t know much about Tor already you should have a look around &lt;a href=&quot;https://www.torproject.org/about/torusers.html.en&quot;&gt;https://www.torproject.org/about/torusers.html.en&lt;/a&gt;. Whilst it is talked about and useful in terms of resisting state level surveillance it has a longer history in resisting corporate surveillance (and an even longer history in secure military communication). One can use Tor to browse relatively anonymously (this claim comes with caveats about browsing habits and online behaviour), securely and privately. It is also relevant in terms of censorship circumvention and network resilience.&lt;/p&gt;
+
+&lt;p&gt;This won’t be a technical primer about Tor and it’s benefits/risks. It is perfectly legal to use here in the UK but your local jurisdiction may differ. Along with the many positive uses of Tor it has been, and continues to be, used for illegal marketplaces. Take the usual precautions online regarding links, spam, information sharing etc. If you do want more information about online privacy/security and the wider issues check out some of the following resources:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tacticaltech.org/&quot;&gt;https://tacticaltech.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.eff.org/&quot;&gt;https://www.eff.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.openrightsgroup.org/&quot;&gt;https://www.openrightsgroup.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;eotk&quot;&gt;EOTK&lt;/h2&gt;
+
+&lt;p&gt;I have been exploring this area for a while now, publishing via &lt;a href=&quot;https://thehouseorgan.xyz/&quot;&gt;https://thehouseorgan.xyz/&lt;/a&gt; / &lt;a href=&quot;http://tho2f4fceyghjl6s.onion/&quot;&gt;tho2f4fceyghjl6s.onion&lt;/a&gt; using a home Raspberry Pi powered server (&lt;a href=&quot;https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/&quot;&gt;https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Having been recommended to look at The Enterprise Onion ToolKit (&lt;a href=&quot;https://github.com/alecmuffett/eotk]&quot;&gt;EOTK&lt;/a&gt;) by &lt;a href=&quot;https://twitter.com/moananddrone&quot;&gt;@moananddrone&lt;/a&gt; I mirrored this site (&lt;a href=&quot;https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/&quot;&gt;https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I have also been volunteering with &lt;a href=&quot;https://rlc.radicallibrarianship.org/&quot;&gt;Radical Librarians Collective&lt;/a&gt; as there is an overlap in issues of privacy and working with tools such as Tor. Related to this work @moanandrone has, quite exceptionally and it will be interesting to see the longer-term impact of this project, gone on to ‘onionise’ the University of West London Repository and his documentation offers some valuable insight as to how issues of intellectual freedom and centralised platforms effect scholarly work - &lt;a href=&quot;https://moananddrone.github.io/bag-of-onions&quot;&gt;https://moananddrone.github.io/bag-of-onions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in how to use EOTK yourself the above links should be helpful.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/Metropolitan_Opera_House,_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot; alt=&quot;A full house, seen from the rear of the stage, at the Metropolitan Opera House for a concert by pianist Josef Hofmann, November 28, 1937&quot; /&gt;
+  
+    &lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3AMetropolitan_Opera_House%2C_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot;&gt;By Unknown or not provided  Retouched by Mmxx [Public domain], via Wikimedia Commons&lt;/a&gt;
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;decentralisation-and-alternatives&quot;&gt;Decentralisation and Alternatives&lt;/h2&gt;
+
+&lt;p&gt;Decentralisation continues to offer strong alternatives to current calcifications of power. Opportunities have spread far beyond p2p file-sharing and torrents. The potential demise of Soundcloud last year raised 2 particularly interesting responses.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Soundcloud is a good example of a project with modest ambition gaining traction with subcultures who then elevate it to a place of relevance. As that growth is recognized, the gears of homogeneity start to turn, and the intent shifts from being one of creating something interesting to creating something larger.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jon-kyle.com/entries/2017-08-19-platform-death/&quot;&gt;https://jon-kyle.com/entries/2017-08-19-platform-death/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jon Kyle and the &lt;a href=&quot;https://datproject.org/&quot;&gt;DAT&lt;/a&gt; community offered a Soundcloud archive tool (to preserve your tracks should the service shutdown) that would be served and hosted using p2p. I made an archive here - &lt;a href=&quot;dat://5525a6916dbed65eb9ea8d1fe7501cda094f937ec7b674337e038dc8427077fd/&quot;&gt;dat://5525a6916dbed65eb9ea8d1fe7501cda094f937ec7b674337e038dc8427077fd/&lt;/a&gt; (you need &lt;a href=&quot;https://beakerbrowser.com/&quot;&gt;Beaker Browser&lt;/a&gt; to view). Projects like &lt;a href=&quot;https://zeronet.io/&quot;&gt;ZeroNet&lt;/a&gt; and &lt;a href=&quot;https://www.openbazaar.org/&quot;&gt;OpenBazaar&lt;/a&gt; are also viable alternatives.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Many factions of the independent musical infrastructure have become closer and closer aligned with corporate interests and advertising supported journalistic models in order to keep their head just slightly above water, and are in danger of losing their distinction and identity as a result. Unless we construct an intervention, this curve towards the commercially viable and mediocre templates of the bland, centralized, content warehouses ultimately threatens to displace the role of music as the preeminent critical space of psychedelic possibility, experimentation and collective desire.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/blockchannel/soundcrowd-tokenizing-collectivizing-soundcloud-5c4f60ed4961&quot;&gt;https://medium.com/blockchannel/soundcrowd-tokenizing-collectivizing-soundcloud-5c4f60ed4961&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Elsewhere Matt Dryhurst suggested tokenising Soundcloud using blockchain technology to engender decentralised, collective ownership. His article is well worth a read and it raises numerous salient points. I would add to my general enthusiasm towards his suggestions that the crypto/blockchain space has a number of inherent issues that need to be resolved. Not only has ‘mining’ proved incredibly resource inefficient there are fundamental ‘oracle’ problems in ‘smart contracts’ which undermine the decentralisation possibilities. And that’s ignoring the general hyperbolic bubble surrounding such technologies. Still as a model for possible collective ownership there’s a lot of potential.&lt;/p&gt;
+
+&lt;p&gt;There’s no reason why similar considerations couldn’t also feature in the ongoing development of Bandcamp or other such marketplaces. These aren’t systems of intervention we can easily implement &lt;em&gt;within&lt;/em&gt; the platform though. We either set up alternatives (set up our own p2p archives etc.) or we take over the platform (tokenising Soundcloud would likely take the form of ‘buying it out’ and distributing it equitably).&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/Drimia_maritima_-_Sea_onion,_Adana_2016-12-04_01-1.jpg&quot; alt=&quot;Dry flowers of Sea onions (Drimia maritima) at Çukurova University Campus in Balcalı, Adana - Turkey&quot; /&gt;
+  
+    &lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ADrimia_maritima_-_Sea_onion%2C_Adana_2016-12-04_01-1.jpg&quot;&gt;By Zeynel Cebeci (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons&lt;/a&gt;
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;bandcamp-onion&quot;&gt;Bandcamp Onion&lt;/h2&gt;
+
+&lt;p&gt;For now we aren’t looking to immediately replace or change Bandcamp (or Soundcloud etc.). We are looking to ensure that, as a platform, it offers opportunities to &lt;em&gt;publicise&lt;/em&gt; our music without sacrificing the broader privacy of ourselves or our fans.&lt;/p&gt;
+
+&lt;p&gt;Some of these benefits could be garnered through simply accessing the existing site using Tor browser and, in combination with HTTPS, we would experience improved privacy from various forms of tracking. &lt;a href=&quot;https://www.torproject.org/docs/onion-services&quot;&gt;Onion Services&lt;/a&gt; however improve anonymity/privacy even further and so I’d like to see more platforms, such as Bandcamp, embracing these positively (&lt;a href=&quot;https://www.facebook.com/notes/protect-the-graph/making-connections-to-facebook-more-secure/1526085754298237/&quot;&gt;much as Alec Muffett has done with Facebook&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Onionising Bandcamp is a provocation: it aims to gauge interest in using such a platform in this manner; it hopes to further debate around the role platforms play in music publshing and consumption; and it intends to show Bandcamp their onionised site in action in the hope they would implement it officially.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem with this implementation is to do with the way browsers handle HTTPS certificates. The EOTK proxy generates self-signed certificates which generate warnings.&lt;/p&gt;
+
+&lt;p&gt;.onion domains don’t require HTTPS as the layers of encryption already present in the Tor network infrastructure offer greater security. The only real use for HTTPS with a .onion domain would be in cases of public sites also offering onionised versions and demonstrating ownership. In such cases the site would procure a signed certificate for the original site and the onion version.&lt;/p&gt;
+
+&lt;p&gt;As I don’t own Bandcamp and am simply proxying it through Tor I have no claim to ownership. If anything what I am doing is &lt;em&gt;unauthorised&lt;/em&gt;. I can not, and would not, provide a signed certificate for HTTPS.&lt;/p&gt;
+
+&lt;p&gt;The implication is that it is necessary to allow these security exceptions as you browse. Where images, CSS and JS etc are handled by various CDN domains it becomes necessary to allow several exceptions for the site to simply display properly.&lt;/p&gt;
+
+&lt;p&gt;If Bandcamp implemented a .onion domain themselves, with an appropriate HTTPS certificate, this game of certificate whack-a-mole would become unnecessary.&lt;/p&gt;
+
+&lt;p&gt;The main Bandcamp Onion is available at &lt;a href=&quot;https://bandc2v6rbqrn6vx.onion&quot;&gt;bandc2v6rbqrn6vx.onion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want the site to function correctly though I would recommend pre-authorising several domains as listed &lt;a href=&quot;https://gist.github.com/mroystonward/aec1fa678186fe62c692b1d5b9d129c2&quot;&gt;here&lt;/a&gt; (or &lt;a href=&quot;http://bctorowb7blvvryo.onion&quot;&gt;bctorowb7blvvryo.onion&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Performance may vary and the current implementation isn’t setup ‘yet’ for scale. I’ll update this page as necessary and if Bandcamp respond to the provocation.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Behold, Bandcamp on the Tor Network.</summary></entry><entry><title type="html">Testing Epoxy Backed Contact Mic’s</title><link href="http://localhost:4000/epoxy-backed-contact-mics/" rel="alternate" type="text/html" title="Testing Epoxy Backed Contact Mic's" /><published>2018-02-03T21:36:00+00:00</published><updated>2018-02-03T21:36:00+00:00</updated><id>http://localhost:4000/epoxy-backed-contact-mics</id><content type="html" xml:base="http://localhost:4000/epoxy-backed-contact-mics/">&lt;p&gt;I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. &lt;em&gt;(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve tried a few variations here, especially in terms of how it is wired and where on the mic the wire is positioned. These variations, over time, have ultimately proved to be less successful than a standard wiring directly onto the piezo element. What has worked consistently well though is backing the element/wiring with epoxy resin. Often twists and snaps of the wiring are the primary site of failure and so encasing these joints in glue helps secure it. It also has the bonus of protecting the element from random shorts whilst handling etc.&lt;/p&gt;
 
