@@ -16,7 +16,7 @@ If you want to see it in action it's here [bandc2v6rbqrn6vx.onion](https://bandc
 
 A word of warning though, you need to jump through some hoops due to HTTPS over Tor. If you know what you're doing check out this 'landing' page - [https://gist.github.com/mroystonward/aec1fa678186fe62c692b1d5b9d129c2](https://gist.github.com/mroystonward/aec1fa678186fe62c692b1d5b9d129c2) / [bctorowb7blvvryo.onion](http://bctorowb7blvvryo.onion) - if not, read on.
 
-{% include figure image_path="/assets/images/Screen Shot 2018-02-14 at 16.41.06.jpg" alt="Bandcamp Onion Address in Tor Browser" caption="Bandcamp Onion Address in Tor Browser" %}
+{% include figure image_path="/assets/images/torscreenshot.jpg" alt="Bandcamp Onion Address in Tor Browser" caption="Bandcamp Onion Address in Tor Browser" %}
 
 ## Platforms, Surveilance and Commercialisation of Data
 
@@ -38,7 +38,7 @@ I don't know about how and how much Bandcamp engages in forms of censorship. The
 
 >Beyond a certain tipping point, platforms become difficult not to use. All this means that power, and a conservative form of power at that, is deeply involved in platforms within the human world. But I think it is also important to emphasize that the reason platforms become successful is partly because they enable you to do things; they are productive, generative. Those seeking to oppose a given platform—a technical one, like Microsoft, Google, or Apple, or a political one, like Neoliberalism, or an aesthetic one, like conservative genre boundaries or tuning systems—have to remember that. It implies that a purely negative or transgressive project will be unlikely to be able to seriously disrupt the functioning of existing malignant platforms. Only the building of new, better ones, will suffice. Or perhaps the re-engineering of those already in existence.
 
-([http://www.glass-bead.org/article/reengineering-hegemony/](http://www.glass-bead.org/article/reengineering-hegemony/))
+([http://www.glass-bead.org/article/reengineering-hegemony/](https://web.archive.org/web/20180215175713/http://www.glass-bead.org/article/reengineering-hegemony/?lang=enview) - note Internet Archive link due to source not being available via HTTPS)
 
 I say all this because the desire to 'onionise' Bandcamp isn't one of being anti-Bandcamp. Rather it's one of engaging with broader debate and scrutiny around content/market/social platforms, especially as they relate to power dynamics in publishing and sharing creative content.
 
@@ -58,7 +58,7 @@ This won't be a technical primer about Tor and it's benefits/risks. It is perfec
 
 I have been exploring this area for a while now, publishing via [https://thehouseorgan.xyz/](https://thehouseorgan.xyz/) / [tho2f4fceyghjl6s.onion](http://tho2f4fceyghjl6s.onion/) using a home Raspberry Pi powered server ([https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/](https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/)).
 
-Having been recommended to look at The Enterprise Onion ToolKit ([EOTK](https://github.com/alecmuffett/eotk])) by [@moananddrone](https://twitter.com/moananddrone) I mirrored this site ([https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/](https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/)).
+Having been recommended to look at The Enterprise Onion ToolKit ([EOTK](https://github.com/alecmuffett/eotk)) by [@moananddrone](https://twitter.com/moananddrone) I mirrored this site ([https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/](https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/)).
 
 I have also been volunteering with [Radical Librarians Collective](https://rlc.radicallibrarianship.org/) as there is an overlap in issues of privacy and working with tools such as Tor. Related to this work @moanandrone has, quite exceptionally and it will be interesting to see the longer-term impact of this project, gone on to 'onionise' the University of West London Repository and his documentation offers some valuable insight as to how issues of intellectual freedom and centralised platforms effect scholarly work - [https://moananddrone.github.io/bag-of-onions](https://moananddrone.github.io/bag-of-onions).
 
