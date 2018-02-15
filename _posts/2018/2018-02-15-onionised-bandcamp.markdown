@@ -1,6 +1,6 @@
 ---
 title:  "Onionised Bandcamp"
-date:   2018-02-15 21:00:00 +1724
+date:   2018-02-15 15:00:00 +1724
 toc: true
 excerpt: "Behold, Bandcamp on the Tor Network."
 header:
