@@ -1,5 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-16T13:22:10+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
-</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Onionised Bandcamp</title><link href="http://localhost:4000/onionised-bandcamp/" rel="alternate" type="text/html" title="Onionised Bandcamp" /><published>2018-02-14T21:36:00+00:00</published><updated>2018-02-14T21:36:00+00:00</updated><id>http://localhost:4000/onionised-bandcamp</id><content type="html" xml:base="http://localhost:4000/onionised-bandcamp/">&lt;p&gt;I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-11T17:35:11+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
+</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Testing Impedance Matching Contact Mic’s</title><link href="http://localhost:4000/impedance-matched-contact-mics/" rel="alternate" type="text/html" title="Testing Impedance Matching Contact Mic's" /><published>2018-03-10T21:36:00+00:00</published><updated>2018-03-10T21:36:00+00:00</updated><id>http://localhost:4000/impedance-matched-contact-mics</id><content type="html" xml:base="http://localhost:4000/impedance-matched-contact-mics/">&lt;p&gt;I’ve been thinking about and comparing contact mic’s recently for a combination of reasons. Firstly I have some broad assumptions that I’ve never really tested and secondly I’m curious as to how the ones I make stack up against other offerings. What makes a difference in a contact mic and how much difference does it really make?&lt;/p&gt;
+
+&lt;p&gt;Previously I’ve compared how much difference backing my contact mic’s with epoxy resin (to make them more durable) makes to their performance - &lt;a href=&quot;https://mroystonward.github.io/epoxy-backed-contact-mics/&quot;&gt;https://mroystonward.github.io/epoxy-backed-contact-mics/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The piezo-electric elements used in building contact mic’s are very high impedance and so various methods of matching, buffering and pre-amplifying the signal are recommended. I decided to buy and test an Hosa MIT-129 Impedance Matching Transformer.&lt;/p&gt;
+
+&lt;p&gt;I tested at work on a metal-clad table using some rulers and sellotape to generate sounds for recording. The mic’s were placed roughly equidistant from the sound source.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/imp-a-b-rig.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape&quot; /&gt;
+  
+    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;The sounds are a procession of ruler ‘twanging’, scraping and sellotaping. An image of the set up is above and the sound recordings are below (you can download from soundcloud too for your own analysis if you like).&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468993066&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I listened back and also used Ableton Live’s built in spectral analysis. I’m still a complete lay person here but have some conclusions.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/imp-a-b-analysis-1.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
+  
+    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Analysis
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;In the image above I’ve highlighted 3 areas on the spectral analysis with the following thoughts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A. The unmatched input shows a peak of activity below 20Hz. I’m surprised and confused by this. Firstly this kind of response at low frequencies is unexpected with a basic contact mic with no buffering/matching/etc. Secondly, this is below general human hearing and has little to no impact on the perceivable audio performance. I’m not saying these frequencies are meaningless (they undoubtably are part of the signal and potentially influence the perceptible frequencies) but simply, in cases such as this, don’t appear to be significant. I expect that there are perfectly reasonable electrical-engineering reasons for this but I’m still rather surprised.&lt;/li&gt;
+  &lt;li&gt;B. Without impedance matching the contact mic is fairly unresponsive around the 80-90Hz range. This is likely part of where contact mic’s are considered to perform weakly with low frequencies.&lt;/li&gt;
+  &lt;li&gt;C. The unmatched mic has several weak points throughout the 200Hz-2.5kHz range. This again weakens the low to mid range response and robs the recording of some richness. Said richness is present in the impedance matched recording along with generally improved low-mid frequency response.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Below is another screenshot from later on in the track and again we see similar results.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/imp-a-b-analysis-2.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
+  
+    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Analysis
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;There are further, qualitative differences that I think are worth consideration.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Firstly, the unmatched contact mic bristles with a little something not present on the other channel. As with the epoxy resin comparisons I think this is related to the resonant frequencies of the contact mic itself and I think that these are attenuated by the impedance matching. Whilst that little bit of extra energy might be desirable in certain situations (I’m primarily thinking noise-music type applications) if you’re after more ‘audiophile’ results it’s worth investing in an impedance matching adaptor.&lt;/li&gt;
+  &lt;li&gt;Secondly, the impedance matching transformer reduces the overall recording amplitude slightly. The tracks were normalised but no further edits/processing was undertaken. If I boost the volume on the 2nd channel the noise floor comes up with it (and apparently Zoom H4s can be a bit noisy anyway). This isn’t really a problem. When recording using impedance matching transformers we could raise the input sensitivity so the recording wouldn’t be quieter and it wouldn’t need a boost which brings the noise floor with it. As much as the slight ‘bristling’ mentioned above is possibly linked to resonance, I think the recording volume differences also play a small part. The moral of the story here is simply that I could have gotten a slightly better recording via the matched channel if it wasn’t for the controlled variables of the A/B comparison.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it really, these strike me as the most significant comparisons/differences. Again, I’m quite pleased as to how well an epoxy-backed, unmatched contact mic stacks up in general and would recommend anyone without the budget to invest in more expensive pro-mic’s and additional equipment to get stuck in and have a go. I’m also pleased with how well an impedance matching adaptor complements a relatively cheap contact mic. I paid ~£16.50 for the adaptor which, considering how much use I’m likely to get out of it, seems pretty good value. I’ll probably get a second one at some point so I can use them on both channels on my audio recorder or even use them for live work.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">More A/B Comparisons</summary></entry><entry><title type="html">Onionised Bandcamp</title><link href="http://localhost:4000/onionised-bandcamp/" rel="alternate" type="text/html" title="Onionised Bandcamp" /><published>2018-02-14T21:36:00+00:00</published><updated>2018-02-14T21:36:00+00:00</updated><id>http://localhost:4000/onionised-bandcamp</id><content type="html" xml:base="http://localhost:4000/onionised-bandcamp/">&lt;p&gt;I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.&lt;/p&gt;
 
 &lt;p&gt;If you want to see it in action it’s here &lt;a href=&quot;https://bandc2v6rbqrn6vx.onion/&quot;&gt;bandc2v6rbqrn6vx.onion&lt;/a&gt; (You need the Tor browser to visit .onion links - &lt;a href=&quot;https://www.torproject.org/&quot;&gt;https://www.torproject.org/&lt;/a&gt;)&lt;/p&gt;
 
@@ -143,9 +198,9 @@
 
 &lt;p&gt;The language of consent and dating/flirting, suggestive of sexual conduct, was also used and Jacob Applebaum was specifically mentioned along with a project he, and others, were involved in called ‘onionflare’. I was unaware of this project before this exchange and only really knew of Applebaum in relation to publicity surrounding acts of sexual abuse. I am also aware of the harm that these actions, and other similar cases of abuse and misogyny, have caused. Not being part of the communities affected I don’t feel there’s anything I can add beyond general disgust in his conduct and solidarity with his victims.&lt;/p&gt;
 
-&lt;p&gt;I don’t want to avoid the issue of consent in this context as it does raise ethical issues that should be part of the discussion. I myself alluded to consent early on in the post, specifically in reference to Bandcamp generally acting consentingly in their approach to artist’s uploaded content. I also mentioned later on that I didn’t do this with permission and that it was likely to be considered ‘unauthorised’. I had considered therefore that Bandcamp may not view this provocation kindly and may even go as far as to send some kind of cease and desist.&lt;/p&gt;
+&lt;p&gt;I don’t want to avoid the issue of consent in this context as it does raise ethical issues that should be part of the discussion. I myself alluded to this early on in the post, specifically in reference to Bandcamp generally acting consentingly in their approach to artist’s uploaded content. I also mentioned later on that I didn’t do this with permission and that it was likely to be considered ‘unauthorised’. I had considered therefore that Bandcamp may not view this provocation kindly and may even go as far as to send some kind of cease and desist.&lt;/p&gt;
 
-&lt;p&gt;Picking up on the use of the word ‘provocation’ it may suggest causing agitation carrying negative connotations. I want to highlight the arts context from which I have been educated where such a provocation is frequently framed as a positive intervention to spark critical engagement (for further context: I have a postgraduate degree from NTU in fine art and institutionally this arts department has been pioneering aspects of an arts based critical pedagogy, drawing from Freire and Illich, that frequently used ‘provocations’ in lieu of traditional lectures). The idea here then isn’t to provoke Bandcamp to piss them off, but to provoke some of the Bandcamp community into critical engagement. I feel that parts of the original post regarding not being ‘anti-Bandcamp’, and the quote regarding the futility of purely transgressive responses to platforms of power and hegemony, provide the necessary context for such a reading of provocation but perhaps it is worth spelling it out more clearly.&lt;/p&gt;
+&lt;p&gt;Picking up on the use of the word ‘provocation’ it may suggest causing agitation carrying negative connotations. I want to highlight the arts context from which I have come where such a provocation is frequently framed as a positive intervention to spark critical engagement (for further context: the department where I studied has been pioneering aspects of an arts based critical pedagogy, drawing from Freire and Illich, that frequently used ‘provocations’ in lieu of traditional lectures). The idea here then isn’t to provoke Bandcamp to piss them off, but to provoke some of the Bandcamp community into critical engagement. I feel that parts of the original post regarding not being ‘anti-Bandcamp’, and the quote regarding the futility of purely transgressive responses to platforms of power and hegemony, provide the necessary context for such a reading of provocation but perhaps it is worth spelling it out more clearly.&lt;/p&gt;
 
 &lt;p&gt;There are important reasons why onionising sites in this manner would be problematic. Not least the trust model of accepting self-signed certificates would likely be damaging in a long-term outward trajectory. There are complex configurations of power inherent in large platforms but there are still sysadmins and technical apparatus being deployed to ensure system integrity for our benefit as much as the platform’s (and in many ways &lt;em&gt;we&lt;/em&gt; make the platform so simple us/them dichotomies don’t do these issues justice). Maverick actions which undermine such systems efforts are also potentially damaging. If there was the interest and use-case for an onionised Bandcamp (a question I hope this project is attempting to explore) these considerations stack up to compelling reasons Bandcamp should consider implementing this officially. In the meantime though this could be considered a threat to Bandcamp’s system integrity.&lt;/p&gt;
 
