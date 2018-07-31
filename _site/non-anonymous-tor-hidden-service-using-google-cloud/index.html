@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Non-anonymous Tor Hidden Service using Google Cloud | :coffee: Hot Contents</title>
+<meta name="description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content=":coffee: Hot Contents">
+<meta property="og:title" content="Non-anonymous Tor Hidden Service using Google Cloud">
+<meta property="og:url" content="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">
+
+
+  <meta property="og:description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/high-tor-wide.jpg">
+
+
+
+  <meta name="twitter:site" content="@mroystonward">
+  <meta name="twitter:title" content="Non-anonymous Tor Hidden Service using Google Cloud">
+  <meta name="twitter:description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+  <meta name="twitter:url" content="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/high-tor-wide.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-07-30T19:36:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Murray Royston-Ward",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title=":coffee: Hot Contents Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/"><img class="emoji" title=":coffee:" alt=":coffee:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2615.png" height="20" width="20"> Hot Contents</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/portfolio/">Portfolio</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/">About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/year-archive/">Posts</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/sitemap/">Sitemap</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/high-tor-wide.jpg');">
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Non-anonymous Tor Hidden Service using Google Cloud
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://commons.wikimedia.org/wiki/File%3AMatlock_High_Tor%2C_II.%2C_Derbyshire%2C_England-LCCN2002696696.jpg">By Photochrom Print Collection [Public domain], via Wikimedia Commons</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/assets/images/bio-photo.jpg" class="author__avatar" alt="Murray Royston-Ward" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Murray Royston-Ward</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Improvised 'musicking', workshops and 'things' leaking out into the world ☕️🍟🍸🌱💻🔊🏴
+
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">London, UK</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/mroystonward" itemprop="sameAs">
+            <i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://mroystonward.bigcartel.com" itemprop="sameAs">
+            <i class="fas fa-fw fa-shopping-basket" aria-hidden="true"></i> Shop
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://twitter.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://gitlab.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Non-anonymous Tor Hidden Service using Google Cloud">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="July 30, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#setting-up-google-compute-engine">Setting up Google Compute Engine</a></li>
+  <li><a href="#installing-tor">Installing Tor</a></li>
+  <li><a href="#installing-nginx">Installing nginx</a></li>
+  <li><a href="#configuring-tor">Configuring Tor</a></li>
+  <li><a href="#taking-things-further">Taking Things Further</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.</p>
+
+<p>One option would be to take it with me and run it as a portable, nomadic server. This is appealing on several fronts but not practical for me right now as under some circumstances encryption technology and the use of Tor is highly scrutinised and problematic. Whilst I’m simply self-hosting and publishing my own music, therefore acting perfectly legally, not everywhere in the world sees it that way and unwanted scrutiny might jeopardise the projects of others I will be associated with. This is all probably a little extreme but it’s not a risk I’m currently able to take. Basically I’m going to temporarily be in a political context where I’ll very much have to toe the line for personal reasons.</p>
+
+<p>Another option would be to have a friend or family member take on the little server. Whilst this is feasible it’s not what I want to do right now. Especially because having to ring someone up and ask them to reboot it if there’s a problem is fine if it works first time but if troubleshooting becomes more difficult, it can become a burden.</p>
+
+<p>A third option would be to simply cease running the hidden service for a while. Not what I want to do.</p>
+
+<p>Finally then, I need to move from the small home-based server to another hosting solution. I could rent server space, set up a VPS etc. or, and I’m a curious fan of this at the moment, play with so-called ‘cloud’ solutions.</p>
+
+<p>This is problematic. My desire to publish independently in a way that critically engages with the economies of ‘platforms’ will now rely on the infrastructure of some of the largest and richest private companies in the world and be embedded with their numerous disturbing business practices and lines of money/power.</p>
+
+<p>I still have free trial credit with google though that I would like to use up and, at this stage, as a learning exercise, I feel that engagement with these platforms in such a way is beneficial. It helps me to develop technical skills and knowledge plus, by reporting this way, I can also help share this knowledge. Whilst ideally, at some point, I would move these services again, to somewhere less problematic, for the meantime it’s a simple and accessible solution to my problem.</p>
+
+<p>So… onwards.</p>
+
+<h2 id="setting-up-google-compute-engine">Setting up Google Compute Engine</h2>
+
+<p>If you want to follow this guide you’ll need an account at <a href="https://cloud.google.com/">https://cloud.google.com/</a>. You can get free trial credits that, for low level usage such as this, should last for a year.</p>
+
+<p>Once we have an account we’re going to set up a new project. Call it whatever you want… for this example I’m using ‘tutorial’.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-001.png" alt="Creating a new project in Google Cloud">
+  
+    <figcaption>Creating a new project in Google Cloud
+</figcaption>
+  
+</figure>
+
+<p>Now we’re going to choose ‘Compute Engine’ from the lefthand menu and ‘create’ a new ‘VM Instance’.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-002.png" alt="Creating a VM Instance in Google Compute Engine">
+  
+    <figcaption>Creating a VM Instance in Google Compute Engine
+</figcaption>
+  
+</figure>
+
+<p>Give it whatever name you want (I’m using ‘tutorial-instance’); choose your region (I opted for European data centres, I especially didn’t want to use US ones); machine type should just be ‘micro’ as we don’t need more power and it’s cheaper this way; boot disk should be Debian 9; on the firewall add HTTP and HTTPS access.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-003.png" alt="VM Instance settings in Google Compute Engine">
+  
+    <figcaption>VM Instance settings in Google Compute Engine
+</figcaption>
+  
+</figure>
+
+<p>That’s it, we now have a fresh Debian instance to work with. Google cloud has a really good web based SSH Terminal so click on that, allow pop-ups if they are blocked and initiate the connection.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-004.png" alt="Launching SSH Terminal in Google Compute Engine">
+  
+    <figcaption>Launching SSH Terminal in Google Compute Engine
+</figcaption>
+  
+</figure>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-005.png" alt="SSH Terminal in Google Compute Engine">
+  
+    <figcaption>SSH Terminal in Google Compute Engine
+</figcaption>
+  
+</figure>
+
+<h2 id="installing-tor">Installing Tor</h2>
+
+<p>We need to run some commands in the terminal to get everything set-up and installed. First update the OS:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+</code></pre></div></div>
+
+<p>Next we’re going to follow Tor instructions here - <a href="https://www.torproject.org/docs/debian.html.en">https://www.torproject.org/docs/debian.html.en</a></p>
+
+<p>We need to add package sources so create a new file in the correct folder:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/apt/sources.list.d/tor.list
+</code></pre></div></div>
+
+<p>Paste this into the new file nano has just created:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deb https://deb.torproject.org/torproject.org stretch main
+deb-src https://deb.torproject.org/torproject.org stretch main
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>The package sources have now been added but things aren’t fully set up yet. First we need the apt-transport-https package to work with https urls. Next we’ll need dirmngr as it’s necessary when working with the gpg key.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install apt-transport-https
+$ sudo apt-get install dirmngr
+</code></pre></div></div>
+
+<p>To install Tor securely we also need to set-up the gpg key. I had trouble with this unless I ran the following commands (from the Tor instructions) as sudo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
+$ sudo gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+</code></pre></div></div>
+
+<p>Now that’s all set-up we can run apt-get to install Tor as follows:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+$ sudo apt-get install tor deb.torproject.org-keyring
+</code></pre></div></div>
+
+<p>That’s it, Tor is installed.</p>
+
+<h2 id="installing-nginx">Installing nginx</h2>
+
+<p>Next we’re going to set up a webserver. Apache isn’t recommended here simply because it bigger and more complex than we need. I’ve previously used lighttpd sucessfully but this time I am going to go with the commonly recommended nginx. First run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install nginx
+</code></pre></div></div>
+
+<p>As I’m not running a site anonymously (I have public facing versions of the same site) I don’t need to worry about many of the warnings usually made about running hidden services. General server best practices should be adequate.</p>
+
+<p>A few settings we will still change with a view to minimising possible information leakage are as follows. Edit the file ‘/etc/nginx/nginx.conf’:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/nginx/nginx.conf
+</code></pre></div></div>
+
+<p>In the http section we’re going to set server_tokens to off and set some logging options like this (… means leave the other bits as they are and we’re pretty much disabling logging):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http {
+
+...
+
+        server_tokens off;
+
+...
+
+        ##
+        # Logging Settings
+        ##
+
+        #access_log /var/log/nginx/access.log;
+        #error_log /var/log/nginx/error.log;
+
+        error_log /dev/null crit;
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>That’s the basic set-up for nginx and it should be up and running. You can try by visiting your instance’s public IP although only HTTP will work so check the address bar if you have connection issues.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-006.png" alt="IP Address in Google Compute Engine">
+  
+    <figcaption>IP Address in Google Compute Engine
+</figcaption>
+  
+</figure>
+
+<p>You’ll only see a very basic nginx landing page but at least we know it is working.</p>
+
+<figure class="">
+  <img src="/assets/images/gce-tor-screenshot-007.png" alt="NGINX Welcome Page">
+  
+    <figcaption>NGINX Welcome Page
+</figcaption>
+  
+</figure>
+
+<p>The sites I use this for are publicly hosted using other services (such as gitlab pages) and the Tor version is a separate mirror. This might not be the case for you and, for non-anonymous sites, you may want to serve both publicly AND over the Tor network from this install. The next steps aren’t entirely necessary or correct if that is the case. The set-up for Tor will be near identical but you’ll want to set-up nginx to work as a regular web server too.</p>
+
+<p>In my case though I DON’T want this nginx install to be public facing at all. To achieve this I’m going to change settings so that nginx only serves via a locked down port from local connections (that Tor can still access).</p>
+
+<p>You’ll need to edit /etc/nginx/sites-available/default</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/nginx/sites-available/default
+</code></pre></div></div>
+
+<p>All you need is as follows so you can safely delete the other section and comments.</p>
+
+<p>We’re telling nginx to only listen on port 8080 from local connections and to block any other connections. We’re setting the root directory where our website files will live and we’re defining valid index pages.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+        listen 127.0.0.1:8080 default_server;
+        server_name localhost;
+        root /var/www/html/;
+        index index.html index.htm;
+        location / {
+                allow 127.0.0.1;
+                deny all;
+
+        }
+}
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>Next we must restart nginx:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service nginx restart
+</code></pre></div></div>
+
+<p>If you refresh the web page it should no longer work as we can’t access the web-server other than locally (which Tor will be able to access and proxy over hidden service requests).</p>
+
+<h2 id="configuring-tor">Configuring Tor</h2>
+
+<p>The final piece of the puzzle is to configure a Tor Hidden Service.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/tor/torrc
+</code></pre></div></div>
+
+<p>Uncomment the two lines below and change the port settings as below. The first 80 is standard webpage port, you could change this but would then need to specify a port when browsing an onion address so 80 is standard. 127.0.0.1 is localhost and matches our nginx settings from earlier (remember we blocked access from anything other than local connections). :8080 is the port we specified in nginx set-up. We could use any different port to 8080 but the nginx and Tor config must match.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:8080
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit and then restart Tor.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service tor restart
+</code></pre></div></div>
+
+<p>Tor will now generate the onion address for this hidden service and we can see it with the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cat /var/lib/tor/hidden_service/hostname
+</code></pre></div></div>
+
+<p>In my case it generated ‘arpf35uo2uscuxso.onion’.</p>
+
+<p>We need to use the Tor browser to visit onion addresses so open it up and visit your onion address.</p>
+
+<p>You should be getting an error page. When we set up nginx we specified some valid index pages. The default nginx debian index page is actually ‘index.nginx-debian.html’ which falls outside of the scope of our project.</p>
+
+<p>We can fix this by making a web-page called index.html.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /var/www/html/index.html
+</code></pre></div></div>
+
+<p>Type the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>Now refresh Tor browser and you should see your new web page.</p>
+
+<p>In principle that’s it. You can put your web files in the /var/www/html/, nginx will serve them locally like a regular website, and Tor will proxy it to the onion address accessible via Tor browser.</p>
+
+<h2 id="taking-things-further">Taking Things Further</h2>
+
+<p>This is great and relatively simple. It doesn’t quite cut it for me though. I want to host multiple sites so will need to set up ‘virtual hosts’ in nginx. The House Organ’s website is built using jekyll and uploading the generated site files to this Compute Engine every-time I make an update is problematic. In fact, transferring files to the site folder isn’t entirely straightforward under any circumstances. There are solutions to all of these problems and I will address them in future posts.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-07-30T19:36:00+02:00">July 30, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/wnns-review/" class="pagination--pager" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/teaser500x300.jpg" alt="WNNS Review: Dissolution Matrix in Afterthought of Skiess
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/wnns-review/" rel="permalink">WNNS Review: Dissolution Matrix in Afterthought of Skiess
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/little-arithmetics-500x300.jpg" alt="Little Arithmetics
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/little-arithmetics/" rel="permalink">Little Arithmetics
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Small Thoughts on Improvisation
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/contact-imp-ab-500x300.jpg" alt="Testing Impedance Matching Contact Mic’s
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/impedance-matched-contact-mics/" rel="permalink">Testing Impedance Matching Contact Mic’s
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">More A/B Comparisons
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/bc-tor-500x300.jpg" alt="Onionised Bandcamp
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/onionised-bandcamp/" rel="permalink">Onionised Bandcamp
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Behold, Bandcamp on the Tor Network.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+    <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/mroystonward"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="https://github.com/mroystonward"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+      <li><a href="https://gitlab.com/mroystonward"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2018 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    (function ($) {
+    var $comments = $('.js-comments');
+
+    $('#new_comment').submit(function () {
+      var form = this;
+
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Loading...');
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+          $('#comment-form-submit').html('Submitted');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('Thanks for your comment! It will show on the site once it has been approved.');
+        },
+        error: function (err) {
+          console.log(err);
+          $('#comment-form-submit').html('Submit Comment');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.');
+          $(form).removeClass('disabled');
+        }
+      });
+
+      return false;
+    });
+
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
+    }
+  })(jQuery);
+  </script>
+
+  
+
+
+
+  </body>
+</html>
