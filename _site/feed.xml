@@ -1,5 +1,274 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-31T10:13:27+02:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
-</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Non-anonymous Tor Hidden Service using Google Cloud</title><link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" /><published>2018-07-30T19:36:00+02:00</published><updated>2018-07-30T19:36:00+02:00</updated><id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id><content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-01T11:03:53+02:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
+</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI</title><link href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" /><published>2018-07-31T19:36:00+02:00</published><updated>2018-07-31T19:36:00+02:00</updated><id>http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id><content type="html" xml:base="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
+
+&lt;p&gt;In my case the main project effected by this is &lt;a href=&quot;https://thehouseorgan.xyz&quot;&gt;thehouseorgan.xyz&lt;/a&gt; and its onion version tho2f4fceyghjl6s.onion.&lt;/p&gt;
+
+&lt;p&gt;The House Organ is built with the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;static site generator Jekyll&lt;/a&gt;. I won’t be covering how to set this up or use it as there are ample tutorials. Also, the website code for The House Organ is &lt;a href=&quot;https://gitlab.com/thehouseorgan/thehouseorgan.gitlab.io&quot;&gt;freely available to review and reuse&lt;/a&gt;. Basically though, I add/modify content, run Jekyll and the site is rebuilt with the changes. It’s all very automatic and straightforward.&lt;/p&gt;
+
+&lt;p&gt;The way the site is published is using &lt;a href=&quot;https://docs.gitlab.com/ee/user/project/pages/&quot;&gt;Gitlab’s Pages&lt;/a&gt; functionality. I have a git repository set up. Whenever I update the site and run Jekyll I then push the changes to Gitlab. Gitlab pages can be set-up via their instructions, it’s fairly straightforward but does have a couple of hoops to jump through. Basically it uses &lt;a href=&quot;https://docs.gitlab.com/ee/user/project/pages/getting_started_part_four.html&quot;&gt;Continuous Integration to automagically copy the generated site files within Gitlab’s backend infrastructure&lt;/a&gt; to the correct place for Gitlab pages to serve the site. Once the config file and Gitlab Runner are set-up everything runs pretty smoothly.&lt;/p&gt;
+
+&lt;p&gt;I mention all of this because, in the previous post, getting the generated site files into the webroot folder on Google Compute Engine is quite difficult so I needed find a solution. Also, rather than manually copying files over every time the site is updated I wanted to try and automate this.&lt;/p&gt;
+
+&lt;p&gt;This tutorial presumes that you are using a similar site generator, git and CI. It definitely works with Jekyll and Gitlab though there will be similarities and overlaps with other setups.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-google-cloud-storage&quot;&gt;Setting up Google Cloud Storage&lt;/h2&gt;
+
+&lt;p&gt;The biggest difficulty I found was finding an automated way to push the generated site folder to our GCE Instance. The solution was to set-up Google Cloud Storage. We create a storage bucket that we can easily push files to using CI; we mount the storage within the GCE virtual machine; and then we set-up nginx to use this bucket as the webroot and serve files from it.&lt;/p&gt;
+
+&lt;p&gt;Setting up a bucket is fairly straightforward. In the Storage area click on ‘Create Bucket’.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-001.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
+  
+    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-002.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
+  
+    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-003.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
+  
+    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.&lt;/p&gt;
+
+&lt;p&gt;You’ll need to ‘Stop’ the VM before you can ‘Edit’ the settings.&lt;/p&gt;
+
+&lt;p&gt;Under ‘Access Scopes’ choose ‘Allow full access to all Cloud APIs’.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-004.png&quot; alt=&quot;Editing Access Scopes in GCE VM Instance&quot; /&gt;
+  
+    &lt;figcaption&gt;Editing Access Scopes in GCE VM Instance
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Save and restart the VM. Once it’s running start up the SSH Terminal again.&lt;/p&gt;
+
+&lt;h2 id=&quot;mounting-google-cloud-storage-bucket-in-a-gce-vm&quot;&gt;Mounting Google Cloud Storage Bucket in a GCE VM&lt;/h2&gt;
+
+&lt;p&gt;To mount our storage bucket we need to install gfuse. The following commands add the correct source repositories, update them and then install gcsfuse:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
+$ echo &quot;deb http://packages.cloud.google.com/apt $GCSFUSE_REPO main&quot; | sudo tee /etc/apt/sources.list.d/gcsfuse.list
+$ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install gcsfuse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We also need a folder to mount to. Due to user permissions (and not wanting to use sudo as it can make mounting flakey) it seemed easiest to do this in the home directory so (where foo is whatever you want to call your folder):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/
+$ mkdir foo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Before we mount there are a couple of things I learned the hard way. Nginx runs as user www-data. I couldn’t figure out any permissions situation that allowed nginx to access this bucket. The only option was to run gfuse with &lt;code class=&quot;highlighter-rouge&quot;&gt;-o allow_other&lt;/code&gt; set which does have security implications (any user within our instance would have access to the contents of the bucket - I don’t however see this as a major problem for me here considering the simplicity of the server setup and the lack of sensitive data in the bucket).&lt;/p&gt;
+
+&lt;p&gt;The other flag that needs setting is &lt;code class=&quot;highlighter-rouge&quot;&gt;--implicit-dirs&lt;/code&gt; so that subdirectories work as expected.&lt;/p&gt;
+
+&lt;p&gt;Go and run (where ‘tho-tutorial-bucket’ is the name of your bucket and ‘~/foo’ is the mount directory you just created):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This should however fail as we need to edit /etc/fuse.conf and uncomment &lt;code class=&quot;highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Edit /etc/fuse.conf:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fuse.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; from in front of &lt;code class=&quot;highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+
+&lt;p&gt;Now try mounting again:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This should now be successfully mounted.&lt;/p&gt;
+
+&lt;h2 id=&quot;updating-nginx-configuration&quot;&gt;Updating nginx Configuration&lt;/h2&gt;
+
+&lt;p&gt;~/foo isn’t a practical folder for nginx to serve from though so we’re going to symlink this to somewhere more practical.&lt;/p&gt;
+
+&lt;p&gt;If you remember, our original nginx set-up looks for our site files in /var/www/html. We’re going to symlink to a new folder within /var/www/html. This also helps us as we may, in the future want to set up other site directories and host multiple sites using ‘virtual hosts’.&lt;/p&gt;
+
+&lt;p&gt;Run the following (changing foo for whatever suits you best and whatever you chose earlier):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo ln -s ~/foo /var/www/html/foo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We need to update our nginx configuration so that it looks in this new folder so edit /etc/nginx/sites-available/default again and change the webroot folder to /var/www/html/foo:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/sites-available/default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;update this line:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root /var/www/html/foo;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+
+&lt;p&gt;We need to restart nginx for the changes to take effect.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service nginx restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;automounting-cloud-storage-bucket&quot;&gt;Automounting Cloud Storage Bucket&lt;/h2&gt;
+
+&lt;p&gt;Currently, if we stop and start the VM Instance again, we’ll have to log in and manually mount our cloud storage again. This is far from ideal but we can set-up automounting by editing /etc/fstab.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add the following line at the bottom (we need the full path so you’ll need your username):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tho-tutorial-bucket /home/username/foo gcsfuse rw,allow_other,implicit_dirs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Right, there’s still nothing in this bucket for nginx to serve so we’re going to make a quick test file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano ~/foo/index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We’ll just make another simple Hello World page (but different to our previous one so we know the new file is being served).&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello Bucket World!&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+
+&lt;p&gt;Now stop the VM Instance. Next start it up again. Now, back in Tor Browser navigate to your onion domain (mine was arpf35uo2uscuxso.onion) and refresh the page. Fingers crossed we’re now seeing our new page which means everything is set-up correctly. Viola!&lt;/p&gt;
+
+&lt;p&gt;Just to note, there are now numerous options available for you to connect to this storage bucket and upload your website files. Personally I use cyberduck but your options are broad and wide.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-cicd&quot;&gt;Setting Up CI/CD&lt;/h3&gt;
+
+&lt;p&gt;As previously mentioned, I’m going to base this next part of the tutorial upon the notion that you already have a Gitlab Pages Jekyll site. This is because it is my set-up.&lt;/p&gt;
+
+&lt;p&gt;I initially set this site up with Github before migrating to Gitlab. When I did move from Github to Gitlab the big thing I had to figure out is how to use Gitlab’s Continuous Integration to deploy to ‘pages’.&lt;/p&gt;
+
+&lt;p&gt;When I did figure it out (and I used scripts which I found online but didn’t document so I can’t share links), I had a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; file that looked like this (if you don’t know what any of this means work through the tutorials):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# requiring the environment of Ruby 2.3.x
+image: ruby:2.3
+
+# add cache to 'vendor' for speeding up builds
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - bundle install --path vendor
+
+# add a job called 'test'
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test/
+  artifacts:
+    paths:
+      - test # generating site folder to be browsed or download
+  except:
+    - master # the 'test' job will affect all branches expect 'master'
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master # this job will affect only the 'master' branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Basically this fires up a Ruby environment and builds the site into a folder called ‘public’ which is where gitlab pages serves it from. I’ve never actually used the ‘test’ option but ho-hum it’s there anyway.&lt;/p&gt;
+
+&lt;p&gt;The plan is then to expand this CI configuration file to also connect to our storage bucket and copy over the site files there so they are accessible by our Tor Hidden Service. Adding a few more commands was fairly straightforward.&lt;/p&gt;
+
+&lt;p&gt;Firstly we’re using &lt;a href=&quot;https://github.com/travis-ci/dpl&quot;&gt;dpl&lt;/a&gt; (which is a travis deployment package) which can be installed as a gem &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install dpl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This can connect to numerous services. It can connect directly to a GCE VM Instance but not in the way that we need hence we’ve set up a storage bucket.&lt;/p&gt;
+
+&lt;p&gt;We’re going to need access keys though so, back in the cloud storage settings, in Storage &amp;gt; Settings &amp;gt; Interoperability you’ll find your ‘Access Key’ and ‘Secret’.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-005.png&quot; alt=&quot;Locating Access Keys in Google Cloud Storage&quot; /&gt;
+  
+    &lt;figcaption&gt;Locating Access Keys in Google Cloud Storage
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.&lt;/p&gt;
+
+&lt;p&gt;Rather, we’re going to use Gitlab’s CI variables (presuming you’re using Gitlab Pages like me). Within your Gitlab Project navigate to Settings &amp;gt; CI / CD.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-006.png&quot; alt=&quot;Gitlab CI / CD Settings&quot; /&gt;
+  
+    &lt;figcaption&gt;Gitlab CI / CD Settings
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Then expand the section ‘Variables’.&lt;/p&gt;
+
+&lt;p&gt;We need to create 2 new variables called &lt;code class=&quot;highlighter-rouge&quot;&gt;ACCESS_KEY_ID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;SECRET_ACCESS_KEY_ID&lt;/code&gt;. Use the ‘Access Key’ and ‘Secret’ from earlier.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-007.png&quot; alt=&quot;Setting Gitlab CI / CD Variables&quot; /&gt;
+  
+    &lt;figcaption&gt;Setting Gitlab CI / CD Variables
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Now, when we add to our CI config we can reference these variables without revealing their values to the public.&lt;/p&gt;
+
+&lt;p&gt;To use dpl we string together the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;provider is gcs (google cloud storage)&lt;/li&gt;
+  &lt;li&gt;access-key-id is the $ACCESS_KEY_ID variable we set earlier&lt;/li&gt;
+  &lt;li&gt;secret-access-key is the $SECRET_ACCESS_KEY_ID variable&lt;/li&gt;
+  &lt;li&gt;bucket is tho-tutorial-bucket (or whatever you set previously)&lt;/li&gt;
+  &lt;li&gt;local-dir is the jekyll _site folder where the built site is stored. It’s important to use this folder (rather than try and use the public folder the CI runner has previously built to) as it’s part of the git project and dpl uses this (it’s primarily designed for pushing the whole git project I guess).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The entire string looks like:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-tutorial-bucket --local-dir=_site
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Edit the ‘pages’ section of your &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+    - gem install dpl
+    - dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-bucket --local-dir=_site
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, whenever you commit a site change (i.e. a new post) it triggers the usual gitlab pages build process and puts your site into the ‘public’ folder and it also connects to your cloud storage bucket and puts your ‘_site’ directory there which is then served internally by nginx and proxied as a hidden service by Tor.&lt;/p&gt;
+
+&lt;p&gt;A note here though. You must make sure you have built or served the changes locally before committing/deploying so that the committed _site folder is up-to-date. This is usually fine if you’re working on changes on your computer and checking them in the local server before committing. If you don’t do this the _site folder won’t be updated with your changes. You can build within the CI runner but if the changes aren’t committed to git then they won’t upload to gcs and the hidden service site won’t reflect the changes on the gitlab pages site. I felt this was a small price considering I usually update the site this way anyway and I didn’t want to go into trying to figure it out any deeper.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-developments&quot;&gt;Further Developments&lt;/h2&gt;
+
+&lt;p&gt;I’ve pretty much managed to migrate the onion version of thehouseorgan.xyz from a home Raspberry Pi server to Google’s Cloud platform following the steps in this and the previous tutorial. The only things that are missing from this set-up are firstly that I need to set up ‘virtual hosts’ so I can serve more than one website this way. Secondly, I also had a torrent client set-up with all of the torrents of my music which I make available. This basically acts like an always on seed so I don’t have to leave my laptop running. I’ll need to try and set this up on GCE too.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">Non-anonymous Tor Hidden Service using Google Cloud</title><link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" /><published>2018-07-30T19:36:00+02:00</published><updated>2018-07-30T19:36:00+02:00</updated><id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id><content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
 
 &lt;p&gt;One option would be to take it with me and run it as a portable, nomadic server. This is appealing on several fronts but not practical for me right now as under some circumstances encryption technology and the use of Tor is highly scrutinised and problematic. Whilst I’m simply self-hosting and publishing my own music, therefore acting perfectly legally, not everywhere in the world sees it that way and unwanted scrutiny might jeopardise the projects of others I will be associated with. This is all probably a little extreme but it’s not a risk I’m currently able to take. Basically I’m going to temporarily be in a political context where I’ll very much have to toe the line for personal reasons.&lt;/p&gt;
 
@@ -744,180 +1013,4 @@ sudo update-rc.d eotk-init.sh defaults
 
 &lt;p&gt;So apologies to anyone who wants to comment and shares my captcha hatred but I’ve enabled google’s reCaptcha so you’re going to have to endure clicking some cars or street signs etc.&lt;/p&gt;
 
-&lt;p&gt;Peace out :v:&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Why I hate captchas but installed them anyway.</summary></entry><entry><title type="html">Self Hosting with Raspberry Pi and Tor</title><link href="http://localhost:4000/self-hosting-with-raspberry-pi-and-tor/" rel="alternate" type="text/html" title="Self Hosting with Raspberry Pi and Tor" /><published>2018-01-16T04:36:00+01:00</published><updated>2018-01-16T04:36:00+01:00</updated><id>http://localhost:4000/self-hosting-with-raspberry-pi-and-tor</id><content type="html" xml:base="http://localhost:4000/self-hosting-with-raspberry-pi-and-tor/">&lt;p&gt;A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.&lt;/p&gt;
-
-&lt;p&gt;My own project, The House Organ, is available on the ‘clearweb’ at &lt;a href=&quot;https://thehouseorgan.xyz&quot;&gt;https://thehouseorgan.xyz&lt;/a&gt;. I’ve recently moved it from github to gitlab pages and setup a custom domain for it. I’ve also maintained a Tor Hidden Service mirror of this site at &lt;a href=&quot;tho2f4fceyghjl6s.onion/&quot;&gt;tho2f4fceyghjl6s.onion/&lt;/a&gt;. The idea behind this is that the site would be censorship resistant and allow for visitors to connect with a degree of anonymity (I doubt that these are very high risks for me personally but there is a political spectrum here that I want to be engaged with). If you want to know more about what Tor is and how it works &lt;a href=&quot;https://www.torproject.org/about/overview.html.en&quot;&gt;https://www.torproject.org/about/overview.html.en&lt;/a&gt; is a good place to start. I’ll save discussion of why one would want to enagge with any of this for a later date&lt;/p&gt;
-
-&lt;p&gt;To set up the Tor mirror I have setup a small webserver at home with the site proxied through Tor - all running on a Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;What follows are notes, self reminders and tips for trying this yourself. I made numerous mistakes on the way so feel free to ask if you encounter any problems, but at the same time this is a rather rough guide and not a step by step tutorial so treat it like a recipe that may need alterations to suit your tastes.&lt;/p&gt;
-
-&lt;h2 id=&quot;setting-up-a-raspberry-pi&quot;&gt;Setting up a Raspberry Pi&lt;/h2&gt;
-
-&lt;p&gt;A few notes on this:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;We’re setting up in a basic headless server configuration so we’re not attaching a monitor and keyboard to interact with the Raspberry Pi. Instead we’ll login via the command line and execute commands. I found that this all took a bit of getting used to but has been useful training for working with servers in general.&lt;/li&gt;
-  &lt;li&gt;For the above reasons I’d install Raspbian over NOOBS. Technically, seeing as NOOBS contains Raspbian, you should be able to do all of this with either, but you don’t need the extra bloat so I wouldn’t bother.&lt;/li&gt;
-  &lt;li&gt;I’ve only done this with Raspberry Pi 2s and 3s. I don’t know if it’d work with a Pi zero and an older original Pi model might struggle a little bit if you run other services on it.&lt;/li&gt;
-  &lt;li&gt;Whenever I’ve done this I’ve generally stuck to Ethernet so haven’t had to faff around much with WiFi. The transfer speeds on your local network are going to impact site load speeds over the Internet also so if you can use Ethernet do, but if not don’t worry about it.&lt;/li&gt;
-  &lt;li&gt;Technically, we’re setting up a web server which probably violates your home ISP terms of service. If you started attracting much traffic your ISP might look at this more closely. Theoretically you could bump up to a business plan if needed but please just be aware of any risks you are placing upon yourself.&lt;/li&gt;
-  &lt;li&gt;As you’re setting up a mini-web-server at home and exposing services to the outside world you should take precautions to ensure these don’t get hacked etc. Setting up passwordless login is a very good idea. It sounds like a bad idea but it relies on a cryptographic key for login so it’s a lot harder to hack than a password is. Setting up a firewall is essential and only expose the ports/services needed. Software such as fail2ban is worth implementing too, so as to block any suspicious activity.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So, caveats and notes out of the way I’d recommend this guide - &lt;a href=&quot;https://web.archive.org/web/20180111082324/http://blog.self.li/post/63281257339/raspberry-pi-part-1-basic-setup-without-cables&quot;&gt;RRaspberry Pi 2: Basic setup without any cables (headless)&lt;/a&gt; (Wayback Machine Link as site doesn’t support HTTPS) - is easy to follow and covers basic security such as setting up a firewall and passwordless login.&lt;/p&gt;
-
-&lt;p&gt;It’s likely getting a bit old now so do check the official Raspberry Pi guides etc. too.&lt;/p&gt;
-
-&lt;h2 id=&quot;installing-tor&quot;&gt;Installing Tor&lt;/h2&gt;
-
-&lt;p&gt;First some more caveats. We’re using Tor to serve a webpage as a hidden service. To access these hidden services visitors need to use Tor browser. Tor browser helps with anonymity and privacy but if your use case/threat model is higher then you’ll need to look into this more deeply and make habitual changes. Also, we’re running the server from home so whilst we’re hosting a ‘hidden service’ we’re not doing it in an anonymous manner. Tor has an undeserved reputation for unsavoury and illegal activities but if you were wanting to host anything remotely illegal I don’t think hosting a hidden service at home would be a very sensible way to do it. Also, on a final note, I’m based in the UK where there aren’t currently any legal restrictions on using Tor, your local situation might differ.&lt;/p&gt;
-
-&lt;p&gt;Right, let’s get Tor installed. We need to add Tor’s package repositories.&lt;/p&gt;
-
-&lt;p&gt;This will open a new file for us to paste in the links.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nano /etc/apt/sources.list.d/torproject.list
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;When I set up Raspbian it was on version Jessie so I added:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb http://deb.torproject.org/torproject.org jessie main
-deb-src http://deb.torproject.org/torproject.org jessie main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you’re on stretch etc. you can get the package details here - &lt;a href=&quot;https://www.torproject.org/docs/debian.html.en#ubuntu&quot;&gt;https://www.torproject.org/docs/debian.html.en#ubuntu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+x&lt;/code&gt; to exit and save nano.&lt;/p&gt;
-
-&lt;p&gt;Now run these 2 commands to set-up gpg keys to validate these sources.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
-
-gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next we need to update the package manager:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And install Tor:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install tor
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;setting-up-a-hidden-service&quot;&gt;Setting up a Hidden Service&lt;/h2&gt;
-
-&lt;p&gt;Now we need to configure some settings in Tor. The config file is called ‘torrc’ and is located at /etc/tor/torrc&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo nano /etc/tor/torrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Underneath where it says:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;############### This section is just for location-hidden services ###
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;You need to add (or uncomment/edit) the lines:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HiddenServiceDir /var/lib/tor/hidden_service/
-HiddenServicePort 80 127.0.0.1:7658
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The first line can be any folder writable by Tor.&lt;/p&gt;
-
-&lt;p&gt;The second line can be unpicked a bit more:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HiddenServicePort 80&lt;/code&gt; means that Tor will proxy to this virtual port. You could change it but I can’t think of many use cases where you’d need to so I’d stick with the standard configuration.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1&lt;/code&gt; specifies proxying internal connections. When we set up the web server this means it will proxy the sites we set up through Tor.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;:7658&lt;/code&gt; This is the internal port we’re proxying. My web server is set to use this port. You can change this but your web server will need setting up to be the same as whatever you choose here.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+x&lt;/code&gt; to exit and save.&lt;/p&gt;
-
-&lt;p&gt;Now restart Tor&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service tor restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Providing everything worked and Tor restarted it will have created some files in the /var/lib/tor/hidden_service/ folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;private_key&lt;/code&gt; is the private key pair and you should back this up and shouldn’t share it with anyone. You shouldn’t need to interact with this file though.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hostname&lt;/code&gt; is your onion address, e.g. duskgytldkxiuqc6.onion. This is the address you’ll put into Tor browser to visit your site.&lt;/p&gt;
-
-&lt;p&gt;The hidden_service folder is pretty locked down security wise (which is sensible) so:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo cat /var/lib/tor/hidden_service/hostname
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To display the onion address.&lt;/p&gt;
-
-&lt;h2 id=&quot;setting-up-a-webserver&quot;&gt;Setting up a Webserver&lt;/h2&gt;
-
-&lt;p&gt;There’s more than one way of doing this. Tor doesn’t recommend Apache as it’s a very large, complex software with a lot of potential for misconfiguration and security leaks. In our use case - a home based DIY Raspberry Pi server - I’m not sure how significant this is. Still, I opted for lighttpd as it’s fairly simple and lightweight.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install lighttpd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I made some additional folders to structure multiple sites as follows. Replace foobar with whatever makes sense for your site name etc.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mkdir /var/www/html
-sudo mkdir /var/www/html/foobar
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now we change the owner and permissions of the folder and add pi to the www-data group.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chown -R www-data:www-data /var/www/html/foobar
-sudo chmod 775 /var/www/html/foobar
-sudo usermod -a -G www-data pi
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now put your website files into the folder /var/www/html/foobar&lt;/p&gt;
-
-&lt;p&gt;If you don’t have any files for this yet you could make a basic index.html page:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo '&amp;lt;h1&amp;gt;Hello, World!&amp;lt;/h1&amp;gt;' &amp;gt; /var/www/html/foobar/index.php
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now we need to edit the lighttpd config file:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo nano /etc/lighttpd/lighttpd.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;change &lt;code class=&quot;highlighter-rouge&quot;&gt;server.document-root&lt;/code&gt; to (or whatever folder structure you chose):&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server.document-root        = &quot;/var/www/html&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and change &lt;code class=&quot;highlighter-rouge&quot;&gt;server.port&lt;/code&gt; to the following (or whatever port you chose in the torrc config above):&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server.port                 = 7658
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now we’re going to add our website as a virtual host. The main reason is so that we can add other sites later if we want to. Add the following lines:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$HTTP[&quot;host&quot;] == &quot;duskgytldkxiuqc6.onion&quot; {
-      server.document-root = &quot;/var/www/html/foobar&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;duskgytldkxiuqc6.onion&lt;/code&gt; is whatever onion address you got earlier.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;server.document-root&lt;/code&gt; should point to whichever folder you created earlier and put your web files in.&lt;/p&gt;
-
-&lt;p&gt;now restart lighttpd:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service lighttpd restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;opening-ports-and-testing-it-all&quot;&gt;Opening Ports and Testing it All&lt;/h2&gt;
-
-&lt;p&gt;Everything should now be setup but our firewall should be blocking access so we need to open up a hole in ufw.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ufw allow 7658
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This should be it, the site doesn’t need to be accessible any way other than via Tor so no other ports should need opening (though you probably opened up port 22 in the Raspberry Pi setup so as you can SSH. Make sure you keep this port open or you won’t be able to login to your Pi).&lt;/p&gt;
-
-&lt;p&gt;Lighttpd is serving your site locally but it isn’t accessible externally.&lt;/p&gt;
-
-&lt;p&gt;Tor however is proxying this site and serving it as a hidden onion service.&lt;/p&gt;
-
-&lt;p&gt;Visiting duskgytldkxiuqc6.onion (or whatever your equivalent is) in Tor browser from another computer should display your website.&lt;/p&gt;
-
-&lt;p&gt;And that’s it really. I hope it works for you as it did for me.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">A rough guide to setting up a Tor hidden service, on a Raspberry Pi, at home.</summary></entry></feed>
+&lt;p&gt;Peace out :v:&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Why I hate captchas but installed them anyway.</summary></entry></feed>

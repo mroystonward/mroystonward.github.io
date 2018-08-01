@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI | :coffee: Hot Contents</title>
+<meta name="description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content=":coffee: Hot Contents">
+<meta property="og:title" content="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI">
+<meta property="og:url" content="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">
+
+
+  <meta property="og:description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/funnel-clouds-wide.jpg">
+
+
+
+  <meta name="twitter:site" content="@mroystonward">
+  <meta name="twitter:title" content="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI">
+  <meta name="twitter:description" content="Improvised “musicking”, workshops and “things” leaking out into the world.">
+  <meta name="twitter:url" content="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/funnel-clouds-wide.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-07-31T19:36:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Murray Royston-Ward",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title=":coffee: Hot Contents Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/"><img class="emoji" title=":coffee:" alt=":coffee:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2615.png" height="20" width="20"> Hot Contents</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/portfolio/">Portfolio</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/">About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/year-archive/">Posts</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/sitemap/">Sitemap</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/funnel-clouds-wide.jpg');">
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  10 minute read
+</p>
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Sunset_with_funnel_clouds.jpg">By Fir0002/Flagstaffotos [CC-BY-NC], via Wikimedia Commons</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/assets/images/bio-photo.jpg" class="author__avatar" alt="Murray Royston-Ward" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Murray Royston-Ward</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Improvised 'musicking', workshops and 'things' leaking out into the world ☕️🍟🍸🌱💻🔊🏴
+
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">London, UK</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/mroystonward" itemprop="sameAs">
+            <i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://mroystonward.bigcartel.com" itemprop="sameAs">
+            <i class="fas fa-fw fa-shopping-basket" aria-hidden="true"></i> Shop
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://twitter.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://gitlab.com/mroystonward" itemprop="sameAs">
+            <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="July 31, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#setting-up-google-cloud-storage">Setting up Google Cloud Storage</a></li>
+  <li><a href="#mounting-google-cloud-storage-bucket-in-a-gce-vm">Mounting Google Cloud Storage Bucket in a GCE VM</a></li>
+  <li><a href="#updating-nginx-configuration">Updating nginx Configuration</a></li>
+  <li>
+<a href="#automounting-cloud-storage-bucket">Automounting Cloud Storage Bucket</a>
+    <ul>
+      <li><a href="#setting-up-cicd">Setting Up CI/CD</a></li>
+    </ul>
+  </li>
+  <li><a href="#further-developments">Further Developments</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.</p>
+
+<p>In my case the main project effected by this is <a href="https://thehouseorgan.xyz">thehouseorgan.xyz</a> and its onion version tho2f4fceyghjl6s.onion.</p>
+
+<p>The House Organ is built with the <a href="https://jekyllrb.com/">static site generator Jekyll</a>. I won’t be covering how to set this up or use it as there are ample tutorials. Also, the website code for The House Organ is <a href="https://gitlab.com/thehouseorgan/thehouseorgan.gitlab.io">freely available to review and reuse</a>. Basically though, I add/modify content, run Jekyll and the site is rebuilt with the changes. It’s all very automatic and straightforward.</p>
+
+<p>The way the site is published is using <a href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab’s Pages</a> functionality. I have a git repository set up. Whenever I update the site and run Jekyll I then push the changes to Gitlab. Gitlab pages can be set-up via their instructions, it’s fairly straightforward but does have a couple of hoops to jump through. Basically it uses <a href="https://docs.gitlab.com/ee/user/project/pages/getting_started_part_four.html">Continuous Integration to automagically copy the generated site files within Gitlab’s backend infrastructure</a> to the correct place for Gitlab pages to serve the site. Once the config file and Gitlab Runner are set-up everything runs pretty smoothly.</p>
+
+<p>I mention all of this because, in the previous post, getting the generated site files into the webroot folder on Google Compute Engine is quite difficult so I needed find a solution. Also, rather than manually copying files over every time the site is updated I wanted to try and automate this.</p>
+
+<p>This tutorial presumes that you are using a similar site generator, git and CI. It definitely works with Jekyll and Gitlab though there will be similarities and overlaps with other setups.</p>
+
+<h2 id="setting-up-google-cloud-storage">Setting up Google Cloud Storage</h2>
+
+<p>The biggest difficulty I found was finding an automated way to push the generated site folder to our GCE Instance. The solution was to set-up Google Cloud Storage. We create a storage bucket that we can easily push files to using CI; we mount the storage within the GCE virtual machine; and then we set-up nginx to use this bucket as the webroot and serve files from it.</p>
+
+<p>Setting up a bucket is fairly straightforward. In the Storage area click on ‘Create Bucket’.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-001.png" alt="Creating a Storage Bucket in Google Cloud">
+  
+    <figcaption>Creating a Storage Bucket in Google Cloud
+</figcaption>
+  
+</figure>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-002.png" alt="Creating a Storage Bucket in Google Cloud">
+  
+    <figcaption>Creating a Storage Bucket in Google Cloud
+</figcaption>
+  
+</figure>
+
+<p>It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-003.png" alt="Creating a Storage Bucket in Google Cloud">
+  
+    <figcaption>Creating a Storage Bucket in Google Cloud
+</figcaption>
+  
+</figure>
+
+<p>Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.</p>
+
+<p>You’ll need to ‘Stop’ the VM before you can ‘Edit’ the settings.</p>
+
+<p>Under ‘Access Scopes’ choose ‘Allow full access to all Cloud APIs’.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-004.png" alt="Editing Access Scopes in GCE VM Instance">
+  
+    <figcaption>Editing Access Scopes in GCE VM Instance
+</figcaption>
+  
+</figure>
+
+<p>Save and restart the VM. Once it’s running start up the SSH Terminal again.</p>
+
+<h2 id="mounting-google-cloud-storage-bucket-in-a-gce-vm">Mounting Google Cloud Storage Bucket in a GCE VM</h2>
+
+<p>To mount our storage bucket we need to install gfuse. The following commands add the correct source repositories, update them and then install gcsfuse:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
+$ echo "deb http://packages.cloud.google.com/apt $GCSFUSE_REPO main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list
+$ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install gcsfuse
+</code></pre></div></div>
+<p>We also need a folder to mount to. Due to user permissions (and not wanting to use sudo as it can make mounting flakey) it seemed easiest to do this in the home directory so (where foo is whatever you want to call your folder):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/
+$ mkdir foo
+</code></pre></div></div>
+
+<p>Before we mount there are a couple of things I learned the hard way. Nginx runs as user www-data. I couldn’t figure out any permissions situation that allowed nginx to access this bucket. The only option was to run gfuse with <code class="highlighter-rouge">-o allow_other</code> set which does have security implications (any user within our instance would have access to the contents of the bucket - I don’t however see this as a major problem for me here considering the simplicity of the server setup and the lack of sensitive data in the bucket).</p>
+
+<p>The other flag that needs setting is <code class="highlighter-rouge">--implicit-dirs</code> so that subdirectories work as expected.</p>
+
+<p>Go and run (where ‘tho-tutorial-bucket’ is the name of your bucket and ‘~/foo’ is the mount directory you just created):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+</code></pre></div></div>
+
+<p>This should however fail as we need to edit /etc/fuse.conf and uncomment <code class="highlighter-rouge">user_allow_other</code></p>
+
+<p>Edit /etc/fuse.conf:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/fuse.conf
+</code></pre></div></div>
+
+<p>and remove the <code class="highlighter-rouge">#</code> from in front of <code class="highlighter-rouge">user_allow_other</code>. <code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>Now try mounting again:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+</code></pre></div></div>
+<p>This should now be successfully mounted.</p>
+
+<h2 id="updating-nginx-configuration">Updating nginx Configuration</h2>
+
+<p>~/foo isn’t a practical folder for nginx to serve from though so we’re going to symlink this to somewhere more practical.</p>
+
+<p>If you remember, our original nginx set-up looks for our site files in /var/www/html. We’re going to symlink to a new folder within /var/www/html. This also helps us as we may, in the future want to set up other site directories and host multiple sites using ‘virtual hosts’.</p>
+
+<p>Run the following (changing foo for whatever suits you best and whatever you chose earlier):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo ln -s ~/foo /var/www/html/foo
+</code></pre></div></div>
+
+<p>We need to update our nginx configuration so that it looks in this new folder so edit /etc/nginx/sites-available/default again and change the webroot folder to /var/www/html/foo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/nginx/sites-available/default
+</code></pre></div></div>
+<p>update this line:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root /var/www/html/foo;
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>We need to restart nginx for the changes to take effect.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service nginx restart
+</code></pre></div></div>
+
+<h2 id="automounting-cloud-storage-bucket">Automounting Cloud Storage Bucket</h2>
+
+<p>Currently, if we stop and start the VM Instance again, we’ll have to log in and manually mount our cloud storage again. This is far from ideal but we can set-up automounting by editing /etc/fstab.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/fstab
+</code></pre></div></div>
+
+<p>Add the following line at the bottom (we need the full path so you’ll need your username):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tho-tutorial-bucket /home/username/foo gcsfuse rw,allow_other,implicit_dirs
+</code></pre></div></div>
+
+<p>Right, there’s still nothing in this bucket for nginx to serve so we’re going to make a quick test file.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano ~/foo/index.html
+</code></pre></div></div>
+
+<p>We’ll just make another simple Hello World page (but different to our previous one so we know the new file is being served).</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h1&gt;Hello Bucket World!&lt;/h1&gt;
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ctrl + x</code> to save and quit.</p>
+
+<p>Now stop the VM Instance. Next start it up again. Now, back in Tor Browser navigate to your onion domain (mine was arpf35uo2uscuxso.onion) and refresh the page. Fingers crossed we’re now seeing our new page which means everything is set-up correctly. Viola!</p>
+
+<p>Just to note, there are now numerous options available for you to connect to this storage bucket and upload your website files. Personally I use cyberduck but your options are broad and wide.</p>
+
+<h3 id="setting-up-cicd">Setting Up CI/CD</h3>
+
+<p>As previously mentioned, I’m going to base this next part of the tutorial upon the notion that you already have a Gitlab Pages Jekyll site. This is because it is my set-up.</p>
+
+<p>I initially set this site up with Github before migrating to Gitlab. When I did move from Github to Gitlab the big thing I had to figure out is how to use Gitlab’s Continuous Integration to deploy to ‘pages’.</p>
+
+<p>When I did figure it out (and I used scripts which I found online but didn’t document so I can’t share links), I had a <code class="highlighter-rouge">.gitlab-ci.yml</code> file that looked like this (if you don’t know what any of this means work through the tutorials):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># requiring the environment of Ruby 2.3.x
+image: ruby:2.3
+
+# add cache to 'vendor' for speeding up builds
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - bundle install --path vendor
+
+# add a job called 'test'
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test/
+  artifacts:
+    paths:
+      - test # generating site folder to be browsed or download
+  except:
+    - master # the 'test' job will affect all branches expect 'master'
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master # this job will affect only the 'master' branch
+</code></pre></div></div>
+
+<p>Basically this fires up a Ruby environment and builds the site into a folder called ‘public’ which is where gitlab pages serves it from. I’ve never actually used the ‘test’ option but ho-hum it’s there anyway.</p>
+
+<p>The plan is then to expand this CI configuration file to also connect to our storage bucket and copy over the site files there so they are accessible by our Tor Hidden Service. Adding a few more commands was fairly straightforward.</p>
+
+<p>Firstly we’re using <a href="https://github.com/travis-ci/dpl">dpl</a> (which is a travis deployment package) which can be installed as a gem <code class="highlighter-rouge">gem install dpl</code>.</p>
+
+<p>This can connect to numerous services. It can connect directly to a GCE VM Instance but not in the way that we need hence we’ve set up a storage bucket.</p>
+
+<p>We’re going to need access keys though so, back in the cloud storage settings, in Storage &gt; Settings &gt; Interoperability you’ll find your ‘Access Key’ and ‘Secret’.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-005.png" alt="Locating Access Keys in Google Cloud Storage">
+  
+    <figcaption>Locating Access Keys in Google Cloud Storage
+</figcaption>
+  
+</figure>
+
+<p>We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.</p>
+
+<p>Rather, we’re going to use Gitlab’s CI variables (presuming you’re using Gitlab Pages like me). Within your Gitlab Project navigate to Settings &gt; CI / CD.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-006.png" alt="Gitlab CI / CD Settings">
+  
+    <figcaption>Gitlab CI / CD Settings
+</figcaption>
+  
+</figure>
+
+<p>Then expand the section ‘Variables’.</p>
+
+<p>We need to create 2 new variables called <code class="highlighter-rouge">ACCESS_KEY_ID</code> and <code class="highlighter-rouge">SECRET_ACCESS_KEY_ID</code>. Use the ‘Access Key’ and ‘Secret’ from earlier.</p>
+
+<figure class="">
+  <img src="/assets/images/jekyll-gce-ci-screenshot-007.png" alt="Setting Gitlab CI / CD Variables">
+  
+    <figcaption>Setting Gitlab CI / CD Variables
+</figcaption>
+  
+</figure>
+
+<p>Now, when we add to our CI config we can reference these variables without revealing their values to the public.</p>
+
+<p>To use dpl we string together the following:</p>
+<ul>
+  <li>provider is gcs (google cloud storage)</li>
+  <li>access-key-id is the $ACCESS_KEY_ID variable we set earlier</li>
+  <li>secret-access-key is the $SECRET_ACCESS_KEY_ID variable</li>
+  <li>bucket is tho-tutorial-bucket (or whatever you set previously)</li>
+  <li>local-dir is the jekyll _site folder where the built site is stored. It’s important to use this folder (rather than try and use the public folder the CI runner has previously built to) as it’s part of the git project and dpl uses this (it’s primarily designed for pushing the whole git project I guess).</li>
+</ul>
+
+<p>The entire string looks like:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-tutorial-bucket --local-dir=_site
+</code></pre></div></div>
+
+<p>Edit the ‘pages’ section of your <code class="highlighter-rouge">.gitlab-ci.yml</code> like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+    - gem install dpl
+    - dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-bucket --local-dir=_site
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+</code></pre></div></div>
+
+<p>Now, whenever you commit a site change (i.e. a new post) it triggers the usual gitlab pages build process and puts your site into the ‘public’ folder and it also connects to your cloud storage bucket and puts your ‘_site’ directory there which is then served internally by nginx and proxied as a hidden service by Tor.</p>
+
+<p>A note here though. You must make sure you have built or served the changes locally before committing/deploying so that the committed _site folder is up-to-date. This is usually fine if you’re working on changes on your computer and checking them in the local server before committing. If you don’t do this the _site folder won’t be updated with your changes. You can build within the CI runner but if the changes aren’t committed to git then they won’t upload to gcs and the hidden service site won’t reflect the changes on the gitlab pages site. I felt this was a small price considering I usually update the site this way anyway and I didn’t want to go into trying to figure it out any deeper.</p>
+
+<h2 id="further-developments">Further Developments</h2>
+
+<p>I’ve pretty much managed to migrate the onion version of thehouseorgan.xyz from a home Raspberry Pi server to Google’s Cloud platform following the steps in this and the previous tutorial. The only things that are missing from this set-up are firstly that I need to set up ‘virtual hosts’ so I can serve more than one website this way. Secondly, I also had a torrent client set-up with all of the torrents of my music which I make available. This basically acts like an always on seed so I don’t have to leave my laptop running. I’ll need to try and set this up on GCE too.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-07-31T19:36:00+02:00">July 31, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/non-anonymous-tor-hidden-service-using-google-cloud/" class="pagination--pager" title="Non-anonymous Tor Hidden Service using Google Cloud
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/high-tor-500x300.jpg" alt="Non-anonymous Tor Hidden Service using Google Cloud
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="permalink">Non-anonymous Tor Hidden Service using Google Cloud
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/teaser500x300.jpg" alt="WNNS Review: Dissolution Matrix in Afterthought of Skiess
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/wnns-review/" rel="permalink">WNNS Review: Dissolution Matrix in Afterthought of Skiess
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/little-arithmetics-500x300.jpg" alt="Little Arithmetics
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/little-arithmetics/" rel="permalink">Little Arithmetics
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Small Thoughts on Improvisation
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/contact-imp-ab-500x300.jpg" alt="Testing Impedance Matching Contact Mic’s
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/impedance-matched-contact-mics/" rel="permalink">Testing Impedance Matching Contact Mic’s
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">More A/B Comparisons
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+    <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/mroystonward"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="https://github.com/mroystonward"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+      <li><a href="https://gitlab.com/mroystonward"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2018 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    (function ($) {
+    var $comments = $('.js-comments');
+
+    $('#new_comment').submit(function () {
+      var form = this;
+
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Loading...');
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+          $('#comment-form-submit').html('Submitted');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('Thanks for your comment! It will show on the site once it has been approved.');
+        },
+        error: function (err) {
+          console.log(err);
+          $('#comment-form-submit').html('Submit Comment');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.');
+          $(form).removeClass('disabled');
+        }
+      });
+
+      return false;
+    });
+
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
+    }
+  })(jQuery);
+  </script>
+
+  
+
+
+
+  </body>
+</html>
