@@ -12,7 +12,7 @@ header:
 ## Introduction
 I'm briefly introducing this text as it is taken directly from a supplement I recently published with [TQ#15](https://tqzine.blogspot.com/). It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It's likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.
 
-[**<i class="far fa-file-pdf" style="color:red;font-size:2.441em;"></i> Here is a PDF**](/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf) of the supplement and below is the text itself.
+[**<i class="far fa-file-pdf" style="color:red;font-size:2.441em;"></i> Here is a PDF**](/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf) of the supplement, [**<i class="fas fa-book" style="color:green;font-size:2.441em;"></i> or an ePub ebook**](/assets/files/an-opinionated-critical-guide-to-diy-digital-publishing.epub) and below is the text itself.
 {: .notice}
 
 ---
