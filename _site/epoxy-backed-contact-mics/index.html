@@ -432,6 +432,58 @@
           <!-- Start static comments -->
           <div class="js-comments">
             
+              <h4 class="page__comments-title">Comments</h4>
+              
+
+              
+                
+                
+                
+                
+                
+                <article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    <img class="comment__avatar" src="https://www.gravatar.com/avatar/f6404106e9faa5eb1b653159845ba6e4?d=mm&amp;s=80" alt="Tom Benedict">
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      
+        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="https://tombenedict.wordpress.com/">Tom Benedict</a></span>
+      
+    </h3>
+    <p class="comment__date">
+      
+        <a href="#comment1" itemprop="url">
+        <time datetime="2018-12-06T21:03:07+00:00" itemprop="datePublished">December 06, 2018 at 09:03 PM</time>
+        </a>
+      
+    </p>
+    <div itemprop="text">
+<p>Interesting experiment! Thanks for sharing your results.</p>
+
+<p>I think your conclusions nailed it: Adding the epoxy changes the natural resonance of the piezo element. Zach Poff came to a similar conclusion when he tried some thicker PZT elements: https://www.zachpoff.com/resources/building-contact-mics/</p>
+
+<p>I built two sets of contact mics, some using thin piezo elements (Murata 7BB-35-3L0) and some using thick elements (OEM parts for ultrasonic mist generators) and got similar results to what you found by applying an epoxy backing: lower overall sensitivity but less “honkiness” at resonant frequencies. (Of the two approaches, I honestly like your epoxy backing better. One, I really like the 35mm Murata elements. But also because the epoxy can be applied as part of the construction of the mic, so it seems like you can tune the effect, to some degree.)</p>
+
+<p>In your article you mentioned that neither approach worked particularly well at low frequencies. That’s more of a feature of the piezoelectric element itself and how it combines with the inputs on the recorder. Piezo elements are inherently high impedance devices. Recorder inputs are considerably lower impedance devices. The impedance mismatch essentially creates a high-pass filter that cuts the low end of the signal. Tim Prebble has a nice write-up of this on his site: http://www.musicofsound.co.nz/blog/the-first-rule-of-contact-mic-club</p>
+
+<p>Putting an impedance matching transformer or an impedance matching buffer amp between the piezo element and the recorder will go a long way toward restoring the low end. Tim Prebble uses contact mics from Trance Audio and Barcus Berry, both of which come with their own amplifiers, but there are some off-the-shelf options as well.</p>
+
+<p>The HOSA MIT-129 is an impedance-matching transformer that takes a 1/4” TS plug on one end and has an XLR on the other. Plug it into the recorder and plug the contact mic into it and the low end shows up. I’m pretty sure you could take your mics as-is and plug them into your recorder with one of these.</p>
+
+<p>I’ve been using piezo buffer amps from Stompville in the UK. SmudgerD designed them to be built into a cajon or similar instrument, but I stuck four of them in a box that goes between my recorder and my mics. They work amazingly well. (I like the sound I get with these more than the MIT-129.)</p>
+
+<p>For what it’s worth, the only real difference between some of the higher-end contact mics and what you built comes down to shielding. Adding a layer of metal tape that’s grounded to your cable shield provides a decent shield for the piezo. The rest, you’ve already got.</p>
+
+<p>Cheers!</p>
+
+<p>Tom</p>
+</div>
+  </div>
+</article>
+
+              
+            
           </div>
           <!-- End static comments -->
 
