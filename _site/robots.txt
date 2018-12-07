@@ -1,1 +1,1 @@
-Sitemap: https://mroystonward.github.io/sitemap.xml
+Sitemap: https://mroystonward.github.io/pages/mroystonward/sitemap.xml
