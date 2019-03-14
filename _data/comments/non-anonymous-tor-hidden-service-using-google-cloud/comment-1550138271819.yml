@@ -1,0 +1,7 @@
+_id: fd93d3a0-303e-11e9-8061-454b79428d38
+message: "Hi Valentin,\r\n\r\nAlmost, but I would make two important distinctions.\r\n\r\n1. Tor allows site visitors to connect with a large degree of anonymity. If you visited my .onion address it would be very difficult for outside observers to see that as it is routed through multiple layers of encryption.\r\n2. Setting up a Tor hidden service as described above introduces several compromises that mean it is not anonymous for me, the site's author. Firstly, I've set it up on google infrastructure so it would be easy for i.e. government or law to know I am responsible for the website. Secondly, I have not audited the hosting environment to ensure everything is locked down and anonymous.\r\n\r\nSetting up a completely anonymous service is completely non-trivial, whereas browsing anonymously using Tor is much easier.\r\n\r\nFinally, my own politics, in using these services is just that, political. But it is political from a privileged white European perspective where it does not matter to me if I am de-anonymised. If being de-anonymised (as a site host) is risky for you then I suggest researching this further and reaching out on Tor message boards."
+name: Murray Royston-Ward
+email: 1521c4e6d029c1656a1dcff8e6b22346
+url: 'https://mroystonward.github.io'
+hidden: ''
+date: '2019-02-14T09:57:51.819Z'
