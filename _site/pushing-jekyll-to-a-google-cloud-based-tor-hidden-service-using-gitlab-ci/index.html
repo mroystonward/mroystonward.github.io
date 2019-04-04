@@ -407,28 +407,28 @@
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-001.png" alt="Creating a Storage Bucket in Google Cloud">
   
-    <figcaption>Creating a Storage Bucket in Google Cloud
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Creating a Storage Bucket in Google Cloud
+
+    </figcaption></figure>
 
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-002.png" alt="Creating a Storage Bucket in Google Cloud">
   
-    <figcaption>Creating a Storage Bucket in Google Cloud
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Creating a Storage Bucket in Google Cloud
+
+    </figcaption></figure>
 
 <p>It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.</p>
 
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-003.png" alt="Creating a Storage Bucket in Google Cloud">
   
-    <figcaption>Creating a Storage Bucket in Google Cloud
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Creating a Storage Bucket in Google Cloud
+
+    </figcaption></figure>
 
 <p>Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.</p>
 
@@ -439,10 +439,10 @@
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-004.png" alt="Editing Access Scopes in GCE VM Instance">
   
-    <figcaption>Editing Access Scopes in GCE VM Instance
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Editing Access Scopes in GCE VM Instance
+
+    </figcaption></figure>
 
 <p>Save and restart the VM. Once it’s running start up the SSH Terminal again.</p>
 
@@ -590,10 +590,10 @@ pages:
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-005.png" alt="Locating Access Keys in Google Cloud Storage">
   
-    <figcaption>Locating Access Keys in Google Cloud Storage
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Locating Access Keys in Google Cloud Storage
+
+    </figcaption></figure>
 
 <p>We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.</p>
 
@@ -602,10 +602,10 @@ pages:
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-006.png" alt="Gitlab CI / CD Settings">
   
-    <figcaption>Gitlab CI / CD Settings
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Gitlab CI / CD Settings
+
+    </figcaption></figure>
 
 <p>Then expand the section ‘Variables’.</p>
 
@@ -614,10 +614,10 @@ pages:
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-007.png" alt="Setting Gitlab CI / CD Variables">
   
-    <figcaption>Setting Gitlab CI / CD Variables
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Setting Gitlab CI / CD Variables
+
+    </figcaption></figure>
 
 <p>Now, when we add to our CI config we can reference these variables without revealing their values to the public.</p>
 
@@ -694,6 +694,39 @@ pages:
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/moldy-onion-500x300.png" alt="Shutting Down Bandcamp Onion
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="permalink">Shutting Down Bandcamp Onion
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
         
           
 
@@ -794,39 +827,6 @@ pages:
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="http://localhost:4000/assets/images/little-arithmetics-500x300.jpg" alt="Little Arithmetics
-">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/little-arithmetics/" rel="permalink">Little Arithmetics
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  4 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Small Thoughts on Improvisation
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
@@ -869,7 +869,7 @@ pages:
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
 
 

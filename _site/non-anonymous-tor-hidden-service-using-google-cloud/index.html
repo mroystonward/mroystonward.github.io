@@ -406,48 +406,48 @@
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-001.png" alt="Creating a new project in Google Cloud">
   
-    <figcaption>Creating a new project in Google Cloud
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Creating a new project in Google Cloud
+
+    </figcaption></figure>
 
 <p>Now we’re going to choose ‘Compute Engine’ from the lefthand menu and ‘create’ a new ‘VM Instance’.</p>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-002.png" alt="Creating a VM Instance in Google Compute Engine">
   
-    <figcaption>Creating a VM Instance in Google Compute Engine
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Creating a VM Instance in Google Compute Engine
+
+    </figcaption></figure>
 
 <p>Give it whatever name you want (I’m using ‘tutorial-instance’); choose your region (I opted for European data centres, I especially didn’t want to use US ones); machine type should just be ‘micro’ as we don’t need more power and it’s cheaper this way; boot disk should be Debian 9; on the firewall add HTTP and HTTPS access.</p>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-003.png" alt="VM Instance settings in Google Compute Engine">
   
-    <figcaption>VM Instance settings in Google Compute Engine
-</figcaption>
-  
-</figure>
+    <figcaption>
+      VM Instance settings in Google Compute Engine
+
+    </figcaption></figure>
 
 <p>That’s it, we now have a fresh Debian instance to work with. Google cloud has a really good web based SSH Terminal so click on that, allow pop-ups if they are blocked and initiate the connection.</p>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-004.png" alt="Launching SSH Terminal in Google Compute Engine">
   
-    <figcaption>Launching SSH Terminal in Google Compute Engine
-</figcaption>
-  
-</figure>
+    <figcaption>
+      Launching SSH Terminal in Google Compute Engine
+
+    </figcaption></figure>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-005.png" alt="SSH Terminal in Google Compute Engine">
   
-    <figcaption>SSH Terminal in Google Compute Engine
-</figcaption>
-  
-</figure>
+    <figcaption>
+      SSH Terminal in Google Compute Engine
+
+    </figcaption></figure>
 
 <h2 id="installing-tor">Installing Tor</h2>
 
@@ -533,20 +533,20 @@ $ sudo apt-get install tor deb.torproject.org-keyring
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-006.png" alt="IP Address in Google Compute Engine">
   
-    <figcaption>IP Address in Google Compute Engine
-</figcaption>
-  
-</figure>
+    <figcaption>
+      IP Address in Google Compute Engine
+
+    </figcaption></figure>
 
 <p>You’ll only see a very basic nginx landing page but at least we know it is working.</p>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-007.png" alt="NGINX Welcome Page">
   
-    <figcaption>NGINX Welcome Page
-</figcaption>
-  
-</figure>
+    <figcaption>
+      NGINX Welcome Page
+
+    </figcaption></figure>
 
 <p>The sites I use this for are publicly hosted using other services (such as gitlab pages) and the Tor version is a separate mirror. This might not be the case for you and, for non-anonymous sites, you may want to serve both publicly AND over the Tor network from this install. The next steps aren’t entirely necessary or correct if that is the case. The set-up for Tor will be near identical but you’ll want to set-up nginx to work as a regular web server too.</p>
 
@@ -675,6 +675,39 @@ HiddenServicePort 80 127.0.0.1:8080
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/moldy-onion-500x300.png" alt="Shutting Down Bandcamp Onion
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="permalink">Shutting Down Bandcamp Onion
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
         <img src="http://localhost:4000/assets/images/diy-digital-500x300.png" alt="An (Opinionated) Critical Guide to DIY Digital Publishing
 ">
       </div>
@@ -766,39 +799,6 @@ HiddenServicePort 80 127.0.0.1:8080
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="http://localhost:4000/assets/images/little-arithmetics-500x300.jpg" alt="Little Arithmetics
-">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/little-arithmetics/" rel="permalink">Little Arithmetics
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  4 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Small Thoughts on Improvisation
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
@@ -841,7 +841,7 @@ HiddenServicePort 80 127.0.0.1:8080
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
 
 

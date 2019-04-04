@@ -1,5 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-14T18:36:53+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
-</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">An (Opinionated) Critical Guide to DIY Digital Publishing</title><link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" /><published>2018-09-22T19:36:00+01:00</published><updated>2018-09-22T19:36:00+01:00</updated><id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id><content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-04T18:50:41+01:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
+</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">Shutting Down Bandcamp Onion</title><link href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" /><published>2019-04-04T03:36:00+01:00</published><updated>2019-04-04T03:36:00+01:00</updated><id>http://localhost:4000/shutting-down-bandcamp-onion</id><content type="html" xml:base="http://localhost:4000/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
+
+&lt;p&gt;My friend and collaborator Kevin Sanders used EOTK to mirror an academic repository as a proof of concept. It got me thinking about what services used by musicians might look like if they also harnessed the privacy enhancing potential of Tor to protect against tracking and monetising user attention. This led to trying out EOTK with Bandcamp as a little experiment.&lt;/p&gt;
+
+&lt;p&gt;A couple of things happened as a result of this. I built it and the limitations of the system with regards to SSL certificates became painfully apparent. Still, it was proof of concept, not an actual service.&lt;/p&gt;
+
+&lt;p&gt;Then I shared it online and thought the creator of EOTK, Alec Muffet, might dig it. I didn’t exactly get the response I expected: displeasure and evocation of sexual abuser Jacob Applebaum.&lt;/p&gt;
+
+&lt;p&gt;I’m not particularly here to go into this in any depth; it made me feel uncomfortable; I didn’t feel like I could add anything as it’s not my community and other voices are fighting against abusers and misogyny in tech; I didn’t feel like I could particularly argue for fear of detracting from the experiences of victims/survivors; I didn’t feel like the evocation was particularly fair as whilst there are interesting points to be discussed about ethics and consent of proxying someone’s website these aren’t the same as the ethics around acts of sexual violence; Alec had proxied cnn.com in precisely the same manner I had with Bandcamp yet failed to see the hypocrisy of doing this in his tutorial video and then chastising me for my actions.&lt;/p&gt;
+
+&lt;p&gt;Anyway, this isn’t meant to be a gripe post. It happened. The disappointing thing is that I lost my appetite for reaching out much further, for trying to engage Bandcamp, or for trying to participate in the tech/privacy community. That probably makes me a bit thin skinned but there it is.&lt;/p&gt;
+
+&lt;p&gt;The project/service has been sitting around for a year and not doing much. I’d set it up on Google Cloud’s free intro and that’s run out now so it’s costing me approx £5 per month to run which seems a bit pointless.&lt;/p&gt;
+
+&lt;p&gt;That’s why, as of today, I’ve pulled the plug and turned it off.&lt;/p&gt;
+
+&lt;p&gt;If anyone has any interest in getting it going again (and wants to help cover some of the costs) please get in touch.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">An (Opinionated) Critical Guide to DIY Digital Publishing</title><link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" /><published>2018-09-22T19:36:00+01:00</published><updated>2018-09-22T19:36:00+01:00</updated><id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id><content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I’m briefly introducing this text as it is taken directly from a supplement I recently published with &lt;a href=&quot;https://tqzine.blogspot.com/&quot;&gt;TQ#15&lt;/a&gt;. It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It’s likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;a href=&quot;/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf&quot;&gt;&lt;strong&gt;&lt;i class=&quot;far fa-file-pdf&quot; style=&quot;color:red;font-size:2.441em;&quot;&gt;&lt;/i&gt; Here is a PDF&lt;/strong&gt;&lt;/a&gt; of the supplement, &lt;a href=&quot;/assets/files/an-opinionated-critical-guide-to-diy-digital-publishing.epub&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fas fa-book&quot; style=&quot;color:green;font-size:2.441em;&quot;&gt;&lt;/i&gt; or an ePub ebook&lt;/strong&gt;&lt;/a&gt; and below is the text itself.&lt;/p&gt;
@@ -172,28 +188,28 @@
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-001.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
   
-    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Creating a Storage Bucket in Google Cloud
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-002.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
   
-    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Creating a Storage Bucket in Google Cloud
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-003.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
   
-    &lt;figcaption&gt;Creating a Storage Bucket in Google Cloud
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Creating a Storage Bucket in Google Cloud
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.&lt;/p&gt;
 
@@ -204,10 +220,10 @@
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-004.png&quot; alt=&quot;Editing Access Scopes in GCE VM Instance&quot; /&gt;
   
-    &lt;figcaption&gt;Editing Access Scopes in GCE VM Instance
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Editing Access Scopes in GCE VM Instance
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Save and restart the VM. Once it’s running start up the SSH Terminal again.&lt;/p&gt;
 
@@ -355,10 +371,10 @@ pages:
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-005.png&quot; alt=&quot;Locating Access Keys in Google Cloud Storage&quot; /&gt;
   
-    &lt;figcaption&gt;Locating Access Keys in Google Cloud Storage
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Locating Access Keys in Google Cloud Storage
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.&lt;/p&gt;
 
@@ -367,10 +383,10 @@ pages:
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-006.png&quot; alt=&quot;Gitlab CI / CD Settings&quot; /&gt;
   
-    &lt;figcaption&gt;Gitlab CI / CD Settings
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Gitlab CI / CD Settings
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Then expand the section ‘Variables’.&lt;/p&gt;
 
@@ -379,10 +395,10 @@ pages:
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-007.png&quot; alt=&quot;Setting Gitlab CI / CD Variables&quot; /&gt;
   
-    &lt;figcaption&gt;Setting Gitlab CI / CD Variables
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Setting Gitlab CI / CD Variables
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now, when we add to our CI config we can reference these variables without revealing their values to the public.&lt;/p&gt;
 
@@ -445,48 +461,48 @@ pages:
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-001.png&quot; alt=&quot;Creating a new project in Google Cloud&quot; /&gt;
   
-    &lt;figcaption&gt;Creating a new project in Google Cloud
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Creating a new project in Google Cloud
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now we’re going to choose ‘Compute Engine’ from the lefthand menu and ‘create’ a new ‘VM Instance’.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-002.png&quot; alt=&quot;Creating a VM Instance in Google Compute Engine&quot; /&gt;
   
-    &lt;figcaption&gt;Creating a VM Instance in Google Compute Engine
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Creating a VM Instance in Google Compute Engine
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Give it whatever name you want (I’m using ‘tutorial-instance’); choose your region (I opted for European data centres, I especially didn’t want to use US ones); machine type should just be ‘micro’ as we don’t need more power and it’s cheaper this way; boot disk should be Debian 9; on the firewall add HTTP and HTTPS access.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-003.png&quot; alt=&quot;VM Instance settings in Google Compute Engine&quot; /&gt;
   
-    &lt;figcaption&gt;VM Instance settings in Google Compute Engine
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      VM Instance settings in Google Compute Engine
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;That’s it, we now have a fresh Debian instance to work with. Google cloud has a really good web based SSH Terminal so click on that, allow pop-ups if they are blocked and initiate the connection.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-004.png&quot; alt=&quot;Launching SSH Terminal in Google Compute Engine&quot; /&gt;
   
-    &lt;figcaption&gt;Launching SSH Terminal in Google Compute Engine
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Launching SSH Terminal in Google Compute Engine
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-005.png&quot; alt=&quot;SSH Terminal in Google Compute Engine&quot; /&gt;
   
-    &lt;figcaption&gt;SSH Terminal in Google Compute Engine
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      SSH Terminal in Google Compute Engine
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;installing-tor&quot;&gt;Installing Tor&lt;/h2&gt;
 
@@ -572,20 +588,20 @@ $ sudo apt-get install tor deb.torproject.org-keyring
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-006.png&quot; alt=&quot;IP Address in Google Compute Engine&quot; /&gt;
   
-    &lt;figcaption&gt;IP Address in Google Compute Engine
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      IP Address in Google Compute Engine
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;You’ll only see a very basic nginx landing page but at least we know it is working.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-007.png&quot; alt=&quot;NGINX Welcome Page&quot; /&gt;
   
-    &lt;figcaption&gt;NGINX Welcome Page
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      NGINX Welcome Page
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;The sites I use this for are publicly hosted using other services (such as gitlab pages) and the Tor version is a separate mirror. This might not be the case for you and, for non-anonymous sites, you may want to serve both publicly AND over the Tor network from this install. The next steps aren’t entirely necessary or correct if that is the case. The set-up for Tor will be near identical but you’ll want to set-up nginx to work as a regular web server too.&lt;/p&gt;
 
@@ -714,10 +730,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/imp-a-b-rig.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape&quot; /&gt;
   
-    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;The sounds are a procession of ruler ‘twanging’, scraping and sellotaping. An image of the set up is above and the sound recordings are below (you can download from soundcloud too for your own analysis if you like).&lt;/p&gt;
 
@@ -728,10 +744,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/imp-a-b-analysis-1.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
   
-    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Analysis
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Impedance Matching A/B Contact Mic Analysis
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;In the image above I’ve highlighted 3 areas on the spectral analysis with the following thoughts:&lt;/p&gt;
 
@@ -746,10 +762,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/imp-a-b-analysis-2.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
   
-    &lt;figcaption&gt;Impedance Matching A/B Contact Mic Analysis
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Impedance Matching A/B Contact Mic Analysis
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;There are further, qualitative differences that I think are worth consideration.&lt;/p&gt;
 
@@ -767,10 +783,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/torscreenshot.jpg&quot; alt=&quot;Bandcamp Onion Address in Tor Browser&quot; /&gt;
   
-    &lt;figcaption&gt;Bandcamp Onion Address in Tor Browser
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      Bandcamp Onion Address in Tor Browser
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;platforms-surveilance-and-commercialisation-of-data&quot;&gt;Platforms, Surveilance and Commercialisation of Data&lt;/h2&gt;
 
@@ -803,10 +819,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/Just_yellow_paint_(12645841144).jpg&quot; alt=&quot;Yellow paint on a piece of film wrap over a bass speaker playing very loud music&quot; /&gt;
   
-    &lt;figcaption&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/31/Just_yellow_paint_%2812645841144%29.jpg&quot;&gt;By aceebee from Camberley, UK (Just yellow paint) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons&lt;/a&gt;
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/31/Just_yellow_paint_%2812645841144%29.jpg&quot;&gt;By aceebee from Camberley, UK (Just yellow paint) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons&lt;/a&gt;
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;the-onion-routing-network&quot;&gt;The Onion Routing network&lt;/h2&gt;
 
@@ -833,10 +849,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/Metropolitan_Opera_House,_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot; alt=&quot;A full house, seen from the rear of the stage, at the Metropolitan Opera House for a concert by pianist Josef Hofmann, November 28, 1937&quot; /&gt;
   
-    &lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3AMetropolitan_Opera_House%2C_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot;&gt;By Unknown or not provided  Retouched by Mmxx [Public domain], via Wikimedia Commons&lt;/a&gt;
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3AMetropolitan_Opera_House%2C_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot;&gt;By Unknown or not provided  Retouched by Mmxx [Public domain], via Wikimedia Commons&lt;/a&gt;
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;decentralisation-and-alternatives&quot;&gt;Decentralisation and Alternatives&lt;/h2&gt;
 
@@ -863,10 +879,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/Drimia_maritima_-_Sea_onion,_Adana_2016-12-04_01-1.jpg&quot; alt=&quot;Dry flowers of Sea onions (Drimia maritima) at Çukurova University Campus in Balcalı, Adana - Turkey&quot; /&gt;
   
-    &lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ADrimia_maritima_-_Sea_onion%2C_Adana_2016-12-04_01-1.jpg&quot;&gt;By Zeynel Cebeci (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons&lt;/a&gt;
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ADrimia_maritima_-_Sea_onion%2C_Adana_2016-12-04_01-1.jpg&quot;&gt;By Zeynel Cebeci (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons&lt;/a&gt;
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;bandcamp-onion&quot;&gt;Bandcamp Onion&lt;/h2&gt;
 
@@ -925,10 +941,10 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/a-b-rig.jpg&quot; alt=&quot;A/B Contact Mic Testing in Window with Vibration Speaker&quot; /&gt;
   
-    &lt;figcaption&gt;A/B Contact Mic Testing in Window with Vibration Speaker
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
+    &lt;figcaption&gt;
+      A/B Contact Mic Testing in Window with Vibration Speaker
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;I thought about the sound source and decided to use something pre-recorded and chose a sound collage I’d made in Iceland with a combination of piano abuse and field recordings. I thought there was a broad tonal range to help determine if there were any significant difference across the spectrum. I played this collage back using a vibration speaker placed on a wooden window bay. It was placed fairly centrally and the contact mics were an equal distance either side of the speaker. I thought the material qualities of the wood might bring out some of the bottom end and, seeing as contact mics generally don’t perform well in this part of the spectrum, I thought it would make a useful comparison.&lt;/p&gt;
 
@@ -966,193 +982,4 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;p&gt;One step that seems important in all this is the archive. We could, but we won’t, delve very deeply into the politics and meanings of archives, rather I’d suggest that most of us try and archive our own work. Whether that be through keeping copies, scrapbooks, portfolios, meticulous documentation, backups etc. The other thing about our archives is that despite our best efforts they aren’t stable. They’re always shaped by our changing relationships to our archives. This is fairly well understood and feels pedestrian to say again but it seems to be like a good place to start to reconnect with practice (though what I really mean is to connect aspects of practice that stray from the widely accepted models of how practice should function in an arts economy and make them more visible with the ultimate aim of maintaining some kind of professional practice that may attract benefits, opportunities, kudos and payment).&lt;/p&gt;
 
-&lt;p&gt;I’m leaving it there. Not much of a conclusion. Rather, I feel it’s more important to critically engage with what ‘being connected with practice’ really means and begin to find ways of embedding it into our praxis. The archive may or may not work for you, it may not work for me, it is where I’m starting though and I wanted to discuss why publicly. Other than that, I’ll be sharing more stuff as I go.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Or how I'm learning to stop beating myself with an imaginary stick.</summary></entry><entry><title type="html">EOTK: Tor Mirroring on Google Cloud Engine</title><link href="http://localhost:4000/eotk-tor-mirroring-on-google-cloud-engine/" rel="alternate" type="text/html" title="EOTK: Tor Mirroring on Google Cloud Engine" /><published>2018-01-20T02:36:00+00:00</published><updated>2018-01-20T02:36:00+00:00</updated><id>http://localhost:4000/eotk-tor-mirroring-on-google-cloud-engine</id><content type="html" xml:base="http://localhost:4000/eotk-tor-mirroring-on-google-cloud-engine/">&lt;p&gt;So at the risk of this site mostly being tech stuff I’m posting another how-to, rough-guide, self-documentation regarding Tor.&lt;/p&gt;
-
-&lt;p&gt;I hadn’t planned this as I’m currently a) meant to be completing a PhD funding application, b) should be trying to find a job and c) trying to focus on music related things rather than tech for a little while.&lt;/p&gt;
-
-&lt;p&gt;Anyway,  &lt;a href=&quot;https://twitter.com/@moananddrone&quot;&gt;@moananddrone&lt;/a&gt; got me intrigued by the Enterprise Onion Toolkit (EOTK) &lt;a href=&quot;https://github.com/alecmuffett/eotk&quot;&gt;https://github.com/alecmuffett/eotk&lt;/a&gt; as he’s got a project requiring it and wanted me to help look at it with him.&lt;/p&gt;
-
-&lt;p&gt;I won’t share any details of the project as Kevin will be talking about that at some point, in the future, as appropriate.&lt;/p&gt;
-
-&lt;p&gt;Still I wanted to share my own experiences of trying out this tool and deploying it using Google’s cloud infrastructure.&lt;/p&gt;
-
-&lt;p&gt;There are political considerations in using Google’s (or Amazon’s etc.) cloud platforms and I’m not agnostic towards such politics. I also want to keep myself educated about the various technologies in use so this seemed like a good opportunity to test out EOTK, have a play with Google’s free introduction to their cloud services, and do all of this separately to my existing Tor installation (which works well as is — I didn’t want to risk breaking my configuration with another toolset).&lt;/p&gt;
-
-&lt;h2 id=&quot;google-cloud-platform&quot;&gt;Google Cloud Platform&lt;/h2&gt;
-
-&lt;p&gt;I’m not really documenting this part of the process very extensively as they’re just visual web forms which are fairly self explanatory to complete and this would just be a series of screenshots which I don’t want to do. If anyone reading struggles here though and the help pages don’t answer your questions feel free to comment and ask questions.&lt;/p&gt;
-
-&lt;p&gt;First thing was to signup to Google Cloud Platform’s free trail - &lt;a href=&quot;https://cloud.google.com/&quot;&gt;https://cloud.google.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I then created a new project and a Compute Engine VM.&lt;/p&gt;
-
-&lt;p&gt;I’m not 100% sure what I’m doing here but I’m trying only a micro instance with Ubuntu 16.04. I also opted for European data centres simply because European data privacy laws are generally speaking considered better that US ones (a complex and contentious issue but for my current needs this simplification is appropriate).&lt;/p&gt;
-
-&lt;p&gt;I’m not familiar with the firewall settings here either so I’ve enabled HTTP and HTTPS. We’ll see if I need to do more config later.&lt;/p&gt;
-
-&lt;p&gt;The online SSH client is truly impressive. Just click the SSH button/link and you get a web based terminal.&lt;/p&gt;
-
-&lt;h2 id=&quot;installing-eotk&quot;&gt;Installing EOTK&lt;/h2&gt;
-
-&lt;p&gt;First things first:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
-
-sudo apt-get dist-upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now to install EOTK&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/alecmuffett/eotk.git
-
-cd eotk
-
-./opt.d/install-everything-on-ubuntu-16.04.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Hopefully everything is now installed.&lt;/p&gt;
-
-&lt;h2 id=&quot;setting-up-an-eotk-project&quot;&gt;Setting up an EOTK Project&lt;/h2&gt;
-
-&lt;p&gt;Lets try it, still in the &lt;code class=&quot;highlighter-rouge&quot;&gt;eotk&lt;/code&gt; folder we can run:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk gen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This generates an onion key file, in my case &lt;code class=&quot;highlighter-rouge&quot;&gt;u35unrkwyvkcdxsl.key&lt;/code&gt;. Copy the name of this, we’ll need it in a moment.&lt;/p&gt;
-
-&lt;p&gt;Let’s set up a configuration file. I’m going to call it &lt;code class=&quot;highlighter-rouge&quot;&gt;mroystonward.conf&lt;/code&gt; but you should call it whatever you like but keep the &lt;code class=&quot;highlighter-rouge&quot;&gt;.conf&lt;/code&gt; at the end.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nano mroystonward.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In the nano text editor we need to write the following:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set project mroystonward
-hardmap secrets.d/u35unrkwyvkcdxsl.key mroystonward.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A few notes here. &lt;code class=&quot;highlighter-rouge&quot;&gt;mroystonward&lt;/code&gt; is the name of my project. Use here whatever you used previously.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;secrets.d/&lt;/code&gt; is the folder where eotk puts onion keys so this needs to stay the same.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;u35unrkwyvkcdxsl.key&lt;/code&gt; should be replaced with whatever onion key you generated above.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mroystonward.github.io&lt;/code&gt; is the domain I’m mirroring via Tor. You should put whatever domain you want to mirror.&lt;/p&gt;
-
-&lt;p&gt;A few notes here though. Don’t put the &lt;code class=&quot;highlighter-rouge&quot;&gt;www&lt;/code&gt; hostname.&lt;/p&gt;
-
-&lt;p&gt;You can do quite complex subdomain setups which I just don’t need in this example. Check the docs and video - &lt;a href=&quot;https://github.com/alecmuffett/eotk&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=ti_VkVmE3J4&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;firing-it-up&quot;&gt;Firing it up&lt;/h2&gt;
-
-&lt;p&gt;Now run (replacing the name of the conf file with whatever you chose earlier):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk conf mroystonward.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and (with whatever project name you chose earlier):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk start mroystonward
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s it, it’s running. We can check the status using:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk status mroystonward
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And you should see both Tor and Nginx processes listed.&lt;/p&gt;
-
-&lt;p&gt;In Tor Browser you can now visit your onion address (mine is &lt;a href=&quot;https://u35unrkwyvkcdxsl.onion/&quot;&gt;u35unrkwyvkcdxsl.onion&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Like me you probably now encounter some errors and warnings.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;/assets/images/insecure.png&quot; alt=&quot;SSL Warnings&quot; /&gt;
-  
-    &lt;figcaption&gt;Your connection is not secure
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;ssl-certificate-problems&quot;&gt;SSL Certificate Problems&lt;/h2&gt;
-
-&lt;p&gt;This is expected behaviour and it’s because the SSL certificates are self signed. You’ll need to click ‘advanced’ and add an exception. You may have to do this several times.&lt;/p&gt;
-
-&lt;p&gt;There’s not a huge amount we can do about this either.&lt;/p&gt;
-
-&lt;p&gt;Certbot/LetsEncrypt doesn’t currently support .onion domains so getting free/simple SSL isn’t an option.&lt;/p&gt;
-
-&lt;p&gt;You currently need an SSL EV certificate which, i.e. from DigiCert, costs ~$250. For non-corporate projects this is a) expensive and b) I’m led to believe is hard to get without the proofs that accompany corporate infrastructure/incorporation etc.&lt;/p&gt;
-
-&lt;p&gt;Depending on the nature of the site HTTPS may not be entirely necessary. This is a new area for my investigations into Tor etc. My current understanding is that the layers of encryption provided by Tor preclude the need for HTTPS on security grounds. I may be wrong here though. Feel free to comment. A HTTPS certificate does however help with proof of ownership and trust, even in an onion environment.&lt;/p&gt;
-
-&lt;p&gt;Useful resources in starting to consider the pros and cons of HTTPS over Tor:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.eff.org/deeplinks/2012/03/https-and-tor-working-together-protect-your-privacy-and-security-online&quot;&gt;https://www.eff.org/deeplinks/2012/03/https-and-tor-working-together-protect-your-privacy-and-security-online&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.eff.org/pages/tor-and-https&quot;&gt;https://www.eff.org/pages/tor-and-https&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.torproject.org/facebook-hidden-services-and-https-certs&quot;&gt;https://blog.torproject.org/facebook-hidden-services-and-https-certs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What these resources don’t make sufficiently clear is the different ways one may choose to use Tor.&lt;/p&gt;
-
-&lt;p&gt;You may use the Tor browser for increased privacy/anonymity whilst browsing clear-net websites (i.e. *.com, *.org, *.net, *.co.uk etc.). The EFF graphic describing the different levels of protection Tor and HTTPS together offer is referring to this kind of browsing. This is one reason the Tor browser includes (and benefits from) the HTTPS Everywhere plugin.&lt;/p&gt;
-
-&lt;p&gt;You may also use the Tor browser to access .onion sites (as we’re setting up here). That this relies upon secure keys provides similar protections to HTTPS. You also know that only one site has this key and so when you connect to an onion domain it is almost certainly the site you think it is. You might not know who owns the site and they may not have your best interests at heart but it’s not anyone else pretending to be that site or intercepting traffic etc.&lt;/p&gt;
-
-&lt;p&gt;Still, we now generally understand that when the browser gives us a security warning about certificates we should take this seriously. Encouraging users to just accept self-signed certificates isn’t good practice either.&lt;/p&gt;
-
-&lt;h2 id=&quot;trying-http-only&quot;&gt;Trying HTTP Only&lt;/h2&gt;
-
-&lt;p&gt;If we don’t need HTTPS we can add this line to the mroystonward.conf file:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set force_https 0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You’ll need to stop, rerun configuration and then start your project again:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk stop mroystonward
-
-./eotk conf mroystonward.conf
-
-./eotk start mroystonward
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Whilst this is useful to note it doesn’t work for me as this entails downgrading from HTTPS to HTTP.&lt;/p&gt;
-
-&lt;h2 id=&quot;but-dont-downgrade-from-https&quot;&gt;But Don’t Downgrade from HTTPS&lt;/h2&gt;
-
-&lt;p&gt;Whilst I’m not yet sure of my position regarding the benefits of HTTPS over Tor for a fairly simple static website with little in the way of logins or cookies, if the original site is already HTTPS, downgrading would be considered bad practice and if there were any secure cookies and or data submission on the site we would now potentially be introducing all sorts of security holes. The EOTK developers are looking into this but for now there isn’t really any elegant solution. Tor are also considering how the Tor browser should handle onion sites with self-signed certificates.&lt;/p&gt;
-
-&lt;p&gt;Added to this, I host &lt;a href=&quot;https://mroystonward.github.io&quot;&gt;mroystonward.github.io&lt;/a&gt; using github pages. A nice feature of this is that they enforce HTTPS. That unfortunately means that even if I set &lt;code class=&quot;highlighter-rouge&quot;&gt;force_https&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;, the part of the process which involves github serving the clear-web site to the EOTK process is all enforced in HTTPS. That means that I’m trying to downgrade to HTTP which isn’t recommended or supported as above. There are inelegant ways around this but none that are available to me as I can’t alter how github serves it’s pages.&lt;/p&gt;
-
-&lt;h2 id=&quot;startup-scripts&quot;&gt;Startup Scripts&lt;/h2&gt;
-
-&lt;p&gt;I also faffed around for quite sometime with startup scripts via the compute engine metadata flags but I could never get everything running properly. To save you time don’t bother. Luckily EOTK comes with a handy init script tool.&lt;/p&gt;
-
-&lt;p&gt;Run the following commands (in the eotk folder still):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./eotk make-init-script
-
-sudo cp eotk-init.sh /etc/init.d
-
-sudo update-rc.d eotk-init.sh defaults
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s it, it’ll now start all projects on boot.&lt;/p&gt;
-
-&lt;h2 id=&quot;parting-thoughts&quot;&gt;Parting Thoughts&lt;/h2&gt;
-
-&lt;p&gt;It all seems very slow to me so far (and slower than a site I directly run as a Tor service from a Raspberry Pi).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;UPDATE: Things seem a lot faster now so my speed concerns seem mostly unfounded.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I know, for example, images on the github site aren’t very optimised as a compromise for the simplicity of the static site publishing process (something I’m looking at fixing at some point). I scaled up the cloud VM to see if that made a difference and too be honest I don’t think it has so I’m sticking with the cheaper micro option for now.&lt;/p&gt;
-
-&lt;p&gt;So, interesting exercise. If you fancy trusting my self-signed certificate you can see this in action at &lt;a href=&quot;https://u35unrkwyvkcdxsl.onion/&quot;&gt;u35unrkwyvkcdxsl.onion&lt;/a&gt;. I’ll leave it running for a while and see what happens but I doubt it’ll be up for a long-long time.&lt;/p&gt;
-
-&lt;p&gt;I’m also impressed by how easy this was to set up on a cloud platform. It suggests the possibilities for temporary set-up/use/tear-down approaches as needs fit. One could easily clone the git repo and add in some default conf files and automate the initialisation process.&lt;/p&gt;
-
-&lt;p&gt;Also, the options to use a small cluster of RaspberryPis and OnionBalance for all of this is super intriguing too but I don’t yet have a use case for it to justify getting more Pis - &lt;a href=&quot;https://www.youtube.com/watch?v=HNJaMNVCb-U&quot;&gt;https://www.youtube.com/watch?v=HNJaMNVCb-U&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Hope this helps you have a play around too.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Setting up the Enterprise Onion Toolkit on a Compute Engine VM</summary></entry></feed>
+&lt;p&gt;I’m leaving it there. Not much of a conclusion. Rather, I feel it’s more important to critically engage with what ‘being connected with practice’ really means and begin to find ways of embedding it into our praxis. The archive may or may not work for you, it may not work for me, it is where I’m starting though and I wanted to discuss why publicly. Other than that, I’ll be sharing more stuff as I go.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Or how I'm learning to stop beating myself with an imaginary stick.</summary></entry></feed>
