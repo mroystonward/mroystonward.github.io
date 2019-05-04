@@ -1,0 +1,12 @@
+_id: 45254720-6e2f-11e9-ba6e-abbcc4ceb446
+message: >-
+  The amount of memory is not what is holding back the rPi 3 from rendering web
+  videos quickly.  It is the fact that through the JavaScript, it must software
+  render.  When you combine youtube-dl and omxplayer, the rPi 3 can play youtube
+  vids at 1080p through its GPU with no problem.  You can also get Chromium to
+  run on raspbian, but I do not have a speed comparison with ChromeOS.
+name: Alisha  Ross
+email: 04f5c0476462673d4e92f180227db174
+url: 'https://www.deepwebsiteslinks.com/a-z-world-market-review/'
+hidden: ''
+date: '2019-05-04T05:41:31.936Z'
