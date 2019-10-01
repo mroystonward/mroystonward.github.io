@@ -1,0 +1,9 @@
+_id: a73e8560-e4a5-11e9-a26f-c186e96c47eb
+message: >-
+  I'm pretty sure the firewall part is wrong. A Tor connection never requires
+  port forwarding or firewall rules.
+name: Dude
+email: 84b8c534b48bb4541ff95d7bc8b6760f
+url: ''
+hidden: ''
+date: '2019-10-01T23:46:14.217Z'
