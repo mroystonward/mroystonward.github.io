@@ -2,13 +2,13 @@
 title:  "Onionised Bandcamp"
 date:   2018-02-15 15:00:00 +1724
 toc: true
-excerpt: "Behold, Bandcamp on the Tor Network."
 header:
   teaser: /assets/images/bc-tor-500x300.jpg
   overlay_image: /assets/images/bc-tor-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [By Carle Hessay (carlehessay.com) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/43/Carle_Hessay_-_There_Shall_Be_Sound_%281974%29.jpg)"
   image_description: "Carle Hessay - There Shall Be Sound (1974)"
+  show_overlay_excerpt: False
 ---
 I'll cut to the chase, I've 'Onionised' Bandcamp.
 

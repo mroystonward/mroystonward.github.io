@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/contact-imp-ab-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   image_description: "Testing Contact Mic's"
+  show_overlay_excerpt: False
 ---
 
 I've been thinking about and comparing contact mic's recently for a combination of reasons. Firstly I have some broad assumptions that I've never really tested and secondly I'm curious as to how the ones I make stack up against other offerings. What makes a difference in a contact mic and how much difference does it really make?

@@ -1,12 +1,12 @@
 ---
 title:  "Testing Epoxy Backed Contact Mic's"
 date:   2018-02-04 15:00:00 +1724
-excerpt: "A/B Comparisons"
 header:
   teaser: /assets/images/contact-ab-500x300.jpg
   overlay_image: /assets/images/contact-ab-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   image_description: "Epoxy Resin Coated Contact Mic's"
+  show_overlay_excerpt: False
 ---
 
 I've been making contact mic's for myself and others for some years now (and I'm planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they're very simple to make and utilise fairly cheap parts there's a handful of variables and build options at play. There are some expensive high quality one's on the market (Jez Riley French's spring to mind) but I've always been more about durability. I want a contact mic that will take a good bashing. _(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)_

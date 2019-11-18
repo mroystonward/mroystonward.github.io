@@ -9,11 +9,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : ":coffee: Hot Contents"
+title                    : "☕️ Hot Contents"
 title_separator          : "|"
 name                     : "Murray Royston-Ward"
-description              : >
-  Improvised "musicking", workshops and "things" leaking out into the world.
+description              : |+
+  Creative entanglements with materials.
+
+  💿 The House Organ
+  🎛 Tripping on Wires
+
+  🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
 # url                      : http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 url                      : https://mroystonward.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -65,9 +70,14 @@ analytics:
 author:
   name             : "Murray Royston-Ward"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : >
-    Improvised 'musicking', workshops and 'things' leaking out into the world ☕️🍟🍸🌱💻🔊🏴
-  location         : "London, UK"
+  bio              : |+
+    Creative entanglements with materials.
+
+    💿 The House Organ
+    🎛 Tripping on Wires
+
+    🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
+  location         : "Sheffield, UK"
   email            :
   pgp              :
   ricochet         :
@@ -82,7 +92,7 @@ author:
   gitlab           : mroystonward
   google_plus      :
   keybase          : mroystonward
-  instagram        :
+  instagram        : thehouseorgan
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   wire             :
@@ -97,8 +107,9 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   archive          :
-  shop             : mroystonward.bigcartel.com
+  shop             : trippingonwires.bigcartel.com
   bitcoin          :
+  bandcamp         : thehouseorgan
 
 
 # Reading Files

@@ -2,13 +2,13 @@
 title:  "Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI"
 date:   2018-08-01 11:00:00 +1724
 toc: true
-excerpt: ""
 header:
   teaser: /assets/images/funnel-clouds-500x300.jpg
   overlay_image: /assets/images/funnel-clouds-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [By Fir0002/Flagstaffotos [CC-BY-NC], via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sunset_with_funnel_clouds.jpg)"
   image_description: "Sunset with funnel clouds"
+  show_overlay_excerpt: False
 ---
 In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.
 

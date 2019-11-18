@@ -1,12 +1,12 @@
 ---
 title:  "Why Being Disconnected from Practice Isn't Really a Thing"
 date:   2018-01-31 10:00:00 +1724
-excerpt: "Or how I'm learning to stop beating myself with an imaginary stick."
 header:
   teaser: /assets/images/reconnecting-with-practice500x300.jpg
   overlay_image: /assets/images/reconnecting-with-practice-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   image_description: "Tabletop of effects pedals"
+  show_overlay_excerpt: False
 ---
 
 One hears people, especially in arts circles, talking about their relationship to practice. Artists and other creatives (not forgetting nurses, teachers and well beyond) don't just think up ideas and they magically appear, let alone the idea that it even starts with an 'idea' rather than a more embedded and entwined being in the world (more on that another day). Artists do stuff and make things. Practice. Professionally though this can be a bit of stick to beat yourself with, especially if your practice isn't very 'visible' or has few tangible outcomes. On a residency a while back there were several participants whose primary motivation was related to 'reconnecting' with their practice. But what does that actually mean?

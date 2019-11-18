@@ -2,13 +2,13 @@
 title:  "Non-anonymous Tor Hidden Service using Google Cloud"
 date:   2018-07-31 11:00:00 +1724
 toc: true
-excerpt: ""
 header:
   teaser: /assets/images/high-tor-500x300.jpg
   overlay_image: /assets/images/high-tor-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [By Photochrom Print Collection [Public domain], via Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AMatlock_High_Tor%2C_II.%2C_Derbyshire%2C_England-LCCN2002696696.jpg)"
   image_description: "Matlock High Tor, II., Derbyshire, England"
+  show_overlay_excerpt: False
 ---
 I've previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I'll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.
 

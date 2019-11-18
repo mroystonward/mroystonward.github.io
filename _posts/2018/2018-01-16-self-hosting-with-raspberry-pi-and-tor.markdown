@@ -2,13 +2,13 @@
 title:  "Self Hosting with Raspberry Pi and Tor"
 date:   2018-01-16 21:00:00 +1724
 toc: true
-excerpt: "A rough guide to setting up a Tor hidden service, on a Raspberry Pi, at home."
 header:
   teaser: /assets/images/high-tor-500x300.jpg
   overlay_image: /assets/images/high-tor-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [By Photochrom Print Collection [Public domain], via Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AMatlock_High_Tor%2C_II.%2C_Derbyshire%2C_England-LCCN2002696696.jpg)"
   image_description: "Matlock High Tor, II., Derbyshire, England"
+  show_overlay_excerpt: False
 ---
 A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I'll write more on this later --- on motivations and failures in my critique/experience --- but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.
 

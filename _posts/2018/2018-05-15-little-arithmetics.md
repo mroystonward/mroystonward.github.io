@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/little-arithmetics-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   image_description: "Testing Contact Mic's"
+  show_overlay_excerpt: False
 ---
 
 I'm hoping to try a little experiment. Things have been quiet here as I've temporarily relocated to Berlin and have been sorting things out and getting set up. I'm also hoping to start a PhD in October and with the last round of funding applications due any minute I've had other priorities. Still, I'm starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I'm on to some heavier, academic stuff.

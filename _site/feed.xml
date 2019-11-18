@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-18T14:32:43+00:00</updated><id>http://localhost:4000/</id><title type="html">:coffee: Hot Contents</title><subtitle>Improvised &quot;musicking&quot;, workshops and &quot;things&quot; leaking out into the world.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-18T21:01:44+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">☕️ Hot Contents</title><subtitle>Creative entanglements with materials.
+
+💿 The House Organ
+🎛 Tripping on Wires
+
+🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
 </subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">DIY - Some Notes</title><link href="http://localhost:4000/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" /><published>2019-11-17T21:36:00+00:00</published><updated>2019-11-17T21:36:00+00:00</updated><id>http://localhost:4000/diy-some-notes</id><content type="html" xml:base="http://localhost:4000/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
 
 &lt;p&gt;Firstly, this won’t be a history of DIY, or even a particularly in-depth consideration. Instead, a brief collection of thoughts, notes, and reflections. A starting point.&lt;/p&gt;
@@ -56,7 +61,7 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
 
 &lt;p&gt;&lt;a href=&quot;https://web.archive.org/web/20180527115008/http://www.copsandrobbers.net/about/&quot;&gt;https://web.archive.org/web/20180527115008/http://www.copsandrobbers.net/about/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Firstly, we can see some direct links to that US DIY Punk culture I mentioned earlier. Secondly, it provides a bunch of headings to dissect at a later date and ones that come directly from a current, local context. For now, this is a brief mapping of some of our key points for further reflection.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><category term="DIY" /><category term="PhD" /><category term="research" /></entry><entry><title type="html">Shutting Down Bandcamp Onion</title><link href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" /><published>2019-04-04T03:36:00+01:00</published><updated>2019-04-04T03:36:00+01:00</updated><id>http://localhost:4000/shutting-down-bandcamp-onion</id><content type="html" xml:base="http://localhost:4000/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
+&lt;p&gt;Firstly, we can see some direct links to that US DIY Punk culture I mentioned earlier. Secondly, it provides a bunch of headings to dissect at a later date and ones that come directly from a current, local context. For now, this is a brief mapping of some of our key points for further reflection.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><category term="DIY" /><category term="PhD" /><category term="research" /><summary type="html">A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?</summary></entry><entry><title type="html">Shutting Down Bandcamp Onion</title><link href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" /><published>2019-04-04T03:36:00+01:00</published><updated>2019-04-04T03:36:00+01:00</updated><id>http://localhost:4000/shutting-down-bandcamp-onion</id><content type="html" xml:base="http://localhost:4000/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
 
 &lt;p&gt;My friend and collaborator Kevin Sanders used EOTK to mirror an academic repository as a proof of concept. It got me thinking about what services used by musicians might look like if they also harnessed the privacy enhancing potential of Tor to protect against tracking and monetising user attention. This led to trying out EOTK with Bandcamp as a little experiment.&lt;/p&gt;
 
@@ -72,7 +77,7 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
 
 &lt;p&gt;That’s why, as of today, I’ve pulled the plug and turned it off.&lt;/p&gt;
 
-&lt;p&gt;If anyone has any interest in getting it going again (and wants to help cover some of the costs) please get in touch.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">An (Opinionated) Critical Guide to DIY Digital Publishing</title><link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" /><published>2018-09-22T19:36:00+01:00</published><updated>2018-09-22T19:36:00+01:00</updated><id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id><content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If anyone has any interest in getting it going again (and wants to help cover some of the costs) please get in touch.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Last year I Onionised Bandcamp, that is to say I used EOTK to set up a Tor proxy to Bandcamp.</summary></entry><entry><title type="html">An (Opinionated) Critical Guide to DIY Digital Publishing</title><link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" /><published>2018-09-22T19:36:00+01:00</published><updated>2018-09-22T19:36:00+01:00</updated><id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id><content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I’m briefly introducing this text as it is taken directly from a supplement I recently published with &lt;a href=&quot;https://tqzine.blogspot.com/&quot;&gt;TQ#15&lt;/a&gt;. It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It’s likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;a href=&quot;/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf&quot;&gt;&lt;strong&gt;&lt;i class=&quot;far fa-file-pdf&quot; style=&quot;color:red;font-size:2.441em;&quot;&gt;&lt;/i&gt; Here is a PDF&lt;/strong&gt;&lt;/a&gt; of the supplement, &lt;a href=&quot;/assets/files/an-opinionated-critical-guide-to-diy-digital-publishing.epub&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fas fa-book&quot; style=&quot;color:green;font-size:2.441em;&quot;&gt;&lt;/i&gt; or an ePub ebook&lt;/strong&gt;&lt;/a&gt; and below is the text itself.&lt;/p&gt;
@@ -224,7 +229,7 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       &lt;p&gt;Source-code available at &lt;a href=&quot;https://gitlab.com/thehouseorgan/thehouseorgan.gitlab.io&quot;&gt;https://gitlab.com/thehouseorgan/thehouseorgan.gitlab.io&lt;/a&gt; &lt;a href=&quot;#fnref:24&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI</title><link href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" /><published>2018-07-31T18:36:00+01:00</published><updated>2018-07-31T18:36:00+01:00</updated><id>http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id><content type="html" xml:base="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Introduction I’m briefly introducing this text as it is taken directly from a supplement I recently published with TQ#15. It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It’s likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.</summary></entry><entry><title type="html">Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI</title><link href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" /><published>2018-07-31T18:36:00+01:00</published><updated>2018-07-31T18:36:00+01:00</updated><id>http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id><content type="html" xml:base="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
 
 &lt;p&gt;In my case the main project effected by this is &lt;a href=&quot;https://thehouseorgan.xyz&quot;&gt;thehouseorgan.xyz&lt;/a&gt; and its onion version tho2f4fceyghjl6s.onion.&lt;/p&gt;
 
@@ -288,7 +293,7 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
 
 &lt;p&gt;To mount our storage bucket we need to install gfuse. The following commands add the correct source repositories, update them and then install gcsfuse:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
 $ echo &quot;deb http://packages.cloud.google.com/apt $GCSFUSE_REPO main&quot; | sudo tee /etc/apt/sources.list.d/gcsfuse.list
 $ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 $ sudo apt-get update
@@ -296,30 +301,30 @@ $ sudo apt-get install gcsfuse
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;We also need a folder to mount to. Due to user permissions (and not wanting to use sudo as it can make mounting flakey) it seemed easiest to do this in the home directory so (where foo is whatever you want to call your folder):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/
 $ mkdir foo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Before we mount there are a couple of things I learned the hard way. Nginx runs as user www-data. I couldn’t figure out any permissions situation that allowed nginx to access this bucket. The only option was to run gfuse with &lt;code class=&quot;highlighter-rouge&quot;&gt;-o allow_other&lt;/code&gt; set which does have security implications (any user within our instance would have access to the contents of the bucket - I don’t however see this as a major problem for me here considering the simplicity of the server setup and the lack of sensitive data in the bucket).&lt;/p&gt;
+&lt;p&gt;Before we mount there are a couple of things I learned the hard way. Nginx runs as user www-data. I couldn’t figure out any permissions situation that allowed nginx to access this bucket. The only option was to run gfuse with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-o allow_other&lt;/code&gt; set which does have security implications (any user within our instance would have access to the contents of the bucket - I don’t however see this as a major problem for me here considering the simplicity of the server setup and the lack of sensitive data in the bucket).&lt;/p&gt;
 
-&lt;p&gt;The other flag that needs setting is &lt;code class=&quot;highlighter-rouge&quot;&gt;--implicit-dirs&lt;/code&gt; so that subdirectories work as expected.&lt;/p&gt;
+&lt;p&gt;The other flag that needs setting is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--implicit-dirs&lt;/code&gt; so that subdirectories work as expected.&lt;/p&gt;
 
 &lt;p&gt;Go and run (where ‘tho-tutorial-bucket’ is the name of your bucket and ‘~/foo’ is the mount directory you just created):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This should however fail as we need to edit /etc/fuse.conf and uncomment &lt;code class=&quot;highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This should however fail as we need to edit /etc/fuse.conf and uncomment &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Edit /etc/fuse.conf:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fuse.conf
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fuse.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;and remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; from in front of &lt;code class=&quot;highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;and remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; from in front of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;user_allow_other&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;Now try mounting again:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gcsfuse -o allow_other --implicit-dirs tho-tutorial-bucket ~/foo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;This should now be successfully mounted.&lt;/p&gt;
 
@@ -331,43 +336,43 @@ $ mkdir foo
 
 &lt;p&gt;Run the following (changing foo for whatever suits you best and whatever you chose earlier):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo ln -s ~/foo /var/www/html/foo
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo ln -s ~/foo /var/www/html/foo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;We need to update our nginx configuration so that it looks in this new folder so edit /etc/nginx/sites-available/default again and change the webroot folder to /var/www/html/foo:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/sites-available/default
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/sites-available/default
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;update this line:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root /var/www/html/foo;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root /var/www/html/foo;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;We need to restart nginx for the changes to take effect.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service nginx restart
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service nginx restart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;automounting-cloud-storage-bucket&quot;&gt;Automounting Cloud Storage Bucket&lt;/h2&gt;
 
 &lt;p&gt;Currently, if we stop and start the VM Instance again, we’ll have to log in and manually mount our cloud storage again. This is far from ideal but we can set-up automounting by editing /etc/fstab.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fstab
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/fstab
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Add the following line at the bottom (we need the full path so you’ll need your username):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tho-tutorial-bucket /home/username/foo gcsfuse rw,allow_other,implicit_dirs
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tho-tutorial-bucket /home/username/foo gcsfuse rw,allow_other,implicit_dirs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Right, there’s still nothing in this bucket for nginx to serve so we’re going to make a quick test file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano ~/foo/index.html
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano ~/foo/index.html
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;We’ll just make another simple Hello World page (but different to our previous one so we know the new file is being served).&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello Bucket World!&amp;lt;/h1&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello Bucket World!&amp;lt;/h1&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;Now stop the VM Instance. Next start it up again. Now, back in Tor Browser navigate to your onion domain (mine was arpf35uo2uscuxso.onion) and refresh the page. Fingers crossed we’re now seeing our new page which means everything is set-up correctly. Viola!&lt;/p&gt;
 
@@ -379,9 +384,9 @@ $ mkdir foo
 
 &lt;p&gt;I initially set this site up with Github before migrating to Gitlab. When I did move from Github to Gitlab the big thing I had to figure out is how to use Gitlab’s Continuous Integration to deploy to ‘pages’.&lt;/p&gt;
 
-&lt;p&gt;When I did figure it out (and I used scripts which I found online but didn’t document so I can’t share links), I had a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; file that looked like this (if you don’t know what any of this means work through the tutorials):&lt;/p&gt;
+&lt;p&gt;When I did figure it out (and I used scripts which I found online but didn’t document so I can’t share links), I had a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; file that looked like this (if you don’t know what any of this means work through the tutorials):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# requiring the environment of Ruby 2.3.x
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# requiring the environment of Ruby 2.3.x
 image: ruby:2.3
 
 # add cache to 'vendor' for speeding up builds
@@ -419,7 +424,7 @@ pages:
 
 &lt;p&gt;The plan is then to expand this CI configuration file to also connect to our storage bucket and copy over the site files there so they are accessible by our Tor Hidden Service. Adding a few more commands was fairly straightforward.&lt;/p&gt;
 
-&lt;p&gt;Firstly we’re using &lt;a href=&quot;https://github.com/travis-ci/dpl&quot;&gt;dpl&lt;/a&gt; (which is a travis deployment package) which can be installed as a gem &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install dpl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Firstly we’re using &lt;a href=&quot;https://github.com/travis-ci/dpl&quot;&gt;dpl&lt;/a&gt; (which is a travis deployment package) which can be installed as a gem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install dpl&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;This can connect to numerous services. It can connect directly to a GCE VM Instance but not in the way that we need hence we’ve set up a storage bucket.&lt;/p&gt;
 
@@ -447,7 +452,7 @@ pages:
 
 &lt;p&gt;Then expand the section ‘Variables’.&lt;/p&gt;
 
-&lt;p&gt;We need to create 2 new variables called &lt;code class=&quot;highlighter-rouge&quot;&gt;ACCESS_KEY_ID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;SECRET_ACCESS_KEY_ID&lt;/code&gt;. Use the ‘Access Key’ and ‘Secret’ from earlier.&lt;/p&gt;
+&lt;p&gt;We need to create 2 new variables called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACCESS_KEY_ID&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SECRET_ACCESS_KEY_ID&lt;/code&gt;. Use the ‘Access Key’ and ‘Secret’ from earlier.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-007.png&quot; alt=&quot;Setting Gitlab CI / CD Variables&quot; /&gt;
@@ -469,12 +474,12 @@ pages:
 &lt;/ul&gt;
 
 &lt;p&gt;The entire string looks like:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-tutorial-bucket --local-dir=_site
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpl --provider=gcs --access-key-id=$ACCESS_KEY_ID --secret-access-key=$SECRET_ACCESS_KEY_ID --bucket=tho-tutorial-bucket --local-dir=_site
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Edit the ‘pages’ section of your &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; like this:&lt;/p&gt;
+&lt;p&gt;Edit the ‘pages’ section of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt; like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pages:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pages:
   stage: deploy
   script:
     - bundle exec jekyll build -d public
@@ -493,7 +498,7 @@ pages:
 
 &lt;h2 id=&quot;further-developments&quot;&gt;Further Developments&lt;/h2&gt;
 
-&lt;p&gt;I’ve pretty much managed to migrate the onion version of thehouseorgan.xyz from a home Raspberry Pi server to Google’s Cloud platform following the steps in this and the previous tutorial. The only things that are missing from this set-up are firstly that I need to set up ‘virtual hosts’ so I can serve more than one website this way. Secondly, I also had a torrent client set-up with all of the torrents of my music which I make available. This basically acts like an always on seed so I don’t have to leave my laptop running. I’ll need to try and set this up on GCE too.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">Non-anonymous Tor Hidden Service using Google Cloud</title><link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" /><published>2018-07-30T18:36:00+01:00</published><updated>2018-07-30T18:36:00+01:00</updated><id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id><content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
+&lt;p&gt;I’ve pretty much managed to migrate the onion version of thehouseorgan.xyz from a home Raspberry Pi server to Google’s Cloud platform following the steps in this and the previous tutorial. The only things that are missing from this set-up are firstly that I need to set up ‘virtual hosts’ so I can serve more than one website this way. Secondly, I also had a torrent client set-up with all of the torrents of my music which I make available. This basically acts like an always on seed so I don’t have to leave my laptop running. I’ll need to try and set this up on GCE too.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.</summary></entry><entry><title type="html">Non-anonymous Tor Hidden Service using Google Cloud</title><link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" /><published>2018-07-30T18:36:00+01:00</published><updated>2018-07-30T18:36:00+01:00</updated><id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id><content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
 
 &lt;p&gt;One option would be to take it with me and run it as a portable, nomadic server. This is appealing on several fronts but not practical for me right now as under some circumstances encryption technology and the use of Tor is highly scrutinised and problematic. Whilst I’m simply self-hosting and publishing my own music, therefore acting perfectly legally, not everywhere in the world sees it that way and unwanted scrutiny might jeopardise the projects of others I will be associated with. This is all probably a little extreme but it’s not a risk I’m currently able to take. Basically I’m going to temporarily be in a political context where I’ll very much have to toe the line for personal reasons.&lt;/p&gt;
 
@@ -565,7 +570,7 @@ pages:
 
 &lt;p&gt;We need to run some commands in the terminal to get everything set-up and installed. First update the OS:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
 $ sudo apt-get dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -573,32 +578,32 @@ $ sudo apt-get dist-upgrade
 
 &lt;p&gt;We need to add package sources so create a new file in the correct folder:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/apt/sources.list.d/tor.list
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/apt/sources.list.d/tor.list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Paste this into the new file nano has just created:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb https://deb.torproject.org/torproject.org stretch main
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb https://deb.torproject.org/torproject.org stretch main
 deb-src https://deb.torproject.org/torproject.org stretch main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;The package sources have now been added but things aren’t fully set up yet. First we need the apt-transport-https package to work with https urls. Next we’ll need dirmngr as it’s necessary when working with the gpg key.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install apt-transport-https
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install apt-transport-https
 $ sudo apt-get install dirmngr
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To install Tor securely we also need to set-up the gpg key. I had trouble with this unless I ran the following commands (from the Tor instructions) as sudo:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 $ sudo gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now that’s all set-up we can run apt-get to install Tor as follows:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
 $ sudo apt-get install tor deb.torproject.org-keyring
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -608,19 +613,19 @@ $ sudo apt-get install tor deb.torproject.org-keyring
 
 &lt;p&gt;Next we’re going to set up a webserver. Apache isn’t recommended here simply because it bigger and more complex than we need. I’ve previously used lighttpd sucessfully but this time I am going to go with the commonly recommended nginx. First run:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install nginx
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install nginx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;As I’m not running a site anonymously (I have public facing versions of the same site) I don’t need to worry about many of the warnings usually made about running hidden services. General server best practices should be adequate.&lt;/p&gt;
 
 &lt;p&gt;A few settings we will still change with a view to minimising possible information leakage are as follows. Edit the file ‘/etc/nginx/nginx.conf’:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/nginx.conf
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/nginx.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In the http section we’re going to set server_tokens to off and set some logging options like this (… means leave the other bits as they are and we’re pretty much disabling logging):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http {
 
 ...
 
@@ -638,7 +643,7 @@ $ sudo apt-get install tor deb.torproject.org-keyring
         error_log /dev/null crit;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;That’s the basic set-up for nginx and it should be up and running. You can try by visiting your instance’s public IP although only HTTP will work so check the address bar if you have connection issues.&lt;/p&gt;
 
@@ -666,14 +671,14 @@ $ sudo apt-get install tor deb.torproject.org-keyring
 
 &lt;p&gt;You’ll need to edit /etc/nginx/sites-available/default&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/sites-available/default
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/nginx/sites-available/default
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;All you need is as follows so you can safely delete the other section and comments.&lt;/p&gt;
 
 &lt;p&gt;We’re telling nginx to only listen on port 8080 from local connections and to block any other connections. We’re setting the root directory where our website files will live and we’re defining valid index pages.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
         listen 127.0.0.1:8080 default_server;
         server_name localhost;
         root /var/www/html/;
@@ -685,11 +690,11 @@ $ sudo apt-get install tor deb.torproject.org-keyring
         }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;Next we must restart nginx:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service nginx restart
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service nginx restart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you refresh the web page it should no longer work as we can’t access the web-server other than locally (which Tor will be able to access and proxy over hidden service requests).&lt;/p&gt;
@@ -698,22 +703,22 @@ $ sudo apt-get install tor deb.torproject.org-keyring
 
 &lt;p&gt;The final piece of the puzzle is to configure a Tor Hidden Service.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/tor/torrc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /etc/tor/torrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Uncomment the two lines below and change the port settings as below. The first 80 is standard webpage port, you could change this but would then need to specify a port when browsing an onion address so 80 is standard. 127.0.0.1 is localhost and matches our nginx settings from earlier (remember we blocked access from anything other than local connections). :8080 is the port we specified in nginx set-up. We could use any different port to 8080 but the nginx and Tor config must match.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HiddenServiceDir /var/lib/tor/hidden_service/
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:8080
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit and then restart Tor.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit and then restart Tor.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service tor restart
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service tor restart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Tor will now generate the onion address for this hidden service and we can see it with the following command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo cat /var/lib/tor/hidden_service/hostname
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo cat /var/lib/tor/hidden_service/hostname
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In my case it generated ‘arpf35uo2uscuxso.onion’.&lt;/p&gt;
@@ -724,14 +729,14 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;p&gt;We can fix this by making a web-page called index.html.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /var/www/html/index.html
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nano /var/www/html/index.html
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Type the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + x&lt;/code&gt; to save and quit.&lt;/p&gt;
 
 &lt;p&gt;Now refresh Tor browser and you should see your new web page.&lt;/p&gt;
 
@@ -739,7 +744,7 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;h2 id=&quot;taking-things-further&quot;&gt;Taking Things Further&lt;/h2&gt;
 
-&lt;p&gt;This is great and relatively simple. It doesn’t quite cut it for me though. I want to host multiple sites so will need to set up ‘virtual hosts’ in nginx. The House Organ’s website is built using jekyll and uploading the generated site files to this Compute Engine every-time I make an update is problematic. In fact, transferring files to the site folder isn’t entirely straightforward under any circumstances. There are solutions to all of these problems and I will address them in future posts.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">WNNS Review: Dissolution Matrix in Afterthought of Skiess</title><link href="http://localhost:4000/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" /><published>2018-07-29T19:36:00+01:00</published><updated>2018-07-29T19:36:00+01:00</updated><id>http://localhost:4000/wnns-review</id><content type="html" xml:base="http://localhost:4000/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
+&lt;p&gt;This is great and relatively simple. It doesn’t quite cut it for me though. I want to host multiple sites so will need to set up ‘virtual hosts’ in nginx. The House Organ’s website is built using jekyll and uploading the generated site files to this Compute Engine every-time I make an update is problematic. In fact, transferring files to the site folder isn’t entirely straightforward under any circumstances. There are solutions to all of these problems and I will address them in future posts.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.</summary></entry><entry><title type="html">WNNS Review: Dissolution Matrix in Afterthought of Skiess</title><link href="http://localhost:4000/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" /><published>2018-07-29T19:36:00+01:00</published><updated>2018-07-29T19:36:00+01:00</updated><id>http://localhost:4000/wnns-review</id><content type="html" xml:base="http://localhost:4000/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Here’s something I’ve been sitting on for a while.” That was the message accompanying this collection of scruffy, welcoming improvisations from Murray Royston-Ward when the CD-r popped through my letterbox back in January. Well, its been sitting on my listening pile for a fair time too, with regular spins on on the WNNS hi-fi only emphasising its enduring appeal. And while Royston-Ward’s aesthetic sits squarely within the no-audience underground palette of abstract scrapes and splutters, the airy openness of the six tracks on offer here give listeners plenty to get their brains round. Royston-Ward’s ability to alchemise a familiar mix of field recordings, object clatter and free improvisation into something beguiling and intimate  is a pleasure to behold – witness the wibbles and mutters of ‘Images In Hair’, evoking a mellow afternoon sharing tea and smokes with visiting aliens. But my favourite moments are when Royston-Ward languidly picks apart avant-rock forms, as on cuts like ‘Waterpark’. The slow clang of detuned guitar and meandering, zero-gravity bass hint at the sprawl of Jim O’Rourke-era Sonic Youth, but with the arty opacity of those records switched out for beatific drift that repays attention with maximum wiry reward. Thurston – give Murray a call. He’ll get your career back on track.&lt;/p&gt;
@@ -756,7 +761,7 @@ HiddenServicePort 80 127.0.0.1:8080
 &lt;p&gt;There is the &lt;a href=&quot;https://resonate.is/album/9998/murray_royston-ward-dissolution_matrix_in_afterthought_of_skies/&quot;&gt;co-operative streaming service Resonate&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;And of course there is Bandcamp:&lt;/p&gt;
-&lt;iframe style=&quot;border: 0; width: 100%; height: 120px;&quot; src=&quot;https://bandcamp.com/EmbeddedPlayer/album=847700786/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/&quot; seamless=&quot;&quot;&gt;&lt;a href=&quot;http://mroystonward.bandcamp.com/album/dissolution-matrix-in-afterthought-of-skies&quot;&gt;Dissolution Matrix in Afterthought of Skies by Murray Royston-Ward&lt;/a&gt;&lt;/iframe&gt;</content><author><name>Murray Royston-Ward</name></author></entry><entry><title type="html">Little Arithmetics</title><link href="http://localhost:4000/little-arithmetics/" rel="alternate" type="text/html" title="Little Arithmetics" /><published>2018-05-15T06:06:00+01:00</published><updated>2018-05-15T06:06:00+01:00</updated><id>http://localhost:4000/little-arithmetics</id><content type="html" xml:base="http://localhost:4000/little-arithmetics/">&lt;p&gt;I’m hoping to try a little experiment. Things have been quiet here as I’ve temporarily relocated to Berlin and have been sorting things out and getting set up. I’m also hoping to start a PhD in October and with the last round of funding applications due any minute I’ve had other priorities. Still, I’m starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I’m on to some heavier, academic stuff.&lt;/p&gt;
+&lt;iframe style=&quot;border: 0; width: 100%; height: 120px;&quot; src=&quot;https://bandcamp.com/EmbeddedPlayer/album=847700786/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/&quot; seamless=&quot;&quot;&gt;&lt;a href=&quot;http://mroystonward.bandcamp.com/album/dissolution-matrix-in-afterthought-of-skies&quot;&gt;Dissolution Matrix in Afterthought of Skies by Murray Royston-Ward&lt;/a&gt;&lt;/iframe&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”</summary></entry><entry><title type="html">Little Arithmetics</title><link href="http://localhost:4000/little-arithmetics/" rel="alternate" type="text/html" title="Little Arithmetics" /><published>2018-05-15T06:06:00+01:00</published><updated>2018-05-15T06:06:00+01:00</updated><id>http://localhost:4000/little-arithmetics</id><content type="html" xml:base="http://localhost:4000/little-arithmetics/">&lt;p&gt;I’m hoping to try a little experiment. Things have been quiet here as I’ve temporarily relocated to Berlin and have been sorting things out and getting set up. I’m also hoping to start a PhD in October and with the last round of funding applications due any minute I’ve had other priorities. Still, I’m starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I’m on to some heavier, academic stuff.&lt;/p&gt;
 
 &lt;p&gt;Rather than try to write any detailed critiques or appraisals of what I’m reading, for the time-being at least, I just want to pose small thoughts, provocations and responses. More of a thinking out loud than academic response. Hopefully this will allow for something a little briefer and more playful that I can return to in a more considered way at a later date.&lt;/p&gt;
 
@@ -989,7 +994,7 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;p&gt;Irrespective of such technical concerns, if you have music on Bandcamp it is now drawn into the frame of this project whether you like it or not. That may be acceptable in terms of not having or expecting control over the technical infrastructure of your work being served by Bandcamp but it isn’t entirely ethical of me either. It’s such grey areas which are at the heart of Pirate Bay claiming no wrong-doing as they’re not ‘hosting’ illegal content or that google/youtube probably provide access to more illegal content than any ‘pirate’ site. I really don’t know how I feel about all of this. If someone actively objected to the appearance of their work within this project I know I couldn’t achieve the level of granularity to exclude them and that makes me uncomfortable.&lt;/p&gt;
 
-&lt;p&gt;I don’t know whether all of these aspects were what Alec was thinking about with his responses but I do hope my comments help ensure that relevant issues are adequately present in any ongoing debate this provocation may raise. Comments are open so it would be great to hear other opinions.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">Behold, Bandcamp on the Tor Network.</summary></entry><entry><title type="html">Testing Epoxy Backed Contact Mic’s</title><link href="http://localhost:4000/epoxy-backed-contact-mics/" rel="alternate" type="text/html" title="Testing Epoxy Backed Contact Mic's" /><published>2018-02-03T21:36:00+00:00</published><updated>2018-02-03T21:36:00+00:00</updated><id>http://localhost:4000/epoxy-backed-contact-mics</id><content type="html" xml:base="http://localhost:4000/epoxy-backed-contact-mics/">&lt;p&gt;I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. &lt;em&gt;(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I don’t know whether all of these aspects were what Alec was thinking about with his responses but I do hope my comments help ensure that relevant issues are adequately present in any ongoing debate this provocation may raise. Comments are open so it would be great to hear other opinions.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.</summary></entry><entry><title type="html">Testing Epoxy Backed Contact Mic’s</title><link href="http://localhost:4000/epoxy-backed-contact-mics/" rel="alternate" type="text/html" title="Testing Epoxy Backed Contact Mic's" /><published>2018-02-03T21:36:00+00:00</published><updated>2018-02-03T21:36:00+00:00</updated><id>http://localhost:4000/epoxy-backed-contact-mics</id><content type="html" xml:base="http://localhost:4000/epoxy-backed-contact-mics/">&lt;p&gt;I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. &lt;em&gt;(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve tried a few variations here, especially in terms of how it is wired and where on the mic the wire is positioned. These variations, over time, have ultimately proved to be less successful than a standard wiring directly onto the piezo element. What has worked consistently well though is backing the element/wiring with epoxy resin. Often twists and snaps of the wiring are the primary site of failure and so encasing these joints in glue helps secure it. It also has the bonus of protecting the element from random shorts whilst handling etc.&lt;/p&gt;
 
@@ -1021,4 +1026,4 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;p&gt;Practically speaking my interpretation is that the epoxy backed contact mic is a little quieter when recording so needs a little more gain. It performs equally well across the frequency spectrum (within the general limitations of a contact mic’s frequency response). The material resonances of the piezo element are somewhat suppressed. What the suppression of those resonances actually means is quite subjective. Suggesting one is more ‘honest’ is quite ridiculous as any recording/listening process is far from ‘neutral’. For general purpose I think I prefer less of those resonances. For others they may be preferable. I could certainly see making work specifically addressing those resonances.&lt;/p&gt;
 
-&lt;p&gt;The purpose of this experiment though was to understand what difference epoxy backing made and to determine whether it had particularly negative or unfavourable consequences. I feel I can confidently say they perform as well if not better with the caveats of personal preference/context regarding resonance.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">A/B Comparisons</summary></entry></feed>
+&lt;p&gt;The purpose of this experiment though was to understand what difference epoxy backing made and to determine whether it had particularly negative or unfavourable consequences. I feel I can confidently say they perform as well if not better with the caveats of personal preference/context regarding resonance.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. (This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)</summary></entry></feed>

@@ -1,13 +1,6 @@
 ---
 title:  "WNNS Review: Dissolution Matrix in Afterthought of Skiess"
 date:   2018-07-30 12:00:00 +1724
-excerpt: ""
-header:
-  teaser:
-  overlay_image:
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption:
-  image_description:
 ---
 I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of "Dissolution Matrix in Afterthought of Skies"
 

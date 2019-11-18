@@ -2,13 +2,13 @@
 title:  "EOTK: Tor Mirroring on Google Cloud Engine"
 date:   2018-01-20 20:00:00 +1724
 toc: true
-excerpt: "Setting up the Enterprise Onion Toolkit on a Compute Engine VM"
 header:
   teaser: /assets/images/onions-500x300.jpg
   overlay_image: /assets/images/onions-wide.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [Onions in Supermarket](http://www.publicdomainpictures.net/view-image.php?image=32534&picture=onions-in-supermarket)"
   image_description: "Onions in Supermarket"
+  show_overlay_excerpt: False
 ---
 
 So at the risk of this site mostly being tech stuff I'm posting another how-to, rough-guide, self-documentation regarding Tor.

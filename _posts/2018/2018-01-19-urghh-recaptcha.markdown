@@ -1,13 +1,13 @@
 ---
 title:  "Urghh... Recaptcha"
 date:   2018-01-19 15:00:00 +1724
-excerpt: "Why I hate captchas but installed them anyway."
 header:
   teaser: /assets/images/hero-recaptcha-demo-500x300.gif
   overlay_image: /assets/images/hero-recaptcha-demo.gif
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Recaptcha demo - https://www.google.com/recaptcha/intro/"
   image_description: "Recaptcha demo"
+  show_overlay_excerpt: False
 ---
 Just a quick note. I hate captcha. Mostly I hate infinite captcha loops you can get locked into whilst browsing using Tor. That's often as much to do with cloudflare than captchas themselves but still...
 

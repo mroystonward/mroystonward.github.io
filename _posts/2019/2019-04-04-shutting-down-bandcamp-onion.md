@@ -2,13 +2,13 @@
 title:  "Shutting Down Bandcamp Onion"
 date:   2019-04-04 20:00:00 +1724
 toc: false
-excerpt: ""
 header:
   teaser: /assets/images/moldy-onion-500x300.png
   overlay_image: /assets/images/moldy-onion-wide.png
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [Rasbak at Dutch Wikipedia - CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Uienvlieg_maden.jpg)"
   image_description: "Rotting Onion"
+  show_overlay_excerpt: False
 ---
 Last year I [Onionised Bandcamp](https://mroystonward.github.io/onionised-bandcamp/), that is to say I used EOTK to set up a Tor proxy to Bandcamp.
 

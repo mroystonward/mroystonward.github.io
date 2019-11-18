@@ -2,14 +2,7 @@
 title:  "DIY - Some Notes"
 date:   2019-11-18 15:00:00 +1724
 toc: false
-excerpt: ""
 tags: [DIY, PhD, research]
-header:
-  teaser:
-  overlay_image:
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: ""
-  image_description: ""
 ---
 A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?
 

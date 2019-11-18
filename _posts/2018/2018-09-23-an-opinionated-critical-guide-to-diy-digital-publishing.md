@@ -2,12 +2,12 @@
 title:  "An (Opinionated) Critical Guide to DIY Digital Publishing"
 date:   2018-09-23 12:00:00 +1724
 toc: true
-excerpt: ""
 header:
   teaser: /assets/images/diy-digital-500x300.png
   overlay_image: /assets/images/diy-digital-wide.png
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   image_description: "Glitched photo of TQ zine and An (Opinionated) Critical Guide to DIY Digital Publishing supplement"
+  show_overlay_excerpt: False
 ---
 ## Introduction
 I'm briefly introducing this text as it is taken directly from a supplement I recently published with [TQ#15](https://tqzine.blogspot.com/). It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It's likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.
