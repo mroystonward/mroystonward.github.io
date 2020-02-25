@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>DIY - Some Notes | ☕️ Hot Contents</title>
-<meta name="description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?">
+<meta name="description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?  ">
 
 
   <meta name="author" content="Murray Royston-Ward">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://localhost:4000/diy-some-notes/">
 
 
-  <meta property="og:description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?">
+  <meta property="og:description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?  ">
 
 
 
@@ -31,7 +31,7 @@
 
   <meta name="twitter:site" content="@mroystonward">
   <meta name="twitter:title" content="DIY - Some Notes">
-  <meta name="twitter:description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?">
+  <meta name="twitter:description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?  ">
   <meta name="twitter:url" content="http://localhost:4000/diy-some-notes/">
 
   
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="DIY - Some Notes">
     <meta itemprop="description" content="A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?">
-    <meta itemprop="datePublished" content="November 17, 2019">
+    <meta itemprop="datePublished" content="2019-11-17T21:36:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -673,7 +673,7 @@ I’m briefly introducing this text as it is taken directly from a supplement I 
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -693,45 +693,6 @@ I’m briefly introducing this text as it is taken directly from a supplement I 
 
 
     
-  <script>
-    (function ($) {
-    $('#new_comment').submit(function () {
-      var form = this;
-
-      $(form).addClass('disabled');
-      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Loading...');
-
-      $.ajax({
-        type: $(this).attr('method'),
-        url: $(this).attr('action'),
-        data: $(this).serialize(),
-        contentType: 'application/x-www-form-urlencoded',
-        success: function (data) {
-          $('#comment-form-submit').html('Submitted');
-          $('.page__comments-form .js-notice').removeClass('notice--danger');
-          $('.page__comments-form .js-notice').addClass('notice--success');
-          showAlert('Thanks for your comment! It will show on the site once it has been approved.');
-        },
-        error: function (err) {
-          console.log(err);
-          $('#comment-form-submit').html('Submit Comment');
-          $('.page__comments-form .js-notice').removeClass('notice--success');
-          $('.page__comments-form .js-notice').addClass('notice--danger');
-          showAlert('Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.');
-          $(form).removeClass('disabled');
-        }
-      });
-
-      return false;
-    });
-
-    function showAlert(message) {
-      $('.page__comments-form .js-notice').removeClass('hidden');
-      $('.page__comments-form .js-notice-text').html(message);
-    }
-  })(jQuery);
-  </script>
-
 
   
 
