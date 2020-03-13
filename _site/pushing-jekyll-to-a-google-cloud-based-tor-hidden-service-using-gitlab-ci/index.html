@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.0 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -30,20 +30,6 @@
   <meta property="og:image" content="http://localhost:4000/assets/images/funnel-clouds-wide.jpg">
 
 
-
-  <meta name="twitter:site" content="@mroystonward">
-  <meta name="twitter:title" content="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI">
-  <meta name="twitter:description" content="In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.  ">
-  <meta name="twitter:url" content="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">
-
-  
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/funnel-clouds-wide.jpg">
-  
-
-  
-    <meta name="twitter:creator" content="@mroystonward">
-  
 
 
 
@@ -145,13 +131,13 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/portfolio/" >Portfolio</a>
+              <a href="/portfolio/">Portfolio</a>
             </li><li class="masthead__menu-item">
-              <a href="/about/" >About</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/" >Posts</a>
+              <a href="/year-archive/">Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/" >Sitemap</a>
+              <a href="/sitemap/">Sitemap</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -175,10 +161,6 @@
     <div class="initial-content">
       
   
-
-
-
-
 
 
 
@@ -294,12 +276,6 @@
       
 
       
-        <li>
-          <a href="https://twitter.com/mroystonward" itemprop="sameAs">
-            <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
-      
 
       
 
@@ -382,6 +358,7 @@
   </div>
 
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI">
     <meta itemprop="description" content="In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.">
@@ -435,7 +412,9 @@
     <figcaption>
       Creating a Storage Bucket in Google Cloud
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <figure class="">
   <img src="/assets/images/jekyll-gce-ci-screenshot-002.png" alt="Creating a Storage Bucket in Google Cloud" />
@@ -443,7 +422,9 @@
     <figcaption>
       Creating a Storage Bucket in Google Cloud
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.</p>
 
@@ -453,7 +434,9 @@
     <figcaption>
       Creating a Storage Bucket in Google Cloud
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.</p>
 
@@ -467,7 +450,9 @@
     <figcaption>
       Editing Access Scopes in GCE VM Instance
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Save and restart the VM. Once it’s running start up the SSH Terminal again.</p>
 
@@ -618,7 +603,9 @@ pages:
     <figcaption>
       Locating Access Keys in Google Cloud Storage
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.</p>
 
@@ -630,7 +617,9 @@ pages:
     <figcaption>
       Gitlab CI / CD Settings
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Then expand the section ‘Variables’.</p>
 
@@ -642,7 +631,9 @@ pages:
     <figcaption>
       Setting Gitlab CI / CD Variables
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Now, when we add to our CI config we can reference these variables without revealing their values to the public.</p>
 
@@ -719,6 +710,44 @@ pages:
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/assets/images/NottNOISEMARCH_500x300.jpg"
+          
+          alt="NottNOISE - Monday 16th March
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/nottnoise-monday-16th-march/" rel="permalink">NottNOISE - Monday 16th March
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
         
           
 
@@ -832,43 +861,6 @@ pages:
     
     <p class="archive__item-excerpt" itemprop="description">Introduction
 I’m briefly introducing this text as it is taken directly from a supplement I recently published with TQ#15. It was quite spur of the moment, ha...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "http://localhost:4000/assets/images/high-tor-500x300.jpg"
-          
-          alt="Non-anonymous Tor Hidden Service using Google Cloud
-">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="permalink">Non-anonymous Tor Hidden Service using Google Cloud
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  8 minute read
-
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run...</p>
   </article>
 </div>
 

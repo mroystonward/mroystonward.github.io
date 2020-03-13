@@ -1,10 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T14:18:16+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">☕️ Hot Contents</title><subtitle>Creative entanglements with materials.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-13T13:25:53+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">☕️ Hot Contents</title><subtitle>Creative entanglements with materials.
 
 💿 The House Organ
 🎛 Tripping on Wires
 
 🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
-</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">DIY - Some Notes</title><link href="http://localhost:4000/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" /><published>2019-11-17T21:36:00+00:00</published><updated>2019-11-17T21:36:00+00:00</updated><id>http://localhost:4000/diy-some-notes</id><content type="html" xml:base="http://localhost:4000/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
+</subtitle><author><name>Murray Royston-Ward</name></author><entry><title type="html">NottNOISE - Monday 16th March</title><link href="http://localhost:4000/nottnoise-monday-16th-march/" rel="alternate" type="text/html" title="NottNOISE - Monday 16th March" /><published>2020-03-12T20:06:00+00:00</published><updated>2020-03-12T20:06:00+00:00</updated><id>http://localhost:4000/nottnoise-monday-16th-march</id><content type="html" xml:base="http://localhost:4000/nottnoise-monday-16th-march/">&lt;p&gt;I’m a bit late posting on here but I’m still pleased to announce I’ll be playing in Nottingham on Monday 16th March.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/NottNOISEMarchSquare.jpg&quot; alt=&quot;NottNOISE Square Poster Image&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      NottNOISE v.2
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Organised by &lt;a href=&quot;http://nottfar.org.uk/&quot;&gt;Nottingham Forum for Artistic Reserach&lt;/a&gt; (NottFAR), this is the second instalment of their quarterly NottNOISE showcases. The lineup includes pianist Xenia Pestova Bennett with bassist James Opstad; clarinettist Tom Jackson performing a new work by Stephen Crowe; electronic duo Dirty Electronics and Dushume; and yours truly, electronics improvisor Murray Royston-Ward.&lt;/p&gt;
+
+&lt;p&gt;Doors 7pm for 7.30pm start. Free Entry. Rough Trade Nottingham.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/events/126409328759140/&quot;&gt;Facebook Event »&lt;/a&gt;&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><category term="live" /><category term="gigs" /><category term="performance" /></entry><entry><title type="html">DIY - Some Notes</title><link href="http://localhost:4000/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" /><published>2019-11-17T21:36:00+00:00</published><updated>2019-11-17T21:36:00+00:00</updated><id>http://localhost:4000/diy-some-notes</id><content type="html" xml:base="http://localhost:4000/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
 
 &lt;p&gt;Firstly, this won’t be a history of DIY, or even a particularly in-depth consideration. Instead, a brief collection of thoughts, notes, and reflections. A starting point.&lt;/p&gt;
 
@@ -253,7 +269,9 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
     &lt;figcaption&gt;
       Creating a Storage Bucket in Google Cloud
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/jekyll-gce-ci-screenshot-002.png&quot; alt=&quot;Creating a Storage Bucket in Google Cloud&quot; /&gt;
@@ -261,7 +279,9 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
     &lt;figcaption&gt;
       Creating a Storage Bucket in Google Cloud
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;It needs to have a unique name (I’ve gone with ‘tho-tutorial-bucket’), stick with multi-regional, and I preferred to use European data centres.&lt;/p&gt;
 
@@ -271,7 +291,9 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
     &lt;figcaption&gt;
       Creating a Storage Bucket in Google Cloud
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Our VM Instance needs access via Cloud API access scopes to interact with the bucket so go to Compute Engine.&lt;/p&gt;
 
@@ -285,7 +307,9 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
     &lt;figcaption&gt;
       Editing Access Scopes in GCE VM Instance
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Save and restart the VM. Once it’s running start up the SSH Terminal again.&lt;/p&gt;
 
@@ -436,7 +460,9 @@ pages:
     &lt;figcaption&gt;
       Locating Access Keys in Google Cloud Storage
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;We need to be careful with these keys and keep them secret. We therefore can’t use them directly in our CI config otherwise anyone could see them by looking at our public code.&lt;/p&gt;
 
@@ -448,7 +474,9 @@ pages:
     &lt;figcaption&gt;
       Gitlab CI / CD Settings
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Then expand the section ‘Variables’.&lt;/p&gt;
 
@@ -460,7 +488,9 @@ pages:
     &lt;figcaption&gt;
       Setting Gitlab CI / CD Variables
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Now, when we add to our CI config we can reference these variables without revealing their values to the public.&lt;/p&gt;
 
@@ -526,7 +556,9 @@ pages:
     &lt;figcaption&gt;
       Creating a new project in Google Cloud
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Now we’re going to choose ‘Compute Engine’ from the lefthand menu and ‘create’ a new ‘VM Instance’.&lt;/p&gt;
 
@@ -536,7 +568,9 @@ pages:
     &lt;figcaption&gt;
       Creating a VM Instance in Google Compute Engine
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;Give it whatever name you want (I’m using ‘tutorial-instance’); choose your region (I opted for European data centres, I especially didn’t want to use US ones); machine type should just be ‘micro’ as we don’t need more power and it’s cheaper this way; boot disk should be Debian 9; on the firewall add HTTP and HTTPS access.&lt;/p&gt;
 
@@ -546,7 +580,9 @@ pages:
     &lt;figcaption&gt;
       VM Instance settings in Google Compute Engine
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;That’s it, we now have a fresh Debian instance to work with. Google cloud has a really good web based SSH Terminal so click on that, allow pop-ups if they are blocked and initiate the connection.&lt;/p&gt;
 
@@ -556,7 +592,9 @@ pages:
     &lt;figcaption&gt;
       Launching SSH Terminal in Google Compute Engine
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/gce-tor-screenshot-005.png&quot; alt=&quot;SSH Terminal in Google Compute Engine&quot; /&gt;
@@ -564,7 +602,9 @@ pages:
     &lt;figcaption&gt;
       SSH Terminal in Google Compute Engine
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;installing-tor&quot;&gt;Installing Tor&lt;/h2&gt;
 
@@ -653,7 +693,9 @@ $ sudo apt-get install tor deb.torproject.org-keyring
     &lt;figcaption&gt;
       IP Address in Google Compute Engine
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;You’ll only see a very basic nginx landing page but at least we know it is working.&lt;/p&gt;
 
@@ -663,7 +705,9 @@ $ sudo apt-get install tor deb.torproject.org-keyring
     &lt;figcaption&gt;
       NGINX Welcome Page
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;The sites I use this for are publicly hosted using other services (such as gitlab pages) and the Tor version is a separate mirror. This might not be the case for you and, for non-anonymous sites, you may want to serve both publicly AND over the Tor network from this install. The next steps aren’t entirely necessary or correct if that is the case. The set-up for Tor will be near identical but you’ll want to set-up nginx to work as a regular web server too.&lt;/p&gt;
 
@@ -795,7 +839,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;The sounds are a procession of ruler ‘twanging’, scraping and sellotaping. An image of the set up is above and the sound recordings are below (you can download from soundcloud too for your own analysis if you like).&lt;/p&gt;
 
@@ -809,7 +855,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       Impedance Matching A/B Contact Mic Analysis
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;In the image above I’ve highlighted 3 areas on the spectral analysis with the following thoughts:&lt;/p&gt;
 
@@ -827,7 +875,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       Impedance Matching A/B Contact Mic Analysis
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;p&gt;There are further, qualitative differences that I think are worth consideration.&lt;/p&gt;
 
@@ -848,7 +898,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       Bandcamp Onion Address in Tor Browser
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;platforms-surveilance-and-commercialisation-of-data&quot;&gt;Platforms, Surveilance and Commercialisation of Data&lt;/h2&gt;
 
@@ -884,7 +936,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/31/Just_yellow_paint_%2812645841144%29.jpg&quot;&gt;By aceebee from Camberley, UK (Just yellow paint) [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons&lt;/a&gt;
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;the-onion-routing-network&quot;&gt;The Onion Routing network&lt;/h2&gt;
 
@@ -914,7 +968,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3AMetropolitan_Opera_House%2C_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg&quot;&gt;By Unknown or not provided  Retouched by Mmxx [Public domain], via Wikimedia Commons&lt;/a&gt;
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;decentralisation-and-alternatives&quot;&gt;Decentralisation and Alternatives&lt;/h2&gt;
 
@@ -944,7 +1000,9 @@ HiddenServicePort 80 127.0.0.1:8080
     &lt;figcaption&gt;
       &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ADrimia_maritima_-_Sea_onion%2C_Adana_2016-12-04_01-1.jpg&quot;&gt;By Zeynel Cebeci (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons&lt;/a&gt;
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;bandcamp-onion&quot;&gt;Bandcamp Onion&lt;/h2&gt;
 
@@ -994,36 +1052,4 @@ HiddenServicePort 80 127.0.0.1:8080
 
 &lt;p&gt;Irrespective of such technical concerns, if you have music on Bandcamp it is now drawn into the frame of this project whether you like it or not. That may be acceptable in terms of not having or expecting control over the technical infrastructure of your work being served by Bandcamp but it isn’t entirely ethical of me either. It’s such grey areas which are at the heart of Pirate Bay claiming no wrong-doing as they’re not ‘hosting’ illegal content or that google/youtube probably provide access to more illegal content than any ‘pirate’ site. I really don’t know how I feel about all of this. If someone actively objected to the appearance of their work within this project I know I couldn’t achieve the level of granularity to exclude them and that makes me uncomfortable.&lt;/p&gt;
 
-&lt;p&gt;I don’t know whether all of these aspects were what Alec was thinking about with his responses but I do hope my comments help ensure that relevant issues are adequately present in any ongoing debate this provocation may raise. Comments are open so it would be great to hear other opinions.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.</summary></entry><entry><title type="html">Testing Epoxy Backed Contact Mic’s</title><link href="http://localhost:4000/epoxy-backed-contact-mics/" rel="alternate" type="text/html" title="Testing Epoxy Backed Contact Mic's" /><published>2018-02-03T21:36:00+00:00</published><updated>2018-02-03T21:36:00+00:00</updated><id>http://localhost:4000/epoxy-backed-contact-mics</id><content type="html" xml:base="http://localhost:4000/epoxy-backed-contact-mics/">&lt;p&gt;I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. &lt;em&gt;(This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve tried a few variations here, especially in terms of how it is wired and where on the mic the wire is positioned. These variations, over time, have ultimately proved to be less successful than a standard wiring directly onto the piezo element. What has worked consistently well though is backing the element/wiring with epoxy resin. Often twists and snaps of the wiring are the primary site of failure and so encasing these joints in glue helps secure it. It also has the bonus of protecting the element from random shorts whilst handling etc.&lt;/p&gt;
-
-&lt;p&gt;I want to do some comparisons with the high-end mic’s on the market at a later date (I need to buy some first) but in the meantime I thought I’d check what effects this epoxy backing actually has on sound quality/mic performance. My test was fairly simple. Two mics made from the same components (wiring, piezo elements etc.), one epoxy backed and the other bare. Here’s a picture of the set-up.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;/assets/images/a-b-rig.jpg&quot; alt=&quot;A/B Contact Mic Testing in Window with Vibration Speaker&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      A/B Contact Mic Testing in Window with Vibration Speaker
-
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;I thought about the sound source and decided to use something pre-recorded and chose a sound collage I’d made in Iceland with a combination of piano abuse and field recordings. I thought there was a broad tonal range to help determine if there were any significant difference across the spectrum. I played this collage back using a vibration speaker placed on a wooden window bay. It was placed fairly centrally and the contact mics were an equal distance either side of the speaker. I thought the material qualities of the wood might bring out some of the bottom end and, seeing as contact mics generally don’t perform well in this part of the spectrum, I thought it would make a useful comparison.&lt;/p&gt;
-
-&lt;p&gt;Both mic’s went into a Zoom H4n with the gain set equally. I noted at the recording stage that the epoxy backed mic was recording at a lower volume so it does already look like the resin effects sensitivity of the mic.&lt;/p&gt;
-
-&lt;p&gt;Once recorded I imported the stereo file into Audacity. I normalised the tracks (I chose not to maintain stereo balance so L/R signal were essentially normalised independently of one another). I then split the stereo track into separate mono files. Here are those normalised tracks for you to compare for yourself.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/439471452&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I listened back and also used Ableton Live’s built in spectral analysis. I’m a complete lay person here but have concluded the following.&lt;/p&gt;
-
-&lt;p&gt;I couldn’t spot any discernible difference in frequency response. There are obviously minor differences as the 2 tracks do sound slightly different. I couldn’t however isolate any areas of the audio spectrum where the epoxy backed mic performed worse than the unbacked mic.&lt;/p&gt;
-
-&lt;p&gt;As noted above, the backed mic was slightly less sensitive. This means that when it was normalised the noise floor would have been amplified slightly too. Usually this wouldn’t present a significant issue as we’d simply raise the sensitivity of the recorder. I couldn’t do this for the purpose of testing but, if I was setting the recorder to the appropriate level for the mic, normalisation wouldn’t have increased the volume as much or any background preamp noise.&lt;/p&gt;
-
-&lt;p&gt;As to the qualitative differences. Well, I can’t quite put my finger on it. I think the higher and lower ends perform very similarly. Instead, I have a theory. I think there are some resonances in the unbacked recording that aren’t very strong in the epoxy-backed recording. I think that the piezo element has natural, material resonances itself. These elements are initially designed to act as buzzers so there is a natural frequency at which they will oscillate and self-resonate. When the piezo element is distorted by vibrations it generates an electrical signal and this is what we hear when we record it and play back through a loudspeaker. I think that these self-resonances, the material properties of the piezo element, are shaping the recording slightly and that this is the difference we hear. The epoxy resin backing suppresses the distortion of the piezo element. This makes it a little less sensitive to vibration but also suppresses the resonant properties of the piezo element.&lt;/p&gt;
-
-&lt;p&gt;Practically speaking my interpretation is that the epoxy backed contact mic is a little quieter when recording so needs a little more gain. It performs equally well across the frequency spectrum (within the general limitations of a contact mic’s frequency response). The material resonances of the piezo element are somewhat suppressed. What the suppression of those resonances actually means is quite subjective. Suggesting one is more ‘honest’ is quite ridiculous as any recording/listening process is far from ‘neutral’. For general purpose I think I prefer less of those resonances. For others they may be preferable. I could certainly see making work specifically addressing those resonances.&lt;/p&gt;
-
-&lt;p&gt;The purpose of this experiment though was to understand what difference epoxy backing made and to determine whether it had particularly negative or unfavourable consequences. I feel I can confidently say they perform as well if not better with the caveats of personal preference/context regarding resonance.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ve been making contact mic’s for myself and others for some years now (and I’m planning on putting some up for sale again quite soon so get in touch if you want any making to order). Whilst they’re very simple to make and utilise fairly cheap parts there’s a handful of variables and build options at play. There are some expensive high quality one’s on the market (Jez Riley French’s spring to mind) but I’ve always been more about durability. I want a contact mic that will take a good bashing. (This has worked well for a number of people where, e.g. they have been used to mic up a log which was being hacked at with a toy axe made from frozen piss.)</summary></entry></feed>
+&lt;p&gt;I don’t know whether all of these aspects were what Alec was thinking about with his responses but I do hope my comments help ensure that relevant issues are adequately present in any ongoing debate this provocation may raise. Comments are open so it would be great to hear other opinions.&lt;/p&gt;</content><author><name>Murray Royston-Ward</name></author><summary type="html">I’ll cut to the chase, I’ve ‘Onionised’ Bandcamp.</summary></entry></feed>

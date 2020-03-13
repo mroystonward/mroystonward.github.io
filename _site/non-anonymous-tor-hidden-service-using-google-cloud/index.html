@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.0 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -30,20 +30,6 @@
   <meta property="og:image" content="http://localhost:4000/assets/images/high-tor-wide.jpg">
 
 
-
-  <meta name="twitter:site" content="@mroystonward">
-  <meta name="twitter:title" content="Non-anonymous Tor Hidden Service using Google Cloud">
-  <meta name="twitter:description" content="I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.  ">
-  <meta name="twitter:url" content="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">
-
-  
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/high-tor-wide.jpg">
-  
-
-  
-    <meta name="twitter:creator" content="@mroystonward">
-  
 
 
 
@@ -145,13 +131,13 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/portfolio/" >Portfolio</a>
+              <a href="/portfolio/">Portfolio</a>
             </li><li class="masthead__menu-item">
-              <a href="/about/" >About</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/" >Posts</a>
+              <a href="/year-archive/">Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/" >Sitemap</a>
+              <a href="/sitemap/">Sitemap</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -175,10 +161,6 @@
     <div class="initial-content">
       
   
-
-
-
-
 
 
 
@@ -294,12 +276,6 @@
       
 
       
-        <li>
-          <a href="https://twitter.com/mroystonward" itemprop="sameAs">
-            <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
-      
 
       
 
@@ -382,6 +358,7 @@
   </div>
 
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Non-anonymous Tor Hidden Service using Google Cloud">
     <meta itemprop="description" content="I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.">
@@ -435,7 +412,9 @@
     <figcaption>
       Creating a new project in Google Cloud
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Now we’re going to choose ‘Compute Engine’ from the lefthand menu and ‘create’ a new ‘VM Instance’.</p>
 
@@ -445,7 +424,9 @@
     <figcaption>
       Creating a VM Instance in Google Compute Engine
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>Give it whatever name you want (I’m using ‘tutorial-instance’); choose your region (I opted for European data centres, I especially didn’t want to use US ones); machine type should just be ‘micro’ as we don’t need more power and it’s cheaper this way; boot disk should be Debian 9; on the firewall add HTTP and HTTPS access.</p>
 
@@ -455,7 +436,9 @@
     <figcaption>
       VM Instance settings in Google Compute Engine
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>That’s it, we now have a fresh Debian instance to work with. Google cloud has a really good web based SSH Terminal so click on that, allow pop-ups if they are blocked and initiate the connection.</p>
 
@@ -465,7 +448,9 @@
     <figcaption>
       Launching SSH Terminal in Google Compute Engine
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <figure class="">
   <img src="/assets/images/gce-tor-screenshot-005.png" alt="SSH Terminal in Google Compute Engine" />
@@ -473,7 +458,9 @@
     <figcaption>
       SSH Terminal in Google Compute Engine
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <h2 id="installing-tor">Installing Tor</h2>
 
@@ -562,7 +549,9 @@ $ sudo apt-get install tor deb.torproject.org-keyring
     <figcaption>
       IP Address in Google Compute Engine
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>You’ll only see a very basic nginx landing page but at least we know it is working.</p>
 
@@ -572,7 +561,9 @@ $ sudo apt-get install tor deb.torproject.org-keyring
     <figcaption>
       NGINX Welcome Page
 
-    </figcaption></figure>
+    </figcaption>
+  
+</figure>
 
 <p>The sites I use this for are publicly hosted using other services (such as gitlab pages) and the Tor version is a separate mirror. This might not be the case for you and, for non-anonymous sites, you may want to serve both publicly AND over the Tor network from this install. The next steps aren’t entirely necessary or correct if that is the case. The set-up for Tor will be near identical but you’ll want to set-up nginx to work as a regular web server too.</p>
 
@@ -703,6 +694,44 @@ HiddenServicePort 80 127.0.0.1:8080
       <div class="archive__item-teaser">
         <img src=
           
+            "http://localhost:4000/assets/images/NottNOISEMARCH_500x300.jpg"
+          
+          alt="NottNOISE - Monday 16th March
+">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/nottnoise-monday-16th-march/" rel="permalink">NottNOISE - Monday 16th March
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
             "http://localhost:4000/assets/images/teaser500x300.jpg"
           
           alt="DIY - Some Notes
@@ -805,43 +834,6 @@ HiddenServicePort 80 127.0.0.1:8080
     
     <p class="archive__item-excerpt" itemprop="description">Introduction
 I’m briefly introducing this text as it is taken directly from a supplement I recently published with TQ#15. It was quite spur of the moment, ha...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "http://localhost:4000/assets/images/funnel-clouds-500x300.jpg"
-          
-          alt="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI
-">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="permalink">Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  11 minute read
-
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites...</p>
   </article>
 </div>
 
