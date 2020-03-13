@@ -67,6 +67,14 @@
         </li>
       {% endif %}
 
+      {% if author.tho %}
+        <li>
+          <a href="https://{{ author.tho }}" itemprop="sameAs">
+            <i class="fas fa-compact-disc" aria-hidden="true"></i> The House Organ
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.bandcamp %}
         <li>
           <a href="https://{{ author.bandcamp }}.bandcamp.com" itemprop="sameAs">
@@ -86,7 +94,7 @@
       {% if author.shop %}
         <li>
           <a href="https://{{ author.shop }}" itemprop="sameAs">
-            <i class="fas fa-shopping-basket" aria-hidden="true"></i> Shop
+            <i class="fas fa-shopping-basket" aria-hidden="true"></i> Tripping on Wires
           </a>
         </li>
       {% endif %}
