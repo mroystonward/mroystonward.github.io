@@ -2,7 +2,7 @@
 title:  "NottNOISE - Monday 16th March"
 date:   2020-03-13 13:30:00 +1724
 toc: false
-excerpt: ""
+excerpt: "I'll be playing NottNOISE (Nottingham) on Monday 16th March."
 tags: [live, gigs, performance]
 header:
   teaser: /assets/images/NottNOISEMARCH_500x300.jpg
