@@ -1,15 +1,10 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "☕️ Hot Contents"
+title                    : "Murray Royston-Ward"
 title_separator          : "|"
 name                     : "Murray Royston-Ward"
 description              : |+
@@ -19,7 +14,6 @@ description              : |+
   🎛 Tripping on Wires
 
   🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
-# url                      : http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 url                      : https://mroystonward.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : mroystonward/mroystonward.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -40,7 +34,7 @@ search_full_content      : true
 github: [metadata]
 
 # SEO Related
-google_site_verification :
+google_site_verification : 9BqlbnC28dNlsZIN5F7-_1kAMmn5UWpA5KSqLDNETUo
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -49,15 +43,15 @@ naver_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :
-  app_id                 :
+  username               : "murray.roystonward"
+  app_id                 : "100019365335060"
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/gtr-tape.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : Murray Royston-Ward # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
