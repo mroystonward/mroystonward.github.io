@@ -281,6 +281,21 @@ defaults:
       author_profile: false
       share: false
 
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+        layout: single
+        toc: false
+        excerpt:
+        tags:
+        header:
+          teaser: /assets/images/-500x300.png
+          overlay_image: /assets/images/-wide.png
+          overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+          caption:
+          image_description:
+
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
