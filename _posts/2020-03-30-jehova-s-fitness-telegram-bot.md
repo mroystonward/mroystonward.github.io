@@ -20,7 +20,8 @@ Here's a conversational performance 'bot' I knocked together over a couple of da
 
 If you want to have a play you can visit [https://t.me/jehovasfitness_bot](https://t.me/jehovasfitness_bot) (you'll need Telegram installed on one of your devices).
 
-{% include figure image_path="/assets/images/jf-bot.png" alt="Interface of @jehovasfitness_bot" caption="@jehovasfitness_bot Interface" %}
+{% assign image_url = "/assets/images/jf-bot.png" | prepend: site.url %}
+{% include figure image_path= image_url alt="Interface of @jehovasfitness_bot" caption="@jehovasfitness_bot Interface" %}
 
 As a response to Covid-19 and the numerous event cancellations, there's a whole range of online streaming and other publishing endeavours going on. Taking part in 'Isolated Mass #2 2020', I saw it as an opportunity to explore the format.
 
