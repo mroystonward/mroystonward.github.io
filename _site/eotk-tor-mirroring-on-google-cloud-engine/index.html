@@ -1,0 +1,812 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>EOTK: Tor Mirroring on Google Cloud Engine | Murray Royston-Ward</title>
+<meta name="description" content="So at the risk of this site mostly being tech stuff I’m posting another how-to, rough-guide, self-documentation regarding Tor.  ">
+
+
+  <meta name="author" content="Murray Royston-Ward">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Murray Royston-Ward">
+<meta property="og:title" content="EOTK: Tor Mirroring on Google Cloud Engine">
+<meta property="og:url" content="https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/">
+
+
+  <meta property="og:description" content="So at the risk of this site mostly being tech stuff I’m posting another how-to, rough-guide, self-documentation regarding Tor.  ">
+
+
+
+  <meta property="og:image" content="https://mroystonward.github.io/assets/images/onions-wide.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2018-01-20T02:36:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mroystonward.github.io/eotk-tor-mirroring-on-google-cloud-engine/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Murray Royston-Ward",
+      "url": "https://mroystonward.github.io/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="9BqlbnC28dNlsZIN5F7-_1kAMmn5UWpA5KSqLDNETUo" />
+
+
+  <meta name="msvalidate.01" content="96DCE1E574483B04092BF0FF201C1F7E">
+
+
+
+  <meta name="yandex-verification" content="f16ac5f34929ca20">
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Murray Royston-Ward Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          ☕️ Hot Contents
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/onions-wide.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          EOTK: Tor Mirroring on Google Cloud Engine
+
+        
+      </h1>
+      
+      
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="http://www.publicdomainpictures.net/view-image.php?image=32534&amp;picture=onions-in-supermarket">Onions in Supermarket</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Murray Royston-Ward" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Murray Royston-Ward</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>💿 The House Organ
+🎛 Tripping on Wires
+🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova’s Fitness</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Sheffield, UK</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://keybase.io/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-keybase" aria-hidden="true"></i> Keybase</a></li>
+          
+        
+          
+            <li><a href="https://thehouseorgan.xyz" rel="nofollow noopener noreferrer"><i class="fas fa-compact-disc" aria-hidden="true"></i> The House Organ</a></li>
+          
+        
+          
+            <li><a href="https://thehouseorgan.bandcamp.com/" rel="nofollow noopener noreferrer"><i class="fab fa-bandcamp" aria-hidden="true"></i> Bandcamp</a></li>
+          
+        
+          
+            <li><a href="https://trippingonwires.bigcartel.com" rel="nofollow noopener noreferrer"><i class="fas fa-shopping-basket" aria-hidden="true"></i> Tripping on Wires</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/thehouseorgan" rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+          
+        
+          
+            <li><a href="https://github.com/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/murray-royston-ward-b86441188/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin"" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="EOTK: Tor Mirroring on Google Cloud Engine">
+    <meta itemprop="description" content="So at the risk of this site mostly being tech stuff I’m posting another how-to, rough-guide, self-documentation regarding Tor.">
+    <meta itemprop="datePublished" content="2018-01-20T02:36:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#google-cloud-platform">Google Cloud Platform</a></li>
+  <li><a href="#installing-eotk">Installing EOTK</a></li>
+  <li><a href="#setting-up-an-eotk-project">Setting up an EOTK Project</a></li>
+  <li><a href="#firing-it-up">Firing it up</a></li>
+  <li><a href="#ssl-certificate-problems">SSL Certificate Problems</a></li>
+  <li><a href="#trying-http-only">Trying HTTP Only</a></li>
+  <li><a href="#but-dont-downgrade-from-https">But Don’t Downgrade from HTTPS</a></li>
+  <li><a href="#startup-scripts">Startup Scripts</a></li>
+  <li><a href="#parting-thoughts">Parting Thoughts</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>So at the risk of this site mostly being tech stuff I’m posting another how-to, rough-guide, self-documentation regarding Tor.</p>
+
+<p>I hadn’t planned this as I’m currently a) meant to be completing a PhD funding application, b) should be trying to find a job and c) trying to focus on music related things rather than tech for a little while.</p>
+
+<p>Anyway,  <a href="https://twitter.com/@moananddrone">@moananddrone</a> got me intrigued by the Enterprise Onion Toolkit (EOTK) <a href="https://github.com/alecmuffett/eotk">https://github.com/alecmuffett/eotk</a> as he’s got a project requiring it and wanted me to help look at it with him.</p>
+
+<p>I won’t share any details of the project as Kevin will be talking about that at some point, in the future, as appropriate.</p>
+
+<p>Still I wanted to share my own experiences of trying out this tool and deploying it using Google’s cloud infrastructure.</p>
+
+<p>There are political considerations in using Google’s (or Amazon’s etc.) cloud platforms and I’m not agnostic towards such politics. I also want to keep myself educated about the various technologies in use so this seemed like a good opportunity to test out EOTK, have a play with Google’s free introduction to their cloud services, and do all of this separately to my existing Tor installation (which works well as is — I didn’t want to risk breaking my configuration with another toolset).</p>
+
+<h2 id="google-cloud-platform">Google Cloud Platform</h2>
+
+<p>I’m not really documenting this part of the process very extensively as they’re just visual web forms which are fairly self explanatory to complete and this would just be a series of screenshots which I don’t want to do. If anyone reading struggles here though and the help pages don’t answer your questions feel free to comment and ask questions.</p>
+
+<p>First thing was to signup to Google Cloud Platform’s free trail - <a href="https://cloud.google.com/">https://cloud.google.com/</a></p>
+
+<p>I then created a new project and a Compute Engine VM.</p>
+
+<p>I’m not 100% sure what I’m doing here but I’m trying only a micro instance with Ubuntu 16.04. I also opted for European data centres simply because European data privacy laws are generally speaking considered better that US ones (a complex and contentious issue but for my current needs this simplification is appropriate).</p>
+
+<p>I’m not familiar with the firewall settings here either so I’ve enabled HTTP and HTTPS. We’ll see if I need to do more config later.</p>
+
+<p>The online SSH client is truly impressive. Just click the SSH button/link and you get a web based terminal.</p>
+
+<h2 id="installing-eotk">Installing EOTK</h2>
+
+<p>First things first:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+
+sudo apt-get dist-upgrade
+</code></pre></div></div>
+
+<p>Now to install EOTK</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/alecmuffett/eotk.git
+
+cd eotk
+
+./opt.d/install-everything-on-ubuntu-16.04.sh
+</code></pre></div></div>
+<p>Hopefully everything is now installed.</p>
+
+<h2 id="setting-up-an-eotk-project">Setting up an EOTK Project</h2>
+
+<p>Lets try it, still in the <code class="language-plaintext highlighter-rouge">eotk</code> folder we can run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk gen
+</code></pre></div></div>
+
+<p>This generates an onion key file, in my case <code class="language-plaintext highlighter-rouge">u35unrkwyvkcdxsl.key</code>. Copy the name of this, we’ll need it in a moment.</p>
+
+<p>Let’s set up a configuration file. I’m going to call it <code class="language-plaintext highlighter-rouge">mroystonward.conf</code> but you should call it whatever you like but keep the <code class="language-plaintext highlighter-rouge">.conf</code> at the end.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano mroystonward.conf
+</code></pre></div></div>
+
+<p>In the nano text editor we need to write the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set project mroystonward
+hardmap secrets.d/u35unrkwyvkcdxsl.key mroystonward.github.io
+</code></pre></div></div>
+
+<p>A few notes here. <code class="language-plaintext highlighter-rouge">mroystonward</code> is the name of my project. Use here whatever you used previously.</p>
+
+<p><code class="language-plaintext highlighter-rouge">secrets.d/</code> is the folder where eotk puts onion keys so this needs to stay the same.</p>
+
+<p><code class="language-plaintext highlighter-rouge">u35unrkwyvkcdxsl.key</code> should be replaced with whatever onion key you generated above.</p>
+
+<p><code class="language-plaintext highlighter-rouge">mroystonward.github.io</code> is the domain I’m mirroring via Tor. You should put whatever domain you want to mirror.</p>
+
+<p>A few notes here though. Don’t put the <code class="language-plaintext highlighter-rouge">www</code> hostname.</p>
+
+<p>You can do quite complex subdomain setups which I just don’t need in this example. Check the docs and video - <a href="https://github.com/alecmuffett/eotk">here</a> and <a href="https://www.youtube.com/watch?v=ti_VkVmE3J4">here</a></p>
+
+<h2 id="firing-it-up">Firing it up</h2>
+
+<p>Now run (replacing the name of the conf file with whatever you chose earlier):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk conf mroystonward.conf
+</code></pre></div></div>
+
+<p>and (with whatever project name you chose earlier):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk start mroystonward
+</code></pre></div></div>
+
+<p>That’s it, it’s running. We can check the status using:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk status mroystonward
+</code></pre></div></div>
+
+<p>And you should see both Tor and Nginx processes listed.</p>
+
+<p>In Tor Browser you can now visit your onion address (mine is <a href="https://u35unrkwyvkcdxsl.onion/">u35unrkwyvkcdxsl.onion</a>).</p>
+
+<p>Like me you probably now encounter some errors and warnings.</p>
+
+<figure class="">
+  <img src="/assets/images/insecure.png" alt="SSL Warnings" />
+  
+    <figcaption>
+      Your connection is not secure
+
+    </figcaption>
+  
+</figure>
+
+<h2 id="ssl-certificate-problems">SSL Certificate Problems</h2>
+
+<p>This is expected behaviour and it’s because the SSL certificates are self signed. You’ll need to click ‘advanced’ and add an exception. You may have to do this several times.</p>
+
+<p>There’s not a huge amount we can do about this either.</p>
+
+<p>Certbot/LetsEncrypt doesn’t currently support .onion domains so getting free/simple SSL isn’t an option.</p>
+
+<p>You currently need an SSL EV certificate which, i.e. from DigiCert, costs ~$250. For non-corporate projects this is a) expensive and b) I’m led to believe is hard to get without the proofs that accompany corporate infrastructure/incorporation etc.</p>
+
+<p>Depending on the nature of the site HTTPS may not be entirely necessary. This is a new area for my investigations into Tor etc. My current understanding is that the layers of encryption provided by Tor preclude the need for HTTPS on security grounds. I may be wrong here though. Feel free to comment. A HTTPS certificate does however help with proof of ownership and trust, even in an onion environment.</p>
+
+<p>Useful resources in starting to consider the pros and cons of HTTPS over Tor:</p>
+
+<ul>
+  <li><a href="https://www.eff.org/deeplinks/2012/03/https-and-tor-working-together-protect-your-privacy-and-security-online">https://www.eff.org/deeplinks/2012/03/https-and-tor-working-together-protect-your-privacy-and-security-online</a></li>
+  <li><a href="https://www.eff.org/pages/tor-and-https">https://www.eff.org/pages/tor-and-https</a></li>
+  <li><a href="https://blog.torproject.org/facebook-hidden-services-and-https-certs">https://blog.torproject.org/facebook-hidden-services-and-https-certs</a></li>
+</ul>
+
+<p>What these resources don’t make sufficiently clear is the different ways one may choose to use Tor.</p>
+
+<p>You may use the Tor browser for increased privacy/anonymity whilst browsing clear-net websites (i.e. *.com, *.org, *.net, *.co.uk etc.). The EFF graphic describing the different levels of protection Tor and HTTPS together offer is referring to this kind of browsing. This is one reason the Tor browser includes (and benefits from) the HTTPS Everywhere plugin.</p>
+
+<p>You may also use the Tor browser to access .onion sites (as we’re setting up here). That this relies upon secure keys provides similar protections to HTTPS. You also know that only one site has this key and so when you connect to an onion domain it is almost certainly the site you think it is. You might not know who owns the site and they may not have your best interests at heart but it’s not anyone else pretending to be that site or intercepting traffic etc.</p>
+
+<p>Still, we now generally understand that when the browser gives us a security warning about certificates we should take this seriously. Encouraging users to just accept self-signed certificates isn’t good practice either.</p>
+
+<h2 id="trying-http-only">Trying HTTP Only</h2>
+
+<p>If we don’t need HTTPS we can add this line to the mroystonward.conf file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set force_https 0
+</code></pre></div></div>
+
+<p>You’ll need to stop, rerun configuration and then start your project again:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk stop mroystonward
+
+./eotk conf mroystonward.conf
+
+./eotk start mroystonward
+</code></pre></div></div>
+
+<p>Whilst this is useful to note it doesn’t work for me as this entails downgrading from HTTPS to HTTP.</p>
+
+<h2 id="but-dont-downgrade-from-https">But Don’t Downgrade from HTTPS</h2>
+
+<p>Whilst I’m not yet sure of my position regarding the benefits of HTTPS over Tor for a fairly simple static website with little in the way of logins or cookies, if the original site is already HTTPS, downgrading would be considered bad practice and if there were any secure cookies and or data submission on the site we would now potentially be introducing all sorts of security holes. The EOTK developers are looking into this but for now there isn’t really any elegant solution. Tor are also considering how the Tor browser should handle onion sites with self-signed certificates.</p>
+
+<p>Added to this, I host <a href="https://mroystonward.github.io">mroystonward.github.io</a> using github pages. A nice feature of this is that they enforce HTTPS. That unfortunately means that even if I set <code class="language-plaintext highlighter-rouge">force_https</code> to <code class="language-plaintext highlighter-rouge">0</code>, the part of the process which involves github serving the clear-web site to the EOTK process is all enforced in HTTPS. That means that I’m trying to downgrade to HTTP which isn’t recommended or supported as above. There are inelegant ways around this but none that are available to me as I can’t alter how github serves it’s pages.</p>
+
+<h2 id="startup-scripts">Startup Scripts</h2>
+
+<p>I also faffed around for quite sometime with startup scripts via the compute engine metadata flags but I could never get everything running properly. To save you time don’t bother. Luckily EOTK comes with a handy init script tool.</p>
+
+<p>Run the following commands (in the eotk folder still):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./eotk make-init-script
+
+sudo cp eotk-init.sh /etc/init.d
+
+sudo update-rc.d eotk-init.sh defaults
+</code></pre></div></div>
+
+<p>That’s it, it’ll now start all projects on boot.</p>
+
+<h2 id="parting-thoughts">Parting Thoughts</h2>
+
+<p>It all seems very slow to me so far (and slower than a site I directly run as a Tor service from a Raspberry Pi).</p>
+
+<p><em>UPDATE: Things seem a lot faster now so my speed concerns seem mostly unfounded.</em></p>
+
+<p>I know, for example, images on the github site aren’t very optimised as a compromise for the simplicity of the static site publishing process (something I’m looking at fixing at some point). I scaled up the cloud VM to see if that made a difference and too be honest I don’t think it has so I’m sticking with the cheaper micro option for now.</p>
+
+<p>So, interesting exercise. If you fancy trusting my self-signed certificate you can see this in action at <a href="https://u35unrkwyvkcdxsl.onion/">u35unrkwyvkcdxsl.onion</a>. I’ll leave it running for a while and see what happens but I doubt it’ll be up for a long-long time.</p>
+
+<p>I’m also impressed by how easy this was to set up on a cloud platform. It suggests the possibilities for temporary set-up/use/tear-down approaches as needs fit. One could easily clone the git repo and add in some default conf files and automate the initialisation process.</p>
+
+<p>Also, the options to use a small cluster of RaspberryPis and OnionBalance for all of this is super intriguing too but I don’t yet have a use case for it to justify getting more Pis - <a href="https://www.youtube.com/watch?v=HNJaMNVCb-U">https://www.youtube.com/watch?v=HNJaMNVCb-U</a></p>
+
+<p>Hope this helps you have a play around too.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-20T02:36:00+00:00">January 20, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/urghh-recaptcha/" class="pagination--pager" title="Urghh… Recaptcha
+">Previous</a>
+    
+    
+      <a href="/why-being-disconnected-from-practice-isnt-really-a-thing/" class="pagination--pager" title="Why Being Disconnected from Practice Isn’t Really a Thing
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/jf-bot-500x300.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jehova-s-fitness-telegram-bot/" rel="permalink">Introducing the Jehova’s Fitness Telegram Bot
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A Telegram bot performing a collaged stream of bits and bobs
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/NottNOISEMARCH_500x300.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/nottnoise-monday-16th-march/" rel="permalink">NottNOISE - Monday 16th March
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I’ll be playing NottNOISE (Nottingham) on Monday 16th March.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/teaser500x300.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/diy-some-notes/" rel="permalink">DIY - Some Notes
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/moldy-onion-500x300.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/shutting-down-bandcamp-onion/" rel="permalink">Shutting Down Bandcamp Onion
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last year I Onionised Bandcamp, that is to say I used EOTK to set up a Tor proxy to Bandcamp.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>
