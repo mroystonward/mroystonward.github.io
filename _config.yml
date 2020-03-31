@@ -56,6 +56,7 @@ analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-162279206-1"
+    anonymize_ip         : true
 
 
 # Site Author
