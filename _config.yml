@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-theme                    : minimal-mistakes-jekyll
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -44,7 +44,7 @@ facebook:
   username               : "murray.roystonward"
   app_id                 :
   publisher              :
-#og_image                 : "/assets/images/gtr-tape.jpg" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/gtr-tape.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -269,8 +269,8 @@ jekyll_compose:
         excerpt:
         tags:
         header:
-#          teaser: /assets/images/-500x300.png
-#          overlay_image: /assets/images/-wide.png
+          teaser: /assets/images/-500x300.png
+          overlay_image: /assets/images/-wide.png
           overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
           caption:
           image_description:
