@@ -70,3 +70,7 @@ Much of this work is collected in this artist's book - [My Neighbor Who Lives in
 As part of the residency I also connected with the local arts community by running a series of open forma and collaborative ‘Listening Groups’ with the intent of encouraging philosophical and personal discourses around sound and music - both in a Fine Arts context and where they intermingle with ‘popular music’.
 
 All listening group materials are archived here: [https://mroystonward.gitlab.io/Britto-Listening-Group/](https://mroystonward.gitlab.io/Britto-Listening-Group/)
+
+The final output is a video consisting of an improvised performance with materials related to my Britto experience combined with some sounds and video footage collected whilst in Dhaka.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OesebJLVgGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

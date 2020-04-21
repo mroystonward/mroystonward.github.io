@@ -39,7 +39,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "mroystonward"
 facebook:
   username               : "murray.roystonward"
   app_id                 :
@@ -93,7 +93,7 @@ author:
       url: "https://github.com/mroystonward"
     - label: "LinkedIn"
       icon: fab fa-linkedin"
-      url: "https://www.linkedin.com/in/murray-royston-ward-b86441188/"
+      url: "https://www.linkedin.com/in/mroystonward/"
 
 # Reading Files
 include:
