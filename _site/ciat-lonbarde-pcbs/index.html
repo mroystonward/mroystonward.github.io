@@ -1,0 +1,835 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Tutorial: Ciat Lonbarde PCBs | Murray Royston-Ward</title>
+<meta name="description" content="A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing. ">
+
+
+  <meta name="author" content="Murray Royston-Ward">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Murray Royston-Ward">
+<meta property="og:title" content="Tutorial: Ciat Lonbarde PCBs">
+<meta property="og:url" content="https://mroystonward.github.io/ciat-lonbarde-pcbs/">
+
+
+  <meta property="og:description" content="A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing. ">
+
+
+
+  <meta property="og:image" content="https://mroystonward.github.io/assets/images/papers-pcb-wide.png">
+
+
+
+  <meta name="twitter:site" content="@mroystonward">
+  <meta name="twitter:title" content="Tutorial: Ciat Lonbarde PCBs">
+  <meta name="twitter:description" content="A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing. ">
+  <meta name="twitter:url" content="https://mroystonward.github.io/ciat-lonbarde-pcbs/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://mroystonward.github.io/assets/images/papers-pcb-wide.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-04-22T09:59:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mroystonward.github.io/ciat-lonbarde-pcbs/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Murray Royston-Ward",
+      "url": "https://mroystonward.github.io/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="9BqlbnC28dNlsZIN5F7-_1kAMmn5UWpA5KSqLDNETUo" />
+
+
+  <meta name="msvalidate.01" content="96DCE1E574483B04092BF0FF201C1F7E">
+
+
+
+  <meta name="yandex-verification" content="f16ac5f34929ca20">
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Murray Royston-Ward Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          ☕️ Hot Contents
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/papers-pcb-wide.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Tutorial: Ciat Lonbarde PCBs
+
+        
+      </h1>
+      
+        <p class="page__lead">A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing.
+</p>
+      
+      
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Murray Royston-Ward" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Murray Royston-Ward</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>💿 The House Organ
+🎛 Tripping on Wires
+🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova’s Fitness</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Sheffield, UK</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://keybase.io/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-keybase" aria-hidden="true"></i><span class="label">Keybase</span></a></li>
+          
+        
+          
+            <li><a href="https://thehouseorgan.xyz" rel="nofollow noopener noreferrer"><i class="fas fa-compact-disc" aria-hidden="true"></i><span class="label">The House Organ</span></a></li>
+          
+        
+          
+            <li><a href="https://thehouseorgan.bandcamp.com/" rel="nofollow noopener noreferrer"><i class="fab fa-bandcamp" aria-hidden="true"></i><span class="label">Bandcamp</span></a></li>
+          
+        
+          
+            <li><a href="https://trippingonwires.bigcartel.com" rel="nofollow noopener noreferrer"><i class="fas fa-shopping-basket" aria-hidden="true"></i><span class="label">Tripping on Wires</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/thehouseorgan" rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mroystonward" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/mroystonward/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin"" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Tutorial: Ciat Lonbarde PCBs">
+    <meta itemprop="description" content="A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing.">
+    <meta itemprop="datePublished" content="2020-04-22T09:59:00+01:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#i-dont-have-time-for-all-of-this">I Don’t Have Time For All Of This</a></li>
+  <li><a href="#credit-where-its-due">Credit Where It’s Due</a></li>
+  <li><a href="#tutorial">Tutorial</a>
+    <ul>
+      <li><a href="#renaming-and-opening-the-files">Renaming and Opening the Files</a></li>
+      <li><a href="#moving-traces-to-the-bottom-layer">Moving Traces to the Bottom Layer</a></li>
+      <li><a href="#duplicating-the-solder-mask">Duplicating the Solder Mask</a></li>
+      <li><a href="#adding-the-board-edge">Adding the Board Edge</a></li>
+      <li><a href="#exporting-to-gerber">Exporting to Gerber</a></li>
+      <li><a href="#final-notes">Final Notes</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>I’m late to this game and missed the connection to the Baltimore late-90s noise scene. I spotted some odd wooden devices in the shop window of <a href="https://www.patch-point.com/">Patch Point</a> a couple of years ago. <a href="https://www.youtube.com/watch?v=f9oZqTS0-HM">Peter Blasser’s world of weird audio electronics</a> has been seeping in ever since.</p>
+
+<p>Of particular note are his ‘<a href="http://ciat-lonbarde.net/paper/">Paper Circuits</a>’. Nothing fancy, no conductive ink, just a print at home substrate for poking and soldering components. They’re a low-cost, accessible entry point for making. Well sort of. They come with a level of <a href="https://llllllll.co/uploads/default/original/3X/e/c/eca6fa88eea1e15aeaed4cdd7f0c36335916172a.jpeg">esoteric symbolism</a> to decipher. Still, it’s easy to get the hang of, and there’s enough online documentation.</p>
+
+<p>I’ve been making the <a href="https://www.ciat-lonbarde.net/paper/man/index.html">Lil’ Sidrassi</a>; a noisily-wild touch interfaced synth. I’ve gone through several iterations; there’s some <a href="https://youtu.be/MTu-WTMIt6s?t=354">out in the wild</a> amongst friends; I’ll share much more of this in the future. Unfortunately, Covid-19 lockdown has prevented me from launching a series of workshops. I’ll reassess when sensible/safe though.</p>
+
+<p>Working on paper has given me a whole new relationship to building, tinkering, prototyping, and relating to my materials. Twisting, knotting, and threading component legs and wires feels closer to textiles. As great as this is, it’s also time-consuming. Building on paper takes longer than building on a Printed Circuit Board (PCB). There’s also more chance of crossed wires and less chance of durability. Transferring these paper circuits to PCB has benefits, especially if hoping to build at scale.</p>
+
+<p>The final bit of pre-amble I wish to mention is working with PCB software. Briefly, my experiences have been less than positive. I’ve faced either a lack of features or bloated over-complexity for my needs—–the idea of ‘drawing’ my circuits appeals far more. Parts libraries are a bore and drawing my own, developing a more personal language, also appeals.  Blasser’s paper circuits were all designed using (Mac only) <a href="https://www.osmondpcb.com/">Osmond PCB</a>. I struggled to understand it at first. Taking <a href="http://www.ciat-lonbarde.net/TIMARACURRICULUM/TIMARATERIALS/cirques/index.html">Blasser’s freely published source files</a>, I hoped to reverse engineer this process and learn how to do it myself.</p>
+
+<h2 id="i-dont-have-time-for-all-of-this">I Don’t Have Time For All Of This</h2>
+
+<p>No worries, I’m sharing all of this work on GitLab - <a href="https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs">https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs</a></p>
+
+<h2 id="credit-where-its-due">Credit Where It’s Due</h2>
+
+<p>I go into more detail within the GitLab repo but thanks to: <a href="https://www.ciat-lonbarde.net/">Peter Blasser/Ciat Lonbarde</a> for publishing the source files; mlogger/mudlogger, Jason Taylor, and Phil Julian for <a href="https://llllllll.co/t/mobenthey-ciat-lonbarde-synthmall-thread/3322/530?u=mlogger">instructions and advice</a>; and the developers of Osmond PCB for their free software (<a href="https://www.osmondpcb.com/donate.html">donate if you can</a>).</p>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p>We’re going to use Osmond (make sure this is installed) to open Blasser’s paper circuit files and then we’re going to make some minor alterations to get them ready for PCB manufacture. I’m no expert, but this represents some basic functional knowledge I have picked up and which works for me.</p>
+
+<h3 id="renaming-and-opening-the-files">Renaming and Opening the Files</h3>
+
+<p>First off, the files don’t have the needed .osm extension.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-001.webp" alt="Mac finder window showing file without .osm extension" class="align-center" /></p>
+
+<p>Rename, in finder, adding .osm at the end.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-002.webp" alt="Renaming a file in Mac finder" class="align-center" /></p>
+
+<p>When prompted, click ‘add’, to add the extension.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-003.webp" alt="Mac finder prompt asking if you want to add the extension" class="align-center" /></p>
+
+<p>If successful, the icon and preview will likely change.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-004.webp" alt="Mac finder window showing file with .osm extension added" class="align-center" /></p>
+
+<p>Double click this, and it should open in Osmond (you did install that already didn’t you?).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-005.webp" alt="Paper circuit opened in Osmond" class="align-center" /></p>
+
+<p>It’s not essential, but I find it easier to set visibility of all layers to ‘No’. This way, you only see the active layer, and you can run through them to check things as you go.</p>
+
+<p>Under the ‘View’ menu select ‘Layers Visible…’</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-019.webp" alt="Osmond menu to select View &gt; Layers Visible" class="align-center" /></p>
+
+<p>In the popup menu, click all the layers to ‘No’ under ‘Visible’.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-006.webp" alt="Osmond window for selecting layer visibility with all layers set to 'no'" class="align-center" /></p>
+
+<p>A note on Layers. In the bottom left corner, you can select the various layers. Here we have Auxiliary 1 and 2, Screen 1 and 2, Mask 1 and 2, and Layer 1. They all perform slightly different functions, some of which will be covered later.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-007.webp" alt="Detail of Osmond window showing layer selection interface" class="align-center" /></p>
+
+<h3 id="moving-traces-to-the-bottom-layer">Moving Traces to the Bottom Layer</h3>
+
+<p>For now, we need to make sure we’ve selected Layer 1 (it should be highlighted if it’s selected).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-008.webp" alt="Osmond window with Layer 1 which shows the circuit's connecting traces" class="align-center" /></p>
+
+<p>This layer has all the connecting lines on it. These are the connecting traces. While it is possible to have dual-layered (or more) boards, with traces on the top and bottom, I want to keep it simple. At the moment, the solder traces, as the only layer, are on the top. We can add another layer to move things around. Select ‘Design &gt; Dup Layer Before’.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-009.webp" alt="Osmond menu for selecting Design &gt; Dup Layer Before" class="align-center" /></p>
+
+<p>This copies the ‘pads’ (the little solder rings around the holes) but not the ‘paths’ (the traces between components).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-010.webp" alt="Osmond window showing the new layer we duplicated" class="align-center" /></p>
+
+<p>It means we have a ‘blank’ (except for the pads) top layer and all the connections on the bottom layer. We’ve essentially moved things down a layer.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-011.webp" alt="Osmond window showing the previous Layer 1 having been moved to Layer 2" class="align-center" /></p>
+
+<h3 id="duplicating-the-solder-mask">Duplicating the Solder Mask</h3>
+
+<p>Next, the solder mask, the coloured lacquer that coats the PCB needs sorting out. Layers M1 and M2 have rings marked that go around component holes. The ‘mask’ is applied around these. If it goes over them, you won’t be able to solder onto it. Currently, M1 has the holes masked properly (the traces were originally on the top layer).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-012.webp" alt="Osmond window showing solder masks on layer M1" class="align-center" /></p>
+
+<p>M2 only shows the actual drill holes but not the solder mask rings. If this went to production, the solder pads would be covered over, and we’d have nothing to solder to.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-013.webp" alt="Osmond window showing no solder masks on layer M2" class="align-center" /></p>
+
+<p>To correct this, we’re going to copy everything on M1 and paste it into M2. </p>
+
+<p>Select layer M1. Cmd+A (or Edit &gt; Select All) followed by Cmd+C (or Edit &gt; Copy). Next select layer M2. Don’t click anywhere or it’ll set the origin point for pasting, and things may be out of alignment. Cmd+V (or Edit &gt; Paste).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-014.webp" alt="Osmond window showing the result of pasting solder masks onto layer M2" class="align-center" /></p>
+
+<p>It may have pasted some text too (on the Rollz it pastes the name of the board) if so, click on the text and delete (backspace).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-015.webp" alt="Osmond window showing layer M2 showing unecessary text removed and solder masks in place" class="align-center" /></p>
+
+<h3 id="adding-the-board-edge">Adding the Board Edge</h3>
+
+<p>The next stage is to add the board edge. I had errors when submitting files for production until I corrected this. Previously, I used a convoluted process between Osmond and KiCad, but this is much simpler.</p>
+
+<p>Go to Layer A1.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-016.webp" alt="Osmond window showing layer A1" class="align-center" /></p>
+
+<p>Select the pen tool.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-017.webp" alt="Detail of Osmond window showing the pen tool" class="align-center" /></p>
+
+<p>Draw a box around the edge of the design (it’s hard to see in the screenshot but the green box right up to the edges).</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-018.webp" alt="Osmond window showing the board edges having been drawn on to layer A1" class="align-center" /></p>
+
+<h3 id="exporting-to-gerber">Exporting to Gerber</h3>
+
+<p>I now like to make all the layers visible again (View &gt; Layers Visible…) for final checks. </p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-020.webp" alt="Osmond window showing layer visibility having been set to yes" class="align-center" /></p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-021.webp" alt="Osmond window view of paper circuit with all layers visible" class="align-center" /></p>
+
+<p>Providing everything looks good we need to get things ready for export. We’re going to generate Gerber files which can be submitted to PCB manufacturers. My experience was that certain file-naming conventions are required. We can use Osmond’s settings to determine this before export (rather than renaming all the files after export).</p>
+
+<p>Go to Edit &gt; Gerber File Names…</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-022.webp" alt="Osmond menu showing Edit &gt; Gerber File Names" class="align-center" /></p>
+
+<p>Use the following naming convention (where foo is the project name, i.e. ultra):</p>
+
+<ul>
+  <li>Drill File: foo.drills_pth.xln</li>
+  <li>Auxiliary Layer 1: foo.boardoutline.ger</li>
+  <li>Auxiliary Layer 2: AUX2.GBR (Leave as is)</li>
+  <li>Silkscreen Layer 1: foo.topsilkscreen.ger</li>
+  <li>Silkscreen Layer 2: foo.bottomsilkscreen.ger</li>
+  <li>Solder Mask Layer 1: foo.topsoldermask.ger</li>
+  <li>Solder Mask Layer 2: foo.bottomsoldermask.ger</li>
+  <li>Layer 1: foo.toplayer.ger</li>
+  <li>Layer 2: foo.bottomlayer.ger</li>
+  <li>Layer 3: LAYER3.GBR (Leave as is)</li>
+  <li>Layer 4: LAYER4.GBR (Leave as is)</li>
+  <li>Layer X: LAYER%d.GBR (Leave as is)</li>
+</ul>
+
+<p>There’s a handy gSheet for calculating these here - <a href="https://docs.google.com/spreadsheets/d/1BWzuB8KpecSda6I6lcm_UFY6Q_5YGrkadQNqYiq9PaU/edit#gid=0">https://docs.google.com/spreadsheets/d/1BWzuB8KpecSda6I6lcm_UFY6Q_5YGrkadQNqYiq9PaU/edit#gid=0</a></p>
+
+<p>I took the screenshot before rather than after but just copy/paste the text into Osmond, one line at a time.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-023.webp" alt="Osmond window for inputting Gerber filenames shown next to a google sheets table for generating the correct Gerber filenames" class="align-center" /></p>
+
+<p>That’s everything all set up. We can now export.</p>
+
+<p>File &gt; Export &gt; Gerber Files… and leave the standard selections.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-024.webp" alt="Osmond menu showing Export &gt; Gerber Files" class="align-center" /></p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-025.webp" alt="Osmond window showing Gerber output settings" class="align-center" /></p>
+
+<p>Sometimes, but not always, I get a warning about all paths not being connected. Others, on forums, report that this can be ignored. So far so good for me too, but I’ll report back if there are are any updates here.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-026.webp" alt="Osmond warning showing 'Not all paths connected'" class="align-center" /></p>
+
+<p>You should end up with a folder full of files.</p>
+
+<p><img src="/assets/images/osmond-gerber-rollz-webp/papers-pcb-027.webp" alt="Mac finder window showing a folder full of correctly named Gerber files" class="align-center" /></p>
+
+<p>I prefer to create a zip file of these. I find it easier to upload the one zip file to manufacturers rather than a folder of files. I’ll presume you know how to do this and won’t repeat the steps here.</p>
+
+<h3 id="final-notes">Final Notes</h3>
+
+<p>I’ve been using <a href="https://jlcpcb.com/">JLCPCB</a> for manufacturing, and the above method has worked for me. I’d recommend making use of any Gerber checking function your manufacturer has available.</p>
+
+<p>If the steps have worked for you, you will have added the .osm extension and opened the files in Osmond. You will have moved the traces to the bottom layer and added the solder mask to this layer. Finally, you will have added the board edge and exported correctly named Gerber files.</p>
+
+<p>Feel free to do this yourself, or use the ones I prepared earlier - <a href="https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs">https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcb</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#osmond" class="page__taxonomy-item" rel="tag">osmond</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#papercircuits" class="page__taxonomy-item" rel="tag">papercircuits</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#pcbs" class="page__taxonomy-item" rel="tag">pcbs</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-22T09:59:00+01:00">April 22, 2020</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/jehova-s-fitness-telegram-bot/" class="pagination--pager" title="Introducing the Jehova’s Fitness Telegram Bot
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/jf-bot-500x300.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jehova-s-fitness-telegram-bot/" rel="permalink">Introducing the Jehova’s Fitness Telegram Bot
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A Telegram bot performing a collaged stream of bits and bobs
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/NottNOISEMARCH_500x300.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/nottnoise-monday-16th-march/" rel="permalink">NottNOISE - Monday 16th March
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I’ll be playing NottNOISE (Nottingham) on Monday 16th March.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/teaser500x300.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/diy-some-notes/" rel="permalink">DIY - Some Notes
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/moldy-onion-500x300.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/shutting-down-bandcamp-onion/" rel="permalink">Shutting Down Bandcamp Onion
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last year I Onionised Bandcamp, that is to say I used EOTK to set up a Tor proxy to Bandcamp.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Murray Royston-Ward. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>

@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
-  <link href="http://localhost:4000/atomtweet.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-21T14:46:50+01:00</updated>
-  <id>http://localhost:4000/atomtweet.xml</id>
+  <link href="https://mroystonward.github.io/atomtweet.xml" rel="self" type="application/atom+xml" />
+  <link href="https://mroystonward.github.io/" rel="alternate" type="text/html" />
+  <updated>2020-04-22T10:15:53+01:00</updated>
+  <id>https://mroystonward.github.io/atomtweet.xml</id>
 
   
   
@@ -34,19 +34,235 @@
     <entry>
       
 
+      <title type="html">I just wrote: "Tutorial: Ciat Lonbarde PCBs" #papercircuits #pcbs #osmond</title>
+      <link href="https://mroystonward.github.io/ciat-lonbarde-pcbs/" rel="alternate" type="text/html" title="Tutorial: Ciat Lonbarde PCBs" />
+      <published>2020-04-22T09:59:00+01:00</published>
+      <updated>2020-04-22T09:59:00+01:00</updated>
+      <id>https://mroystonward.github.io/ciat-lonbarde-pcbs</id>
+      
+      
+        <content type="html" xml:base="https://mroystonward.github.io/ciat-lonbarde-pcbs/">&lt;p&gt;I’m late to this game and missed the connection to the Baltimore late-90s noise scene. I spotted some odd wooden devices in the shop window of &lt;a href=&quot;https://www.patch-point.com/&quot;&gt;Patch Point&lt;/a&gt; a couple of years ago. &lt;a href=&quot;https://www.youtube.com/watch?v=f9oZqTS0-HM&quot;&gt;Peter Blasser’s world of weird audio electronics&lt;/a&gt; has been seeping in ever since.&lt;/p&gt;
+
+&lt;p&gt;Of particular note are his ‘&lt;a href=&quot;http://ciat-lonbarde.net/paper/&quot;&gt;Paper Circuits&lt;/a&gt;’. Nothing fancy, no conductive ink, just a print at home substrate for poking and soldering components. They’re a low-cost, accessible entry point for making. Well sort of. They come with a level of &lt;a href=&quot;https://llllllll.co/uploads/default/original/3X/e/c/eca6fa88eea1e15aeaed4cdd7f0c36335916172a.jpeg&quot;&gt;esoteric symbolism&lt;/a&gt; to decipher. Still, it’s easy to get the hang of, and there’s enough online documentation.&lt;/p&gt;
+
+&lt;p&gt;I’ve been making the &lt;a href=&quot;https://www.ciat-lonbarde.net/paper/man/index.html&quot;&gt;Lil’ Sidrassi&lt;/a&gt;; a noisily-wild touch interfaced synth. I’ve gone through several iterations; there’s some &lt;a href=&quot;https://youtu.be/MTu-WTMIt6s?t=354&quot;&gt;out in the wild&lt;/a&gt; amongst friends; I’ll share much more of this in the future. Unfortunately, Covid-19 lockdown has prevented me from launching a series of workshops. I’ll reassess when sensible/safe though.&lt;/p&gt;
+
+&lt;p&gt;Working on paper has given me a whole new relationship to building, tinkering, prototyping, and relating to my materials. Twisting, knotting, and threading component legs and wires feels closer to textiles. As great as this is, it’s also time-consuming. Building on paper takes longer than building on a Printed Circuit Board (PCB). There’s also more chance of crossed wires and less chance of durability. Transferring these paper circuits to PCB has benefits, especially if hoping to build at scale.&lt;/p&gt;
+
+&lt;p&gt;The final bit of pre-amble I wish to mention is working with PCB software. Briefly, my experiences have been less than positive. I’ve faced either a lack of features or bloated over-complexity for my needs—–the idea of ‘drawing’ my circuits appeals far more. Parts libraries are a bore and drawing my own, developing a more personal language, also appeals.  Blasser’s paper circuits were all designed using (Mac only) &lt;a href=&quot;https://www.osmondpcb.com/&quot;&gt;Osmond PCB&lt;/a&gt;. I struggled to understand it at first. Taking &lt;a href=&quot;http://www.ciat-lonbarde.net/TIMARACURRICULUM/TIMARATERIALS/cirques/index.html&quot;&gt;Blasser’s freely published source files&lt;/a&gt;, I hoped to reverse engineer this process and learn how to do it myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-dont-have-time-for-all-of-this&quot;&gt;I Don’t Have Time For All Of This&lt;/h2&gt;
+
+&lt;p&gt;No worries, I’m sharing all of this work on GitLab - &lt;a href=&quot;https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs&quot;&gt;https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;credit-where-its-due&quot;&gt;Credit Where It’s Due&lt;/h2&gt;
+
+&lt;p&gt;I go into more detail within the GitLab repo but thanks to: &lt;a href=&quot;https://www.ciat-lonbarde.net/&quot;&gt;Peter Blasser/Ciat Lonbarde&lt;/a&gt; for publishing the source files; mlogger/mudlogger, Jason Taylor, and Phil Julian for &lt;a href=&quot;https://llllllll.co/t/mobenthey-ciat-lonbarde-synthmall-thread/3322/530?u=mlogger&quot;&gt;instructions and advice&lt;/a&gt;; and the developers of Osmond PCB for their free software (&lt;a href=&quot;https://www.osmondpcb.com/donate.html&quot;&gt;donate if you can&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h2&gt;
+
+&lt;p&gt;We’re going to use Osmond (make sure this is installed) to open Blasser’s paper circuit files and then we’re going to make some minor alterations to get them ready for PCB manufacture. I’m no expert, but this represents some basic functional knowledge I have picked up and which works for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;renaming-and-opening-the-files&quot;&gt;Renaming and Opening the Files&lt;/h3&gt;
+
+&lt;p&gt;First off, the files don’t have the needed .osm extension.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-001.webp&quot; alt=&quot;Mac finder window showing file without .osm extension&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rename, in finder, adding .osm at the end.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-002.webp&quot; alt=&quot;Renaming a file in Mac finder&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When prompted, click ‘add’, to add the extension.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-003.webp&quot; alt=&quot;Mac finder prompt asking if you want to add the extension&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If successful, the icon and preview will likely change.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-004.webp&quot; alt=&quot;Mac finder window showing file with .osm extension added&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Double click this, and it should open in Osmond (you did install that already didn’t you?).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-005.webp&quot; alt=&quot;Paper circuit opened in Osmond&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s not essential, but I find it easier to set visibility of all layers to ‘No’. This way, you only see the active layer, and you can run through them to check things as you go.&lt;/p&gt;
+
+&lt;p&gt;Under the ‘View’ menu select ‘Layers Visible…’&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-019.webp&quot; alt=&quot;Osmond menu to select View &amp;gt; Layers Visible&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the popup menu, click all the layers to ‘No’ under ‘Visible’.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-006.webp&quot; alt=&quot;Osmond window for selecting layer visibility with all layers set to 'no'&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A note on Layers. In the bottom left corner, you can select the various layers. Here we have Auxiliary 1 and 2, Screen 1 and 2, Mask 1 and 2, and Layer 1. They all perform slightly different functions, some of which will be covered later.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-007.webp&quot; alt=&quot;Detail of Osmond window showing layer selection interface&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;moving-traces-to-the-bottom-layer&quot;&gt;Moving Traces to the Bottom Layer&lt;/h3&gt;
+
+&lt;p&gt;For now, we need to make sure we’ve selected Layer 1 (it should be highlighted if it’s selected).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-008.webp&quot; alt=&quot;Osmond window with Layer 1 which shows the circuit's connecting traces&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This layer has all the connecting lines on it. These are the connecting traces. While it is possible to have dual-layered (or more) boards, with traces on the top and bottom, I want to keep it simple. At the moment, the solder traces, as the only layer, are on the top. We can add another layer to move things around. Select ‘Design &amp;gt; Dup Layer Before’.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-009.webp&quot; alt=&quot;Osmond menu for selecting Design &amp;gt; Dup Layer Before&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This copies the ‘pads’ (the little solder rings around the holes) but not the ‘paths’ (the traces between components).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-010.webp&quot; alt=&quot;Osmond window showing the new layer we duplicated&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It means we have a ‘blank’ (except for the pads) top layer and all the connections on the bottom layer. We’ve essentially moved things down a layer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-011.webp&quot; alt=&quot;Osmond window showing the previous Layer 1 having been moved to Layer 2&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;duplicating-the-solder-mask&quot;&gt;Duplicating the Solder Mask&lt;/h3&gt;
+
+&lt;p&gt;Next, the solder mask, the coloured lacquer that coats the PCB needs sorting out. Layers M1 and M2 have rings marked that go around component holes. The ‘mask’ is applied around these. If it goes over them, you won’t be able to solder onto it. Currently, M1 has the holes masked properly (the traces were originally on the top layer).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-012.webp&quot; alt=&quot;Osmond window showing solder masks on layer M1&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;M2 only shows the actual drill holes but not the solder mask rings. If this went to production, the solder pads would be covered over, and we’d have nothing to solder to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-013.webp&quot; alt=&quot;Osmond window showing no solder masks on layer M2&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To correct this, we’re going to copy everything on M1 and paste it into M2. &lt;/p&gt;
+
+&lt;p&gt;Select layer M1. Cmd+A (or Edit &amp;gt; Select All) followed by Cmd+C (or Edit &amp;gt; Copy). Next select layer M2. Don’t click anywhere or it’ll set the origin point for pasting, and things may be out of alignment. Cmd+V (or Edit &amp;gt; Paste).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-014.webp&quot; alt=&quot;Osmond window showing the result of pasting solder masks onto layer M2&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It may have pasted some text too (on the Rollz it pastes the name of the board) if so, click on the text and delete (backspace).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-015.webp&quot; alt=&quot;Osmond window showing layer M2 showing unecessary text removed and solder masks in place&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-the-board-edge&quot;&gt;Adding the Board Edge&lt;/h3&gt;
+
+&lt;p&gt;The next stage is to add the board edge. I had errors when submitting files for production until I corrected this. Previously, I used a convoluted process between Osmond and KiCad, but this is much simpler.&lt;/p&gt;
+
+&lt;p&gt;Go to Layer A1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-016.webp&quot; alt=&quot;Osmond window showing layer A1&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the pen tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-017.webp&quot; alt=&quot;Detail of Osmond window showing the pen tool&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Draw a box around the edge of the design (it’s hard to see in the screenshot but the green box right up to the edges).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-018.webp&quot; alt=&quot;Osmond window showing the board edges having been drawn on to layer A1&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;exporting-to-gerber&quot;&gt;Exporting to Gerber&lt;/h3&gt;
+
+&lt;p&gt;I now like to make all the layers visible again (View &amp;gt; Layers Visible…) for final checks. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-020.webp&quot; alt=&quot;Osmond window showing layer visibility having been set to yes&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-021.webp&quot; alt=&quot;Osmond window view of paper circuit with all layers visible&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Providing everything looks good we need to get things ready for export. We’re going to generate Gerber files which can be submitted to PCB manufacturers. My experience was that certain file-naming conventions are required. We can use Osmond’s settings to determine this before export (rather than renaming all the files after export).&lt;/p&gt;
+
+&lt;p&gt;Go to Edit &amp;gt; Gerber File Names…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-022.webp&quot; alt=&quot;Osmond menu showing Edit &amp;gt; Gerber File Names&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Use the following naming convention (where foo is the project name, i.e. ultra):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Drill File: foo.drills_pth.xln&lt;/li&gt;
+  &lt;li&gt;Auxiliary Layer 1: foo.boardoutline.ger&lt;/li&gt;
+  &lt;li&gt;Auxiliary Layer 2: AUX2.GBR (Leave as is)&lt;/li&gt;
+  &lt;li&gt;Silkscreen Layer 1: foo.topsilkscreen.ger&lt;/li&gt;
+  &lt;li&gt;Silkscreen Layer 2: foo.bottomsilkscreen.ger&lt;/li&gt;
+  &lt;li&gt;Solder Mask Layer 1: foo.topsoldermask.ger&lt;/li&gt;
+  &lt;li&gt;Solder Mask Layer 2: foo.bottomsoldermask.ger&lt;/li&gt;
+  &lt;li&gt;Layer 1: foo.toplayer.ger&lt;/li&gt;
+  &lt;li&gt;Layer 2: foo.bottomlayer.ger&lt;/li&gt;
+  &lt;li&gt;Layer 3: LAYER3.GBR (Leave as is)&lt;/li&gt;
+  &lt;li&gt;Layer 4: LAYER4.GBR (Leave as is)&lt;/li&gt;
+  &lt;li&gt;Layer X: LAYER%d.GBR (Leave as is)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There’s a handy gSheet for calculating these here - &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1BWzuB8KpecSda6I6lcm_UFY6Q_5YGrkadQNqYiq9PaU/edit#gid=0&quot;&gt;https://docs.google.com/spreadsheets/d/1BWzuB8KpecSda6I6lcm_UFY6Q_5YGrkadQNqYiq9PaU/edit#gid=0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I took the screenshot before rather than after but just copy/paste the text into Osmond, one line at a time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-023.webp&quot; alt=&quot;Osmond window for inputting Gerber filenames shown next to a google sheets table for generating the correct Gerber filenames&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s everything all set up. We can now export.&lt;/p&gt;
+
+&lt;p&gt;File &amp;gt; Export &amp;gt; Gerber Files… and leave the standard selections.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-024.webp&quot; alt=&quot;Osmond menu showing Export &amp;gt; Gerber Files&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-025.webp&quot; alt=&quot;Osmond window showing Gerber output settings&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes, but not always, I get a warning about all paths not being connected. Others, on forums, report that this can be ignored. So far so good for me too, but I’ll report back if there are are any updates here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-026.webp&quot; alt=&quot;Osmond warning showing 'Not all paths connected'&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You should end up with a folder full of files.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/osmond-gerber-rollz-webp/papers-pcb-027.webp&quot; alt=&quot;Mac finder window showing a folder full of correctly named Gerber files&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I prefer to create a zip file of these. I find it easier to upload the one zip file to manufacturers rather than a folder of files. I’ll presume you know how to do this and won’t repeat the steps here.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-notes&quot;&gt;Final Notes&lt;/h3&gt;
+
+&lt;p&gt;I’ve been using &lt;a href=&quot;https://jlcpcb.com/&quot;&gt;JLCPCB&lt;/a&gt; for manufacturing, and the above method has worked for me. I’d recommend making use of any Gerber checking function your manufacturer has available.&lt;/p&gt;
+
+&lt;p&gt;If the steps have worked for you, you will have added the .osm extension and opened the files in Osmond. You will have moved the traces to the bottom layer and added the solder mask to this layer. Finally, you will have added the board edge and exported correctly named Gerber files.&lt;/p&gt;
+
+&lt;p&gt;Feel free to do this yourself, or use the ones I prepared earlier - &lt;a href=&quot;https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcbs&quot;&gt;https://gitlab.com/tripping-on-wires/ciat-lonbarde-pcb&lt;/a&gt;&lt;/p&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Murray Royston-Ward</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="papercircuits" />
+      
+        <category term="pcbs" />
+      
+        <category term="osmond" />
+      
+
+      
+        <summary type="html">A tutorial on turning Peter Blasser's 'Paper Circuits' into files needed for Printed Circuit Board manufacturing.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      
+
       <title type="html">I just wrote: "Introducing the Jehova's Fitness Telegram Bot" #telegram #bot #performance #coronavirus</title>
-      <link href="http://localhost:4000/jehova-s-fitness-telegram-bot/" rel="alternate" type="text/html" title="Introducing the Jehova’s Fitness Telegram Bot" />
+      <link href="https://mroystonward.github.io/jehova-s-fitness-telegram-bot/" rel="alternate" type="text/html" title="Introducing the Jehova’s Fitness Telegram Bot" />
       <published>2020-03-30T20:36:00+01:00</published>
       <updated>2020-03-30T20:36:00+01:00</updated>
-      <id>http://localhost:4000/jehova-s-fitness-telegram-bot</id>
+      <id>https://mroystonward.github.io/jehova-s-fitness-telegram-bot</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/jehova-s-fitness-telegram-bot/">&lt;p&gt;Here’s a conversational performance ‘bot’ I knocked together over a couple of days. It was made to ‘perform’ at &lt;a href=&quot;https://www.facebook.com/events/238080100698038&quot;&gt;Isolated Mass #2 2020&lt;/a&gt; (where it largely failed) but continues to live on, ideal for one-on-one interaction.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/jehova-s-fitness-telegram-bot/">&lt;p&gt;Here’s a conversational performance ‘bot’ I knocked together over a couple of days. It was made to ‘perform’ at &lt;a href=&quot;https://www.facebook.com/events/238080100698038&quot;&gt;Isolated Mass #2 2020&lt;/a&gt; (where it largely failed) but continues to live on, ideal for one-on-one interaction.&lt;/p&gt;
 
 &lt;p&gt;If you want to have a play you can visit &lt;a href=&quot;https://t.me/jehovasfitness_bot&quot;&gt;https://t.me/jehovasfitness_bot&lt;/a&gt; (you’ll need Telegram installed on one of your devices).&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;http://localhost:4000/assets/images/jf-bot.png&quot; alt=&quot;Interface of @jehovasfitness_bot&quot; /&gt;
+  &lt;img src=&quot;https://mroystonward.github.io/assets/images/jf-bot.png&quot; alt=&quot;Interface of @jehovasfitness_bot&quot; /&gt;
   
     &lt;figcaption&gt;
       @jehovasfitness_bot Interface
@@ -100,13 +316,13 @@
       
 
       <title type="html">I just wrote: "NottNOISE - Monday 16th March" #live #gigs #performance</title>
-      <link href="http://localhost:4000/nottnoise-monday-16th-march/" rel="alternate" type="text/html" title="NottNOISE - Monday 16th March" />
+      <link href="https://mroystonward.github.io/nottnoise-monday-16th-march/" rel="alternate" type="text/html" title="NottNOISE - Monday 16th March" />
       <published>2020-03-12T20:06:00+00:00</published>
       <updated>2020-03-12T20:06:00+00:00</updated>
-      <id>http://localhost:4000/nottnoise-monday-16th-march</id>
+      <id>https://mroystonward.github.io/nottnoise-monday-16th-march</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/nottnoise-monday-16th-march/">&lt;p&gt;I’m a bit late posting on here but I’m still pleased to announce I’ll be playing in Nottingham on Monday 16th March.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/nottnoise-monday-16th-march/">&lt;p&gt;I’m a bit late posting on here but I’m still pleased to announce I’ll be playing in Nottingham on Monday 16th March.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/NottNOISEMarchSquare.jpg&quot; alt=&quot;NottNOISE Square Poster Image&quot; /&gt;
@@ -159,13 +375,13 @@
       
 
       <title type="html">I just wrote: "DIY - Some Notes" #DIY #PhD #research</title>
-      <link href="http://localhost:4000/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" />
+      <link href="https://mroystonward.github.io/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" />
       <published>2019-11-17T21:36:00+00:00</published>
       <updated>2019-11-17T21:36:00+00:00</updated>
-      <id>http://localhost:4000/diy-some-notes</id>
+      <id>https://mroystonward.github.io/diy-some-notes</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
 
 &lt;p&gt;Firstly, this won’t be a history of DIY, or even a particularly in-depth consideration. Instead, a brief collection of thoughts, notes, and reflections. A starting point.&lt;/p&gt;
 
@@ -259,13 +475,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "Shutting Down Bandcamp Onion"</title>
-      <link href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" />
+      <link href="https://mroystonward.github.io/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" />
       <published>2019-04-04T03:36:00+01:00</published>
       <updated>2019-04-04T03:36:00+01:00</updated>
-      <id>http://localhost:4000/shutting-down-bandcamp-onion</id>
+      <id>https://mroystonward.github.io/shutting-down-bandcamp-onion</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
 
 &lt;p&gt;My friend and collaborator Kevin Sanders used EOTK to mirror an academic repository as a proof of concept. It got me thinking about what services used by musicians might look like if they also harnessed the privacy enhancing potential of Tor to protect against tracking and monetising user attention. This led to trying out EOTK with Bandcamp as a little experiment.&lt;/p&gt;
 
@@ -312,13 +528,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "An (Opinionated) Critical Guide to DIY Digital Publishing"</title>
-      <link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" />
+      <link href="https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" />
       <published>2018-09-22T19:36:00+01:00</published>
       <updated>2018-09-22T19:36:00+01:00</updated>
-      <id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id>
+      <id>https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I’m briefly introducing this text as it is taken directly from a supplement I recently published with &lt;a href=&quot;https://tqzine.blogspot.com/&quot;&gt;TQ#15&lt;/a&gt;. It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It’s likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;a href=&quot;/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf&quot;&gt;&lt;strong&gt;&lt;i class=&quot;far fa-file-pdf&quot; style=&quot;color:red;font-size:2.441em;&quot;&gt;&lt;/i&gt; Here is a PDF&lt;/strong&gt;&lt;/a&gt; of the supplement, &lt;a href=&quot;/assets/files/an-opinionated-critical-guide-to-diy-digital-publishing.epub&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fas fa-book&quot; style=&quot;color:green;font-size:2.441em;&quot;&gt;&lt;/i&gt; or an ePub ebook&lt;/strong&gt;&lt;/a&gt; and below is the text itself.&lt;/p&gt;
@@ -501,13 +717,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI"</title>
-      <link href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" />
+      <link href="https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" />
       <published>2018-07-31T18:36:00+01:00</published>
       <updated>2018-07-31T18:36:00+01:00</updated>
-      <id>http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id>
+      <id>https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
 
 &lt;p&gt;In my case the main project effected by this is &lt;a href=&quot;https://thehouseorgan.xyz&quot;&gt;thehouseorgan.xyz&lt;/a&gt; and its onion version tho2f4fceyghjl6s.onion.&lt;/p&gt;
 
@@ -821,13 +1037,13 @@ pages:
       
 
       <title type="html">I just wrote: "Non-anonymous Tor Hidden Service using Google Cloud"</title>
-      <link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" />
+      <link href="https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" />
       <published>2018-07-30T18:36:00+01:00</published>
       <updated>2018-07-30T18:36:00+01:00</updated>
-      <id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id>
+      <id>https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
 
 &lt;p&gt;One option would be to take it with me and run it as a portable, nomadic server. This is appealing on several fronts but not practical for me right now as under some circumstances encryption technology and the use of Tor is highly scrutinised and problematic. Whilst I’m simply self-hosting and publishing my own music, therefore acting perfectly legally, not everywhere in the world sees it that way and unwanted scrutiny might jeopardise the projects of others I will be associated with. This is all probably a little extreme but it’s not a risk I’m currently able to take. Basically I’m going to temporarily be in a political context where I’ll very much have to toe the line for personal reasons.&lt;/p&gt;
 
@@ -1118,13 +1334,13 @@ HiddenServicePort 80 127.0.0.1:8080
       
 
       <title type="html">I just wrote: "WNNS Review: Dissolution Matrix in Afterthought of Skiess"</title>
-      <link href="http://localhost:4000/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" />
+      <link href="https://mroystonward.github.io/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" />
       <published>2018-07-29T19:36:00+01:00</published>
       <updated>2018-07-29T19:36:00+01:00</updated>
-      <id>http://localhost:4000/wnns-review</id>
+      <id>https://mroystonward.github.io/wnns-review</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Here’s something I’ve been sitting on for a while.” That was the message accompanying this collection of scruffy, welcoming improvisations from Murray Royston-Ward when the CD-r popped through my letterbox back in January. Well, its been sitting on my listening pile for a fair time too, with regular spins on on the WNNS hi-fi only emphasising its enduring appeal. And while Royston-Ward’s aesthetic sits squarely within the no-audience underground palette of abstract scrapes and splutters, the airy openness of the six tracks on offer here give listeners plenty to get their brains round. Royston-Ward’s ability to alchemise a familiar mix of field recordings, object clatter and free improvisation into something beguiling and intimate  is a pleasure to behold – witness the wibbles and mutters of ‘Images In Hair’, evoking a mellow afternoon sharing tea and smokes with visiting aliens. But my favourite moments are when Royston-Ward languidly picks apart avant-rock forms, as on cuts like ‘Waterpark’. The slow clang of detuned guitar and meandering, zero-gravity bass hint at the sprawl of Jim O’Rourke-era Sonic Youth, but with the arty opacity of those records switched out for beatific drift that repays attention with maximum wiry reward. Thurston – give Murray a call. He’ll get your career back on track.&lt;/p&gt;
@@ -1172,13 +1388,13 @@ HiddenServicePort 80 127.0.0.1:8080
       
 
       <title type="html">I just wrote: "Little Arithmetics"</title>
-      <link href="http://localhost:4000/little-arithmetics/" rel="alternate" type="text/html" title="Little Arithmetics" />
+      <link href="https://mroystonward.github.io/little-arithmetics/" rel="alternate" type="text/html" title="Little Arithmetics" />
       <published>2018-05-15T06:06:00+01:00</published>
       <updated>2018-05-15T06:06:00+01:00</updated>
-      <id>http://localhost:4000/little-arithmetics</id>
+      <id>https://mroystonward.github.io/little-arithmetics</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/little-arithmetics/">&lt;p&gt;I’m hoping to try a little experiment. Things have been quiet here as I’ve temporarily relocated to Berlin and have been sorting things out and getting set up. I’m also hoping to start a PhD in October and with the last round of funding applications due any minute I’ve had other priorities. Still, I’m starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I’m on to some heavier, academic stuff.&lt;/p&gt;
+        <content type="html" xml:base="https://mroystonward.github.io/little-arithmetics/">&lt;p&gt;I’m hoping to try a little experiment. Things have been quiet here as I’ve temporarily relocated to Berlin and have been sorting things out and getting set up. I’m also hoping to start a PhD in October and with the last round of funding applications due any minute I’ve had other priorities. Still, I’m starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I’m on to some heavier, academic stuff.&lt;/p&gt;
 
 &lt;p&gt;Rather than try to write any detailed critiques or appraisals of what I’m reading, for the time-being at least, I just want to pose small thoughts, provocations and responses. More of a thinking out loud than academic response. Hopefully this will allow for something a little briefer and more playful that I can return to in a more considered way at a later date.&lt;/p&gt;
 
@@ -1219,104 +1435,6 @@ HiddenServicePort 80 127.0.0.1:8080
 
       
         <summary type="html">Small Thoughts on Improvisation</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">I just wrote: "Testing Impedance Matching Contact Mic's"</title>
-      <link href="http://localhost:4000/impedance-matched-contact-mics/" rel="alternate" type="text/html" title="Testing Impedance Matching Contact Mic’s" />
-      <published>2018-03-10T21:36:00+00:00</published>
-      <updated>2018-03-10T21:36:00+00:00</updated>
-      <id>http://localhost:4000/impedance-matched-contact-mics</id>
-      
-      
-        <content type="html" xml:base="http://localhost:4000/impedance-matched-contact-mics/">&lt;p&gt;I’ve been thinking about and comparing contact mic’s recently for a combination of reasons. Firstly I have some broad assumptions that I’ve never really tested and secondly I’m curious as to how the ones I make stack up against other offerings. What makes a difference in a contact mic and how much difference does it really make?&lt;/p&gt;
-
-&lt;p&gt;Previously I’ve compared how much difference backing my contact mic’s with epoxy resin (to make them more durable) makes to their performance - &lt;a href=&quot;https://mroystonward.github.io/epoxy-backed-contact-mics/&quot;&gt;https://mroystonward.github.io/epoxy-backed-contact-mics/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The piezo-electric elements used in building contact mic’s are very high impedance and so various methods of matching, buffering and pre-amplifying the signal are recommended. I decided to buy and test an Hosa MIT-129 Impedance Matching Transformer.&lt;/p&gt;
-
-&lt;p&gt;I tested at work on a metal-clad table using some rulers and sellotape to generate sounds for recording. The mic’s were placed roughly equidistant from the sound source.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;/assets/images/imp-a-b-rig.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Impedance Matching A/B Contact Mic Testing with Twangers and Sellotape
-
-    &lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;p&gt;The sounds are a procession of ruler ‘twanging’, scraping and sellotaping. An image of the set up is above and the sound recordings are below (you can download from soundcloud too for your own analysis if you like).&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468993066&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I listened back and also used Ableton Live’s built in spectral analysis. I’m still a complete lay person here but have some conclusions.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;/assets/images/imp-a-b-analysis-1.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Impedance Matching A/B Contact Mic Analysis
-
-    &lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;p&gt;In the image above I’ve highlighted 3 areas on the spectral analysis with the following thoughts:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A. The unmatched input shows a peak of activity below 20Hz. I’m surprised and confused by this. Firstly this kind of response at low frequencies is unexpected with a basic contact mic with no buffering/matching/etc. Secondly, this is below general human hearing and has little to no impact on the perceivable audio performance. I’m not saying these frequencies are meaningless (they undoubtably are part of the signal and potentially influence the perceptible frequencies) but simply, in cases such as this, don’t appear to be significant. I expect that there are perfectly reasonable electrical-engineering reasons for this but I’m still rather surprised.&lt;/li&gt;
-  &lt;li&gt;B. Without impedance matching the contact mic is fairly unresponsive around the 80-90Hz range. This is likely part of where contact mic’s are considered to perform weakly with low frequencies.&lt;/li&gt;
-  &lt;li&gt;C. The unmatched mic has several weak points throughout the 200Hz-2.5kHz range. This again weakens the low to mid range response and robs the recording of some richness. Said richness is present in the impedance matched recording along with generally improved low-mid frequency response.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Below is another screenshot from later on in the track and again we see similar results.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;/assets/images/imp-a-b-analysis-2.jpg&quot; alt=&quot;Impedance Matching A/B Contact Mic Analysis&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Impedance Matching A/B Contact Mic Analysis
-
-    &lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;p&gt;There are further, qualitative differences that I think are worth consideration.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Firstly, the unmatched contact mic bristles with a little something not present on the other channel. As with the epoxy resin comparisons I think this is related to the resonant frequencies of the contact mic itself and I think that these are attenuated by the impedance matching. Whilst that little bit of extra energy might be desirable in certain situations (I’m primarily thinking noise-music type applications) if you’re after more ‘audiophile’ results it’s worth investing in an impedance matching adaptor.&lt;/li&gt;
-  &lt;li&gt;Secondly, the impedance matching transformer reduces the overall recording amplitude slightly. The tracks were normalised but no further edits/processing was undertaken. If I boost the volume on the 2nd channel the noise floor comes up with it (and apparently Zoom H4s can be a bit noisy anyway). This isn’t really a problem. When recording using impedance matching transformers we could raise the input sensitivity so the recording wouldn’t be quieter and it wouldn’t need a boost which brings the noise floor with it. As much as the slight ‘bristling’ mentioned above is possibly linked to resonance, I think the recording volume differences also play a small part. The moral of the story here is simply that I could have gotten a slightly better recording via the matched channel if it wasn’t for the controlled variables of the A/B comparison.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That’s it really, these strike me as the most significant comparisons/differences. Again, I’m quite pleased as to how well an epoxy-backed, unmatched contact mic stacks up in general and would recommend anyone without the budget to invest in more expensive pro-mic’s and additional equipment to get stuck in and have a go. I’m also pleased with how well an impedance matching adaptor complements a relatively cheap contact mic. I paid ~£16.50 for the adaptor which, considering how much use I’m likely to get out of it, seems pretty good value. I’ll probably get a second one at some point so I can use them on both channels on my audio recorder or even use them for live work.&lt;/p&gt;</content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Murray Royston-Ward</name>
-        
-        
-      </author>
-
-      
-
-      
-
-      
-        <summary type="html">More A/B Comparisons</summary>
       
 
       
