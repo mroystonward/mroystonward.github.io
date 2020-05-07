@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
-  <link href="https://mroystonward.github.io/atomtweet.xml" rel="self" type="application/atom+xml" />
-  <link href="https://mroystonward.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-04-24T11:19:16+01:00</updated>
-  <id>https://mroystonward.github.io/atomtweet.xml</id>
+  <link href="http://localhost:4000/atomtweet.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2020-05-07T18:22:54+01:00</updated>
+  <id>http://localhost:4000/atomtweet.xml</id>
 
   
   
@@ -34,14 +34,65 @@
     <entry>
       
 
+      <title type="html">I just wrote: "Archiving Posset-bot" #ai #bot #radiofreemidwich</title>
+      <link href="http://localhost:4000/archiving-possetbot/" rel="alternate" type="text/html" title="Archiving Posset-bot" />
+      <published>2020-05-07T18:22:00+01:00</published>
+      <updated>2020-05-07T18:22:00+01:00</updated>
+      <id>http://localhost:4000/archiving-possetbot</id>
+      
+      
+        <content type="html" xml:base="http://localhost:4000/archiving-possetbot/">&lt;p&gt;I’ve just archived the ‘Joe-Posset-Review-AI’ (&lt;a href=&quot;https://radiofreemidwich.wordpress.com/2018/09/25/the-death-of-music-criticism-cheap-artificial-intelligence-quickly-assimilates-the-rfm-undead-into-weird-new-shapes-creating-a-confident-chrome-voice-that-it-will-use-to-crush-destroy-each-sorr/&quot;&gt;see this write-up&lt;/a&gt;), otherwise know as ‘Posset-bot’, &lt;a href=&quot;https://github.com/mroystonward/Joe-Posset-Review-AI&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some system updates broke things locally. Google have significantly upgraded TensorFlow and the scripts I hacked are no longer compatible.&lt;/p&gt;
+
+&lt;p&gt;I’ve wasted a good few hours trying new installs and adapting the scripts to no avail.&lt;/p&gt;
+
+&lt;p&gt;I’m sure it’s fixable but it’s not a good investment of time just for some tongue-in-cheek fake reviews over at &lt;a href=&quot;https://thoughouseorgan.xyz&quot;&gt;The House Organ&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rest In Power Posset-bot ❤️🤖&lt;/p&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Murray Royston-Ward</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="ai" />
+      
+        <category term="bot" />
+      
+        <category term="radiofreemidwich" />
+      
+
+      
+        <summary type="html">Posset-bot takes early retirement</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      
+
       <title type="html">I just wrote: "Tutorial: Ciat Lonbarde PCBs" #papercircuits #pcbs #osmond</title>
-      <link href="https://mroystonward.github.io/ciat-lonbarde-pcbs/" rel="alternate" type="text/html" title="Tutorial: Ciat Lonbarde PCBs" />
+      <link href="http://localhost:4000/ciat-lonbarde-pcbs/" rel="alternate" type="text/html" title="Tutorial: Ciat Lonbarde PCBs" />
       <published>2020-04-22T09:59:00+01:00</published>
       <updated>2020-04-22T09:59:00+01:00</updated>
-      <id>https://mroystonward.github.io/ciat-lonbarde-pcbs</id>
+      <id>http://localhost:4000/ciat-lonbarde-pcbs</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/ciat-lonbarde-pcbs/">&lt;p&gt;I’m late to this game and missed the connection to the Baltimore late-90s noise scene. I spotted some odd wooden devices in the shop window of &lt;a href=&quot;https://www.patch-point.com/&quot;&gt;Patch Point&lt;/a&gt; a couple of years ago. &lt;a href=&quot;https://www.youtube.com/watch?v=f9oZqTS0-HM&quot;&gt;Peter Blasser’s world of weird audio electronics&lt;/a&gt; has been seeping in ever since.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/ciat-lonbarde-pcbs/">&lt;p&gt;I’m late to this game and missed the connection to the Baltimore late-90s noise scene. I spotted some odd wooden devices in the shop window of &lt;a href=&quot;https://www.patch-point.com/&quot;&gt;Patch Point&lt;/a&gt; a couple of years ago. &lt;a href=&quot;https://www.youtube.com/watch?v=f9oZqTS0-HM&quot;&gt;Peter Blasser’s world of weird audio electronics&lt;/a&gt; has been seeping in ever since.&lt;/p&gt;
 
 &lt;p&gt;Of particular note are his ‘&lt;a href=&quot;http://ciat-lonbarde.net/paper/&quot;&gt;Paper Circuits&lt;/a&gt;’. Nothing fancy, no conductive ink, just a print at home substrate for poking and soldering components. They’re a low-cost, accessible entry point for making. Well sort of. They come with a level of &lt;a href=&quot;https://llllllll.co/uploads/default/original/3X/e/c/eca6fa88eea1e15aeaed4cdd7f0c36335916172a.jpeg&quot;&gt;esoteric symbolism&lt;/a&gt; to decipher. Still, it’s easy to get the hang of, and there’s enough online documentation.&lt;/p&gt;
 
@@ -251,18 +302,18 @@
       
 
       <title type="html">I just wrote: "Introducing the Jehova's Fitness Telegram Bot" #telegram #bot #performance #coronavirus</title>
-      <link href="https://mroystonward.github.io/jehova-s-fitness-telegram-bot/" rel="alternate" type="text/html" title="Introducing the Jehova’s Fitness Telegram Bot" />
+      <link href="http://localhost:4000/jehova-s-fitness-telegram-bot/" rel="alternate" type="text/html" title="Introducing the Jehova’s Fitness Telegram Bot" />
       <published>2020-03-30T20:36:00+01:00</published>
       <updated>2020-03-30T20:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/jehova-s-fitness-telegram-bot</id>
+      <id>http://localhost:4000/jehova-s-fitness-telegram-bot</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/jehova-s-fitness-telegram-bot/">&lt;p&gt;Here’s a conversational performance ‘bot’ I knocked together over a couple of days. It was made to ‘perform’ at &lt;a href=&quot;https://www.facebook.com/events/238080100698038&quot;&gt;Isolated Mass #2 2020&lt;/a&gt; (where it largely failed) but continues to live on, ideal for one-on-one interaction.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/jehova-s-fitness-telegram-bot/">&lt;p&gt;Here’s a conversational performance ‘bot’ I knocked together over a couple of days. It was made to ‘perform’ at &lt;a href=&quot;https://www.facebook.com/events/238080100698038&quot;&gt;Isolated Mass #2 2020&lt;/a&gt; (where it largely failed) but continues to live on, ideal for one-on-one interaction.&lt;/p&gt;
 
 &lt;p&gt;If you want to have a play you can visit &lt;a href=&quot;https://t.me/jehovasfitness_bot&quot;&gt;https://t.me/jehovasfitness_bot&lt;/a&gt; (you’ll need Telegram installed on one of your devices).&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;https://mroystonward.github.io/assets/images/jf-bot.png&quot; alt=&quot;Interface of @jehovasfitness_bot&quot; /&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/jf-bot.png&quot; alt=&quot;Interface of @jehovasfitness_bot&quot; /&gt;
   
     &lt;figcaption&gt;
       @jehovasfitness_bot Interface
@@ -316,13 +367,13 @@
       
 
       <title type="html">I just wrote: "NottNOISE - Monday 16th March" #live #gigs #performance</title>
-      <link href="https://mroystonward.github.io/nottnoise-monday-16th-march/" rel="alternate" type="text/html" title="NottNOISE - Monday 16th March" />
+      <link href="http://localhost:4000/nottnoise-monday-16th-march/" rel="alternate" type="text/html" title="NottNOISE - Monday 16th March" />
       <published>2020-03-12T20:06:00+00:00</published>
       <updated>2020-03-12T20:06:00+00:00</updated>
-      <id>https://mroystonward.github.io/nottnoise-monday-16th-march</id>
+      <id>http://localhost:4000/nottnoise-monday-16th-march</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/nottnoise-monday-16th-march/">&lt;p&gt;I’m a bit late posting on here but I’m still pleased to announce I’ll be playing in Nottingham on Monday 16th March.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/nottnoise-monday-16th-march/">&lt;p&gt;I’m a bit late posting on here but I’m still pleased to announce I’ll be playing in Nottingham on Monday 16th March.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;/assets/images/NottNOISEMarchSquare.jpg&quot; alt=&quot;NottNOISE Square Poster Image&quot; /&gt;
@@ -375,13 +426,13 @@
       
 
       <title type="html">I just wrote: "DIY - Some Notes" #DIY #PhD #research</title>
-      <link href="https://mroystonward.github.io/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" />
+      <link href="http://localhost:4000/diy-some-notes/" rel="alternate" type="text/html" title="DIY - Some Notes" />
       <published>2019-11-17T21:36:00+00:00</published>
       <updated>2019-11-17T21:36:00+00:00</updated>
-      <id>https://mroystonward.github.io/diy-some-notes</id>
+      <id>http://localhost:4000/diy-some-notes</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/diy-some-notes/">&lt;p&gt;A key term within my practice, and the broader music communities I identify with, is DIY. But what does this mean?&lt;/p&gt;
 
 &lt;p&gt;Firstly, this won’t be a history of DIY, or even a particularly in-depth consideration. Instead, a brief collection of thoughts, notes, and reflections. A starting point.&lt;/p&gt;
 
@@ -475,13 +526,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "Shutting Down Bandcamp Onion"</title>
-      <link href="https://mroystonward.github.io/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" />
+      <link href="http://localhost:4000/shutting-down-bandcamp-onion/" rel="alternate" type="text/html" title="Shutting Down Bandcamp Onion" />
       <published>2019-04-04T03:36:00+01:00</published>
       <updated>2019-04-04T03:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/shutting-down-bandcamp-onion</id>
+      <id>http://localhost:4000/shutting-down-bandcamp-onion</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/shutting-down-bandcamp-onion/">&lt;p&gt;Last year I &lt;a href=&quot;https://mroystonward.github.io/onionised-bandcamp/&quot;&gt;Onionised Bandcamp&lt;/a&gt;, that is to say I used EOTK to set up a Tor proxy to Bandcamp.&lt;/p&gt;
 
 &lt;p&gt;My friend and collaborator Kevin Sanders used EOTK to mirror an academic repository as a proof of concept. It got me thinking about what services used by musicians might look like if they also harnessed the privacy enhancing potential of Tor to protect against tracking and monetising user attention. This led to trying out EOTK with Bandcamp as a little experiment.&lt;/p&gt;
 
@@ -528,13 +579,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "An (Opinionated) Critical Guide to DIY Digital Publishing"</title>
-      <link href="https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" />
+      <link href="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/" rel="alternate" type="text/html" title="An (Opinionated) Critical Guide to DIY Digital Publishing" />
       <published>2018-09-22T19:36:00+01:00</published>
       <updated>2018-09-22T19:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing</id>
+      <id>http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+        <content type="html" xml:base="http://localhost:4000/an-opinionated-critical-guide-to-diy-digital-publishing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I’m briefly introducing this text as it is taken directly from a supplement I recently published with &lt;a href=&quot;https://tqzine.blogspot.com/&quot;&gt;TQ#15&lt;/a&gt;. It was quite spur of the moment, having wanted to try and collect some of these thoughts for a while now, so I contacted Andy and he was up for it and it all came together quite quickly. It’s likely to be out-of-date quite soon, but it does represent a current snapshot, of the problematic flows of power and capital that run through our practices of recording and releasing music on-line.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;a href=&quot;/assets/files/2018-08-16-Critical-guide-to-digital-publishing-TQ-supplement-a5.pdf&quot;&gt;&lt;strong&gt;&lt;i class=&quot;far fa-file-pdf&quot; style=&quot;color:red;font-size:2.441em;&quot;&gt;&lt;/i&gt; Here is a PDF&lt;/strong&gt;&lt;/a&gt; of the supplement, &lt;a href=&quot;/assets/files/an-opinionated-critical-guide-to-diy-digital-publishing.epub&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fas fa-book&quot; style=&quot;color:green;font-size:2.441em;&quot;&gt;&lt;/i&gt; or an ePub ebook&lt;/strong&gt;&lt;/a&gt; and below is the text itself.&lt;/p&gt;
@@ -717,13 +768,13 @@ If you send in a listing for a night of EDL-endorsed Black Metal bands or a Rock
       
 
       <title type="html">I just wrote: "Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI"</title>
-      <link href="https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" />
+      <link href="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/" rel="alternate" type="text/html" title="Pushing Jekyll to a Google Cloud based Tor Hidden Service using Gitlab CI" />
       <published>2018-07-31T18:36:00+01:00</published>
       <updated>2018-07-31T18:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id>
+      <id>http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/pushing-jekyll-to-a-google-cloud-based-tor-hidden-service-using-gitlab-ci/">&lt;p&gt;In my previous post I migrated from a Raspberry Pi home server to Google Compute Engine for the purpose of hosting Tor Hidden Service versions of my websites. This was primarily as I will temporarily not be able to run small home servers rather than due to any particular limitations of a home based setup.&lt;/p&gt;
 
 &lt;p&gt;In my case the main project effected by this is &lt;a href=&quot;https://thehouseorgan.xyz&quot;&gt;thehouseorgan.xyz&lt;/a&gt; and its onion version tho2f4fceyghjl6s.onion.&lt;/p&gt;
 
@@ -1037,13 +1088,13 @@ pages:
       
 
       <title type="html">I just wrote: "Non-anonymous Tor Hidden Service using Google Cloud"</title>
-      <link href="https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" />
+      <link href="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/" rel="alternate" type="text/html" title="Non-anonymous Tor Hidden Service using Google Cloud" />
       <published>2018-07-30T18:36:00+01:00</published>
       <updated>2018-07-30T18:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud</id>
+      <id>http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/non-anonymous-tor-hidden-service-using-google-cloud/">&lt;p&gt;I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.&lt;/p&gt;
 
 &lt;p&gt;One option would be to take it with me and run it as a portable, nomadic server. This is appealing on several fronts but not practical for me right now as under some circumstances encryption technology and the use of Tor is highly scrutinised and problematic. Whilst I’m simply self-hosting and publishing my own music, therefore acting perfectly legally, not everywhere in the world sees it that way and unwanted scrutiny might jeopardise the projects of others I will be associated with. This is all probably a little extreme but it’s not a risk I’m currently able to take. Basically I’m going to temporarily be in a political context where I’ll very much have to toe the line for personal reasons.&lt;/p&gt;
 
@@ -1334,13 +1385,13 @@ HiddenServicePort 80 127.0.0.1:8080
       
 
       <title type="html">I just wrote: "WNNS Review: Dissolution Matrix in Afterthought of Skiess"</title>
-      <link href="https://mroystonward.github.io/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" />
+      <link href="http://localhost:4000/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" />
       <published>2018-07-29T19:36:00+01:00</published>
       <updated>2018-07-29T19:36:00+01:00</updated>
-      <id>https://mroystonward.github.io/wnns-review</id>
+      <id>http://localhost:4000/wnns-review</id>
       
       
-        <content type="html" xml:base="https://mroystonward.github.io/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
+        <content type="html" xml:base="http://localhost:4000/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Here’s something I’ve been sitting on for a while.” That was the message accompanying this collection of scruffy, welcoming improvisations from Murray Royston-Ward when the CD-r popped through my letterbox back in January. Well, its been sitting on my listening pile for a fair time too, with regular spins on on the WNNS hi-fi only emphasising its enduring appeal. And while Royston-Ward’s aesthetic sits squarely within the no-audience underground palette of abstract scrapes and splutters, the airy openness of the six tracks on offer here give listeners plenty to get their brains round. Royston-Ward’s ability to alchemise a familiar mix of field recordings, object clatter and free improvisation into something beguiling and intimate  is a pleasure to behold – witness the wibbles and mutters of ‘Images In Hair’, evoking a mellow afternoon sharing tea and smokes with visiting aliens. But my favourite moments are when Royston-Ward languidly picks apart avant-rock forms, as on cuts like ‘Waterpark’. The slow clang of detuned guitar and meandering, zero-gravity bass hint at the sprawl of Jim O’Rourke-era Sonic Youth, but with the arty opacity of those records switched out for beatific drift that repays attention with maximum wiry reward. Thurston – give Murray a call. He’ll get your career back on track.&lt;/p&gt;
@@ -1378,63 +1429,6 @@ HiddenServicePort 80 127.0.0.1:8080
 
       
         <summary type="html">I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">I just wrote: "Little Arithmetics"</title>
-      <link href="https://mroystonward.github.io/little-arithmetics/" rel="alternate" type="text/html" title="Little Arithmetics" />
-      <published>2018-05-15T06:06:00+01:00</published>
-      <updated>2018-05-15T06:06:00+01:00</updated>
-      <id>https://mroystonward.github.io/little-arithmetics</id>
-      
-      
-        <content type="html" xml:base="https://mroystonward.github.io/little-arithmetics/">&lt;p&gt;I’m hoping to try a little experiment. Things have been quiet here as I’ve temporarily relocated to Berlin and have been sorting things out and getting set up. I’m also hoping to start a PhD in October and with the last round of funding applications due any minute I’ve had other priorities. Still, I’m starting to make time again for reading, after a few indulgences with Ursula K Le Guin and William Gibson I’m on to some heavier, academic stuff.&lt;/p&gt;
-
-&lt;p&gt;Rather than try to write any detailed critiques or appraisals of what I’m reading, for the time-being at least, I just want to pose small thoughts, provocations and responses. More of a thinking out loud than academic response. Hopefully this will allow for something a little briefer and more playful that I can return to in a more considered way at a later date.&lt;/p&gt;
-
-&lt;p&gt;I’ve just started reading Joseph Nechvatal’s ‘Immersion Into Noise’ (2011) which, very early on contains the following Deleuze and Guattari quote (and which these thoughts will have nothing to say on beyond this quote):&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What is real is the becoming itself, the block of becoming, not the supposedly fixed terms through which that which becomes passes. — Gilles Deleuze and Félix Guattari, A Thousand Plateaus&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’d like to consider this in terms of Improvised Music Practice. I’m going to leave that term wide open in terms of types, idioms, non-idioms, genres, styles etc. of Improvised Music Practice and all the other attendant forms of labor and participation (audience, electronics DIYer, experimental instrument builder, promoter etc.) Instead I’d like to suggest a commonality. Forms of music practice centred around spontaneity of creation. I’m wary of a view of creativity that suggest thoughts put into practice so I will simply generalise this as a gestural process of doing (this may later have problems but it’s an abstraction for the purposes of my immediate thinking).&lt;/p&gt;
-
-&lt;p&gt;Coming back to the above quote perhaps we can bootstrap this generalisation as creative activity that centres becoming rather than the things that have become. Long standing questions of the role of recorded artefacts of improvisation add challenge to this rationale but I would posit that these documents, when employed within improvised music practice are frequently an extension of processes which centre becoming rather than replacing these processes with a renewed focus on what has become (the role these may go to play in defining improvised music history and practice not withstanding).&lt;/p&gt;
-
-&lt;p&gt;Why then do we bother with distinctions between forms of improvised music practice? From Jazz improvisation to Free Improv, improvised harsh noise to the No Audience Underground?&lt;/p&gt;
-
-&lt;p&gt;My thinking is simply dissatisfaction. Critical engagement with the boundaries that calcify around such practices. Free Improvisers such as members of AMM were deeply influenced by Jazz musicians but recognised that, not being Black Americans, the boundaries around Jazz didn’t fit a white European perspective (and without attending to such problematics would easily reinforce forms of colonial power and cultural appropriation). Likewise, Free Improvisation, via characters such as Cardew and The Scratch Orchestra has a lot of relevance to challenging compositional authority imposed upon musicians within a Western Art Music tradition and various political discourses of the time. Whilst there are huge overlaps, Free Improv has less to say about the non-hierarchical and participatory social functions of the No Audience Underground (rather than the non-hierarchical and participatory aspects of art music ensembles). Whilst there is little that goes on at an average NAU show organised in the back room of a pub or a practice space in Sheffield, Leeds, Manchester etc. that differs significantly from the histories of Fluxus, free improv and psychedelic rock, they often feel a far cry away from the somewhat poe-faced arts council funded and culturally legitimised world of Free Improv shows at an arts centre or part of a Jazz festival. The fact the NAU shows take place primarily within a welcoming and open yet familial and insular social context is a significant differentiation. It feels somewhat naive to say but it’s for the ‘people’ more that for the ‘culture’ - yet at the same time there is a recognition that culture is something you make for yourselves rather than wait for someone else to make for you.&lt;/p&gt;
-
-&lt;p&gt;I’m really not suggesting any of these forms are radically different from each other yet there is a radical praxis in critiquing and developing different forms of or social environments for improvised music practice. What I want to suggest then is that this radical praxis is itself part of the centring of becoming within improvised music practice. A part of the ‘doing’ of improvisation.&lt;/p&gt;
-
-&lt;p&gt;Surely similar forces are at play in various sub-cultural shifts and genre fractures throughout forms of popular, classical, art and academic music (not to mention other cultural forms, scientific branches and philosophical ‘turns’). It’s not so much a case of saying improvised music is radically different, than a case of saying that such radical praxis is foregrounded by the nature of improvised music practice itself.&lt;/p&gt;</content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Murray Royston-Ward</name>
-        
-        
-      </author>
-
-      
-
-      
-
-      
-        <summary type="html">Small Thoughts on Improvisation</summary>
       
 
       
