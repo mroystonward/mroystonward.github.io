@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
   <link href="http://localhost:4000/atomtweet.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-07T18:22:54+01:00</updated>
+  <updated>2020-08-06T12:36:02+01:00</updated>
   <id>http://localhost:4000/atomtweet.xml</id>
 
   
@@ -31,6 +31,81 @@
   
 
 
+    <entry>
+      
+
+      <title type="html">I just wrote: "Clearing the Decks"</title>
+      <link href="http://localhost:4000/clearing-the-decks/" rel="alternate" type="text/html" title="Clearing the Decks" />
+      <published>2020-08-06T12:35:00+01:00</published>
+      <updated>2020-08-06T12:35:00+01:00</updated>
+      <id>http://localhost:4000/clearing-the-decks</id>
+      
+      
+        <content type="html" xml:base="http://localhost:4000/clearing-the-decks/">&lt;p&gt;I’ve just been writing for my PhD progression. It’s been an intense couple of months but there’s now a brief respite as my report is reviewed for corrections prior to viva.&lt;/p&gt;
+
+&lt;p&gt;Such tasks inevitably lead to a letting go of other things around me. I probably don’t eat quite as well, the todo list gets left undone, etc. Now I have a brief respite and I’ve cut my hair, caught up on laundry, and bought an excess of fruit and vegetables. This kind of self-redemption is somewhat addictive though, triggering dopamine hits that get you through pandemic limbo. So… I’m having a tidy.&lt;/p&gt;
+
+&lt;p&gt;First on the list is The House Organ. It has been keeping quiet. This isn’t much of a problem, it’s there when I need it. There are a bunch of facets that simply aren’t proving worthwhile though. I’d like to slough them off and clear out a bit of brain space. It’s funny how these things don’t demand active thinking or maintenance, but they still occupy space in the psyche and start to feel like dead weight.&lt;/p&gt;
+
+&lt;p&gt;What am I talking about then? Torrents, Tor, Trackers, and DAT in particular.&lt;/p&gt;
+
+&lt;h2 id=&quot;torrents&quot;&gt;Torrents&lt;/h2&gt;
+
+&lt;p&gt;I started sharing release via torrents simply as an alternative. The utopian heyday of internet piracy is long gone and the ideological cracks are apparent. As are the false narratives from vested corporate interest that make ALL torrents sound illicit. Torrents are a simple and effective method of sharing data. In this case, you grab the audio files directly from me and anyone else sharing. Creating torrents is easy. Software to download from them is free and easy. Finally, it doesn’t rely on web infrastructure—it’s peer to peer—so we don’t have to fork out for cloud storage or hosting (which would benefit the big internet behemoths more than anyone else).&lt;/p&gt;
+
+&lt;p&gt;The problem is, there just doesn’t seem to be much interest in them, at least in my community, anymore. I can count on one finger the amount of times anyone has download a release via a torrent of mine. I run them off of a raspberry pi at home which takes periodic server admin tasks, updates, fixes, and ultimately leeches a little home network bandwidth and costs (though a relatively small amount) electricity to keep running. In the time I spent in Berlin, I’m also aware of a complete anti-torrent vibe as people are scared of fines and being cut-off for engaging in torrents full-stop. As I was subletting, or at friends, I respected the house rules and so I don’t have any certainty but, my feeling was a complete lack of understanding on differences between legal and illicit torrents. In The House Organ’s case, it’s my stuff and so I can share it via torrent if I like, no laws or copyright are being breached. The feeling in Germany was that torrents are illegal full stop. This wont be the only place, and in some countries it probably is illegal full stop.&lt;/p&gt;
+
+&lt;p&gt;The point of all this is: the small amount of cost I incur and time sunk into maintaining the torrents on the site aren’t worth it. There is zero engagement with it.&lt;/p&gt;
+
+&lt;h2 id=&quot;tor&quot;&gt;Tor&lt;/h2&gt;
+
+&lt;p&gt;The so-called (and I fundamentally disagree with this nomenclature) Dark Web. There’s a complete lack of understanding about what this is or why it might be good. Using Tor, outside of criminality, is completely political. It’s conceiving of the internet as a fundamentally different beast to the surveillance and services model that dominates. Few are interested and I can count on zero fingers the amount of people that have engaged with the Tor version of The House Organ.&lt;/p&gt;
+
+&lt;p&gt;That’s a little unfair. I have no stats. There is no tracking at all. What I can say is that no one has shown any interest and that no-one has bothered with the torrents, which is a rough indicator. Why? Well, if you went on the House Organ via Tor and then listened, downloaded, engaged through Bandcamp or Social Media then you’re probably not really engaged with Tor. If you’re going through Tor, you probably want to go the torrent route.&lt;/p&gt;
+
+&lt;p&gt;Similarly, it takes a little maintenance and runs on the same raspberry pi as above so costs a little to keep going.&lt;/p&gt;
+
+&lt;h2 id=&quot;trackers&quot;&gt;Trackers&lt;/h2&gt;
+
+&lt;p&gt;I rolled my own torrent tracker. Mostly for the benefit of my own torrents (see above). One person took me up on the offer of tracking their torrent, and then no-one else. The torrents aren’t being used, the tracker isn’t being used, and no-one is engaged. Again, runs on the raspberry pi (I’m getting a lot off of this little £30 computer) so costs a little time and electricity.&lt;/p&gt;
+
+&lt;h2 id=&quot;dat&quot;&gt;DAT&lt;/h2&gt;
+
+&lt;p&gt;Another peer to peer technology. Initially it showed a lot of promise but it’s a small team and development can be a bit hit and miss. I’ve tried to engage with the community. Firstly, I submitting a ticket to get The House Organ listed on their showcase of DAT projects. This hasn’t been actioned after nearly a year. There’s other priorities, I’m not complaining, but trying this project hasn’t benefited me. I’ve also raised some bug tickets regarding large archives but this hasn’t been fixed. The developers have responded and are working on things. I’m not saying it’s a dead project or the devs are uninterested. I am saying it hasn’t worked out.&lt;/p&gt;
+
+&lt;p&gt;No-one has engaged via DAT either. I don’t have logs or trackers but you can tell if anyone has p2p accessed the site, and no-one has. This doesn’t run off of the raspberry pi but, there are still some computer organisation and update tasks I have to periodically tend to. It also means keeping software installed that has no benefit to me and so I’d rather ditch it and keep things tidy.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;So, that’s basically all of the peer to peer aspects of The House Organ. They have failed to serve me, or you. No-one uses these facilities. I’d be better focussing on Bandcamp and the like. Resonate isn’t fulfilling its potential but I’m not ready to ditch it yet. Same with Spotify etc. I get no listeners there either but it doesn’t cost me (other than my soul of course).&lt;/p&gt;
+
+&lt;p&gt;I’m going to start taking things down and tidying up. Feel free to get in touch about any of this.&lt;/p&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Murray Royston-Ward</name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html">I’ve just been writing for my PhD progression. It’s been an intense couple of months but there’s now a brief respite as my report is reviewed for corrections prior to viva.</summary>
+      
+
+      
+      
+    </entry>
+  
     <entry>
       
 
@@ -1375,60 +1450,6 @@ HiddenServicePort 80 127.0.0.1:8080
 
       
         <summary type="html">I’ve previously talked about how to set up Tor Hidden Services, at home on a Raspberry Pi. As I’ll be moving around soon and not have a permanent base to run such a mini-server I have been thinking about what to do.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">I just wrote: "WNNS Review: Dissolution Matrix in Afterthought of Skiess"</title>
-      <link href="http://localhost:4000/wnns-review/" rel="alternate" type="text/html" title="WNNS Review: Dissolution Matrix in Afterthought of Skiess" />
-      <published>2018-07-29T19:36:00+01:00</published>
-      <updated>2018-07-29T19:36:00+01:00</updated>
-      <id>http://localhost:4000/wnns-review</id>
-      
-      
-        <content type="html" xml:base="http://localhost:4000/wnns-review/">&lt;p&gt;I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Here’s something I’ve been sitting on for a while.” That was the message accompanying this collection of scruffy, welcoming improvisations from Murray Royston-Ward when the CD-r popped through my letterbox back in January. Well, its been sitting on my listening pile for a fair time too, with regular spins on on the WNNS hi-fi only emphasising its enduring appeal. And while Royston-Ward’s aesthetic sits squarely within the no-audience underground palette of abstract scrapes and splutters, the airy openness of the six tracks on offer here give listeners plenty to get their brains round. Royston-Ward’s ability to alchemise a familiar mix of field recordings, object clatter and free improvisation into something beguiling and intimate  is a pleasure to behold – witness the wibbles and mutters of ‘Images In Hair’, evoking a mellow afternoon sharing tea and smokes with visiting aliens. But my favourite moments are when Royston-Ward languidly picks apart avant-rock forms, as on cuts like ‘Waterpark’. The slow clang of detuned guitar and meandering, zero-gravity bass hint at the sprawl of Jim O’Rourke-era Sonic Youth, but with the arty opacity of those records switched out for beatific drift that repays attention with maximum wiry reward. Thurston – give Murray a call. He’ll get your career back on track.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://weneednoswords.wordpress.com/2018/07/21/murray-royston-ward-dissolution-matrix-in-afterthought-of-skies/&quot;&gt;https://weneednoswords.wordpress.com/2018/07/21/murray-royston-ward-dissolution-matrix-in-afterthought-of-skies/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If anyone wants to listen for themselves it’s available through a variety of options:&lt;/p&gt;
-
-&lt;p&gt;Firstly, it’s self-released by &lt;a href=&quot;https://thehouseorgan.xyz/2018/01/01/dissolution-matrix-in-afterthought-of-skies.html&quot;&gt;The House Organ and can be torrented freely and legally&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The House Organ is also available via Tor Hidden Services &lt;a href=&quot;tho2f4fceyghjl6s.onion&quot;&gt;tho2f4fceyghjl6s.onion&lt;/a&gt; and via the p2p DAT protocol &lt;a href=&quot;dat:thehouseorgan.hashbase.io&quot;&gt;dat:thehouseorgan.hashbase.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;There is the &lt;a href=&quot;https://resonate.is/album/9998/murray_royston-ward-dissolution_matrix_in_afterthought_of_skies/&quot;&gt;co-operative streaming service Resonate&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And of course there is Bandcamp:&lt;/p&gt;
-&lt;iframe style=&quot;border: 0; width: 100%; height: 120px;&quot; src=&quot;https://bandcamp.com/EmbeddedPlayer/album=847700786/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/&quot; seamless=&quot;&quot;&gt;&lt;a href=&quot;http://mroystonward.bandcamp.com/album/dissolution-matrix-in-afterthought-of-skies&quot;&gt;Dissolution Matrix in Afterthought of Skies by Murray Royston-Ward&lt;/a&gt;&lt;/iframe&gt;</content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Murray Royston-Ward</name>
-        
-        
-      </author>
-
-      
-
-      
-
-      
-        <summary type="html">I just wanted to share this most welcome review, from the ever-excellent We Need No Swords, of “Dissolution Matrix in Afterthought of Skies”</summary>
       
 
       

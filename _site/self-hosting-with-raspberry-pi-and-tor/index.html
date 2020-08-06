@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Self Hosting with Raspberry Pi and Tor | Murray Royston-Ward</title>
-<meta name="description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.  ">
+<meta name="description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.">
 
 
   <meta name="author" content="Murray Royston-Ward">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://localhost:4000/self-hosting-with-raspberry-pi-and-tor/">
 
 
-  <meta property="og:description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.  ">
+  <meta property="og:description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.">
 
 
 
@@ -33,7 +33,7 @@
 
   <meta name="twitter:site" content="@mroystonward">
   <meta name="twitter:title" content="Self Hosting with Raspberry Pi and Tor">
-  <meta name="twitter:description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.  ">
+  <meta name="twitter:description" content="A year or so ago I started experimenting with digital self publishing. Having become increasingly politicised with regard to both state and commercial online surveillance I also started questioning the role centralised platforms such as soundcloud and bandcamp play in independent music distribution. I’ll write more on this later — on motivations and failures in my critique/experience — but for now I wanted to talk about how I set up a Raspberry Pi webserver at home for publishing a Tor hidden service.">
   <meta name="twitter:url" content="http://localhost:4000/self-hosting-with-raspberry-pi-and-tor/">
 
   
@@ -97,6 +97,7 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
   <style>
@@ -199,15 +200,26 @@
       </h1>
       
       
-        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
+  <p class="page__meta">
 
+    
 
-  8 minute read
+    
 
-</p>
+    
       
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        8 minute read
+      
+    
+
+  </p>
+
       
       
     </div>
@@ -573,8 +585,9 @@ sudo usermod -a -G www-data pi
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-16T03:36:00+00:00">January 16, 2018</time></p>
-        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-16T03:36:00+00:00">January 16, 2018</time></p>
+
+
       </footer>
 
       
@@ -610,25 +623,79 @@ sudo usermod -a -G www-data pi
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+        <img src="/assets/images/teaser500x300.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/clearing-the-decks/" rel="permalink">Clearing the Decks
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        5 minute read
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">I’ve just been writing for my PhD progression. It’s been an intense couple of months but there’s now a brief respite as my report is reviewed for corrections...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
         <img src="/assets/images/archiving-possetbot-500x300.jpg" alt="">
       </div>
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/archiving-possetbot/" rel="permalink">Archiving Posset-bot
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
+  <p class="page__meta">
 
-
-  less than 1 minute read
-
-</p>
     
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        less than 1 minute read
+      
+    
+
+  </p>
+
     <p class="archive__item-excerpt" itemprop="description">Posset-bot takes early retirement
 </p>
   </article>
@@ -646,22 +713,33 @@ sudo usermod -a -G www-data pi
         <img src="/assets/images/papers-pcb-500x300.png" alt="">
       </div>
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/ciat-lonbarde-pcbs/" rel="permalink">Tutorial: Ciat Lonbarde PCBs
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
+  <p class="page__meta">
 
-
-  8 minute read
-
-</p>
     
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        8 minute read
+      
+    
+
+  </p>
+
     <p class="archive__item-excerpt" itemprop="description">A tutorial on turning Peter Blasser’s ‘Paper Circuits’ into files needed for Printed Circuit Board manufacturing.
 </p>
   </article>
@@ -679,56 +757,34 @@ sudo usermod -a -G www-data pi
         <img src="/assets/images/jf-bot-500x300.png" alt="">
       </div>
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/jehova-s-fitness-telegram-bot/" rel="permalink">Introducing the Jehova’s Fitness Telegram Bot
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
+  <p class="page__meta">
 
-
-  1 minute read
-
-</p>
     
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        1 minute read
+      
+    
+
+  </p>
+
     <p class="archive__item-excerpt" itemprop="description">A Telegram bot performing a collaged stream of bits and bobs
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/NottNOISEMARCH_500x300.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/nottnoise-monday-16th-march/" rel="permalink">NottNOISE - Monday 16th March
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  less than 1 minute read
-
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">I’ll be playing NottNOISE (Nottingham) on Monday 16th March.
 </p>
   </article>
 </div>
@@ -779,7 +835,6 @@ sudo usermod -a -G www-data pi
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
