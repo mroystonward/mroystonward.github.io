@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
@@ -66,17 +66,18 @@ analytics:
 author:
   name             :
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : |+
-    🎛 [Tripping on Wires](https://www.trippingonwires.com/)
-
-    💿 [The House Organ](https://thehouseorgan.xyz)
-
-    🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
+  bio              : 
   location         : "Sheffield, UK"
   links:
+    - label: "Tripping on Wires"
+      icon: "fas fa-sliders-h"
+      url: "https://www.trippingonwires.com"
+    - label: "The House Organ"
+      icon: "fas fa-compact-disc"
+      url: "https://thehouseorgan.xyz"
     - label: "Bandcamp"
       icon: "fab fa-bandcamp"
-      url: "https://thehouseorgan.bandcamp.com/"
+      url: "https://thehouseorgan.bandcamp.com"
     - label: "BigCartel"
       icon: "fas fa-shopping-basket"
       url: "https://shop.trippingonwires.com"

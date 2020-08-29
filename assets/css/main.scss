@@ -1,15 +1,20 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$bandcamp-color: #629aa9 !default;
-$shopping-basket-color: #BD4459 !default;
+$bandcamp-color: #fff6fb !default;
+$shopping-basket-color: #fff6fb !default;
+$keybase-color: #fff6fb !default;
+$github-color: #fff6fb !default;
+$gitlab-color: #fff6fb !default;
+$linkedin-color: #fff6fb !default;
+$rss-color: #fff6fb !default;
 
 .author__content a:hover{
     text-decoration: underline;
 }
 
 .social-icons {
-  .fa-bandcamp {
+  .fab-bandcamp {
     color: $bandcamp-color;
   }
   .fa-shopping-basket {
