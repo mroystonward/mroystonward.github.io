@@ -8,8 +8,10 @@ title                    : "Murray Royston-Ward"
 title_separator          : "|"
 name                     : "Murray Royston-Ward"
 description              : |+
-  🎛 Tripping on Wires<br/>
-  💿 The House Organ<br/>
+  🎛 [Tripping on Wires](https://www.trippingonwires.com/)
+
+  💿 [The House Organ](https://thehouseorgan.xyz)
+
   🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
 url                      : https://mroystonward.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -90,6 +92,17 @@ author:
     - label: "LinkedIn"
       icon: fab fa-linkedin"
       url: "https://www.linkedin.com/in/mroystonward/"
+
+# Footer
+footer:
+  links:
+    - label: "Post Archive"
+      icon: "fas fa-archive"
+      url: "/year-archive/"
+    - label: "Sitemap"
+      icon: "fas fa-sitemap"
+      url: "/sitemap/"
+
 
 # Reading Files
 include:
