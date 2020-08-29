@@ -8,14 +8,14 @@ title                    : "Murray Royston-Ward"
 title_separator          : "|"
 name                     : "Murray Royston-Ward"
 description              : |+
-  💿 The House Organ
-  🎛 Tripping on Wires
+  🎛 Tripping on Wires<br/>
+  💿 The House Organ<br/>
   🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
-url                      : https://mroystonward.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://mroystonward.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : mroystonward/mroystonward.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/teaser500x300.jpg"
-masthead_title           : "☕️ Hot Contents"
+masthead_title           :
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -39,9 +39,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "mroystonward"
+  username               :
 facebook:
-  username               : "murray.roystonward"
+  username               :
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/gtr-tape.jpg" # Open Graph/Twitter default site image
@@ -62,29 +62,25 @@ analytics:
 
 # Site Author
 author:
-  name             : "Murray Royston-Ward"
+  name             :
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : |+
-    💿 The House Organ
-    🎛 Tripping on Wires
+    🎛 [Tripping on Wires](https://www.trippingonwires.com/)
+
+    💿 [The House Organ](https://thehouseorgan.xyz)
+
     🎵 Murray Royston-Ward ➕ The Sons of David Ginola ➕ Jehova's Fitness
   location         : "Sheffield, UK"
   links:
-    - label: "Keybase"
-      icon: "fab fa-keybase"
-      url: "https://keybase.io/mroystonward"
-    - label: "The House Organ"
-      icon: "fas fa-compact-disc"
-      url: "https://thehouseorgan.xyz"
     - label: "Bandcamp"
       icon: "fab fa-bandcamp"
       url: "https://thehouseorgan.bandcamp.com/"
-    - label: "Tripping on Wires"
+    - label: "BigCartel"
       icon: "fas fa-shopping-basket"
-      url: "https://trippingonwires.bigcartel.com"
-    - label: "Instagram"
-      icon: "fab fa-instagram"
-      url: "https://instagram.com/thehouseorgan"
+      url: "https://shop.trippingonwires.com"
+    - label: "Keybase"
+      icon: "fab fa-keybase"
+      url: "https://keybase.io/mroystonward"
     - label: "GitLab"
       icon: "fab fa-gitlab"
       url: "https://gitlab.com/mroystonward"

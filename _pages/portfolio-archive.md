@@ -2,9 +2,7 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-header:
-  image: /assets/images/gtr-tape.jpg
-author_profile: false
+author_profile: true
 ---
 
 <div class="grid__wrapper">

@@ -4,6 +4,10 @@
 $bandcamp-color: #629aa9 !default;
 $shopping-basket-color: #BD4459 !default;
 
+.author__content a:hover{
+    text-decoration: underline;
+}
+
 .social-icons {
   .fa-bandcamp {
     color: $bandcamp-color;
