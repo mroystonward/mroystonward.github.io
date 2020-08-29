@@ -4,7 +4,7 @@ excerpt: "Between the 25th and the 30th of September 2013, in groups and alone, 
 date: 2013-09-25
 header:
   image: /assets/images/portfolio/water-001.jpg
-  teaser: /assets/images/portfolio/water-001.jpg
+  teaser: /assets/images/portfolio/t_water-001.jpg
 sidebar:
   - text: "Collaborate project and book"
   - text: "September 2013"

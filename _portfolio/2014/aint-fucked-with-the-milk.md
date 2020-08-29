@@ -4,7 +4,7 @@ excerpt: "Sound installation and score drawing upon the alternative tuning syste
 date: 2014-08-01
 header:
   image: /assets/images/portfolio/aint-fucked-with-the-milk-004.jpg
-  teaser: /assets/images/portfolio/aint-fucked-with-the-milk-004.jpg
+  teaser: /assets/images/portfolio/t_aint-fucked-with-the-milk-004.jpg
 sidebar:
   - text: "August 2014"
   - text: "Raspberry Pi, Arduino Nano, DIY circuitry, Solenoids, Drums, Spot lights."

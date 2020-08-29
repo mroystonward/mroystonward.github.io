@@ -4,7 +4,7 @@ excerpt: "Audio installation activating listeners through dynamically modulating
 date: 2010-03-01
 header:
   image: /assets/images/portfolio/hit-the-sky-001.jpg
-  teaser: /assets/images/portfolio/hit-the-sky-001.jpg
+  teaser: /assets/images/portfolio/t_hit-the-sky-001.jpg
 sidebar:
   - text: "Dakeyne Street Factory, Nottingham"
   - text: "March 2010"

@@ -4,7 +4,7 @@ excerpt: "An ongoing archive of staged realities and material flows leaking into
 date: 2014-08-01
 header:
   image: /assets/images/portfolio/improvs1-001.jpg
-  teaser: /assets/images/portfolio/improvs1-001.jpg
+  teaser: /assets/images/portfolio/t_improvs1-001.jpg
 sidebar:
   - text: "2014-Ongoing"
 gallery:

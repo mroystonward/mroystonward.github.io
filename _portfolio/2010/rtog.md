@@ -4,7 +4,7 @@ excerpt: "Cardiff based DIY gig collective - bringing fringe highlights and dirt
 date: 2010-06-13
 header:
   image: /assets/images/portfolio/rtog-001.jpg
-  teaser: /assets/images/portfolio/rtog-001.jpg
+  teaser: /assets/images/portfolio/t_rtog-001.jpg
 sidebar:
   - text: "Cardiff and Nottingham"
   - text: "2010 to 2013"

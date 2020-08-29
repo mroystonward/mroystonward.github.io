@@ -4,7 +4,7 @@ excerpt: "A Triangle Network Fellowship at Britto Arts Trust in Dhaka, Banglades
 date: 2015-09-01
 header:
   image: /assets/images/portfolio/britto-001.jpg
-  teaser: /assets/images/portfolio/britto-001.jpg
+  teaser: /assets/images/portfolio/t_britto-001.jpg
 sidebar:
   - text: "Britto Arts Trust, Dhaka"
   - text: "Septempber 2015"

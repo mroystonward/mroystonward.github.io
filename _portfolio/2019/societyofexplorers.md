@@ -4,7 +4,7 @@ excerpt: "A workshop for Site Gallery's Society of Explorers exploring making mu
 date: 2019-06-19
 header:
   image: /assets/images/portfolio/societyofexplorers-splash.jpg
-  teaser: /assets/images/portfolio/societyofexplorers-splash.jpg
+  teaser: /assets/images/portfolio/t_societyofexplorers-splash.jpg
 sidebar:
   - text: "Site Gallery, Sheffield"
   - text: "June-July 2019"

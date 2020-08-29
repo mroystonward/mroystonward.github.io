@@ -6,7 +6,7 @@ header:
   video:
     id: zwHSCmRF84U
     provider: youtube
-  teaser: /assets/images/portfolio/lustfaust-001.jpg
+  teaser: /assets/images/portfolio/t_lustfaust-001.jpg
 sidebar:
   - text: "London, New York, Berlin, Turin, Naples, Rome..."
   - text: "2006-2011"

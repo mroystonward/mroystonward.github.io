@@ -4,7 +4,7 @@ excerpt: "One off 12” vinyl commission for Mat Jenner’s FOAM project."
 date: 2014-10-01
 header:
   image: /assets/images/portfolio/foam-004.jpg
-  teaser: /assets/images/portfolio/foam-004.jpg
+  teaser: /assets/images/portfolio/t_foam-004.jpg
 sidebar:
   - text: "One Thoresby Street"
   - text: "October 2014"

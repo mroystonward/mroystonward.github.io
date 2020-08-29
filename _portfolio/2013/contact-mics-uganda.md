@@ -4,7 +4,7 @@ excerpt: "A 2 day workshop ran in the Katwe slums of Nsambya in Kampala, Uganda 
 date: 2013-12-01
 header:
   image: /assets/images/portfolio/contact-mics-uganda-001.jpg
-  teaser: /assets/images/portfolio/contact-mics-uganda-001.jpg
+  teaser: /assets/images/portfolio/t_contact-mics-uganda-001.jpg
 sidebar:
   - text: "M-LISADA, Kampala, Uganda"
   - text: "December 2013"

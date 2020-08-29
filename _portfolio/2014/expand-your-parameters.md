@@ -4,7 +4,7 @@ excerpt: "Composed in response to Marvin Gaye Chetwynd’s exhibition at Notting
 date: 2014-03-01
 header:
   image: /assets/images/portfolio/expand-your-parameters-001.jpg
-  teaser: /assets/images/portfolio/expand-your-parameters-001.jpg
+  teaser: /assets/images/portfolio/t_expand-your-parameters-001.jpg
 sidebar:
   - text: "Visual Score"
   - text: "March 2014"

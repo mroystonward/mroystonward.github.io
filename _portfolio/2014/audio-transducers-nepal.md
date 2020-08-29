@@ -4,7 +4,7 @@ excerpt: "In March 2014 I visited Nepal with my wife. I was there to run a works
 date: 2014-03-01
 header:
   image: /assets/images/portfolio/audio-transducers-nepal-001.jpg
-  teaser: /assets/images/portfolio/audio-transducers-nepal-001.jpg
+  teaser: /assets/images/portfolio/t_audio-transducers-nepal-001.jpg
 sidebar:
   - text: "Kavre Deaf School, Banepa, Nepal"
   - text: "March 2014"

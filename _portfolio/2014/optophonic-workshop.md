@@ -4,7 +4,7 @@ excerpt: "I was invited to run a workshop as part of PS2N’s Optophonic Worksho
 date: 2014-07-25
 header:
   image: /assets/images/portfolio/optophonic-workshop-001.jpg
-  teaser: /assets/images/portfolio/optophonic-workshop-001.jpg
+  teaser: /assets/images/portfolio/t_optophonic-workshop-001.jpg
 sidebar:
   - text: "PS2N, Tramlines, Sheffield"
   - text: "July 2014"

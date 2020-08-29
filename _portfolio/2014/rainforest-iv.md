@@ -4,7 +4,7 @@ excerpt: "Based upon David Tudor’s Rainforest IV (1973) and realised as a coll
 date: 2014-06-01
 header:
   image: /assets/images/portfolio/rainforest-iv-001.jpg
-  teaser: /assets/images/portfolio/rainforest-iv-001.jpg
+  teaser: /assets/images/portfolio/t_rainforest-iv-001.jpg
 sidebar:
   - text: "NTU, Bonnington"
   - text: "June 2014"

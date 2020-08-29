@@ -4,7 +4,7 @@ excerpt: "A realisation of the score ‘Do You Want To Expand Your Parameters Or
 date: 2014-03-01
 header:
   image: /assets/images/portfolio/the-memory-project-001.jpg
-  teaser: /assets/images/portfolio/the-memory-project-001.jpg
+  teaser: /assets/images/portfolio/t_the-memory-project-001.jpg
 sidebar:
   - text: "Nottingham Contemporary"
   - text: "March 2014"

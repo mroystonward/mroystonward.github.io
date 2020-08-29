@@ -4,7 +4,7 @@ excerpt: "Workshop conducted as part of the Rammel Club/Reactor Halls E14: Cable
 date: 2015-02-28
 header:
   image: /assets/images/portfolio/contact-mic-surgery-001.jpg
-  teaser: /assets/images/portfolio/contact-mic-surgery-001.jpg
+  teaser: /assets/images/portfolio/t_contact-mic-surgery-001.jpg
 sidebar:
   - text: "Reactor Halls, Primary Studios, Nottingham"
   - text: "February 2015"

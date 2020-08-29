@@ -4,7 +4,7 @@ excerpt: "10 week UNIT(e) Residency at g39 in Cardiff."
 date: 2016-01-13
 header:
   image: /assets/images/portfolio/unite-001.jpg
-  teaser: /assets/images/portfolio/unite-001.jpg
+  teaser: /assets/images/portfolio/t_unite-001.jpg
 sidebar:
   - text: "g39, Cardiff"
   - text: "January 2016"

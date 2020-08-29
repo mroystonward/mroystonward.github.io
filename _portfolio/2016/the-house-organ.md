@@ -4,7 +4,7 @@ excerpt: "In-house audio reports from the amateur avant-garde."
 date: 2016-07-29
 header:
   image: /assets/images/portfolio/tho_youtube_header.jpg
-  teaser: /assets/images/portfolio/tho_youtube_header.jpg
+  teaser: /assets/images/portfolio/t_tho_youtube_header.jpg
 sidebar:
   - text: "DIY record label / gigs / publishing"
   - text: "July 2016 &ndash; ongoing"
