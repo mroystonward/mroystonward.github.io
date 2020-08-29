@@ -83,6 +83,12 @@ var store = [{
         "url": "http://localhost:4000/portfolio/2014/rammel-club/",
         "teaser": "http://localhost:4000/assets/images/portfolio/rammel-001.gif"
       },{
+        "title": "From Now On",
+        "excerpt":"I was asked to play at From Now On and I suggested a hybrid installation/performance which built upon my work with transducers. As an extended 4 hour piece the audience drifted in and out as I sporadically tweaked, tuned, and interfered with the work. Several drums, spread around a darkened room, with DIY vibration transducers attached, I routed various live sounds and field recordings from past projects to create a layered, slow-moving, audio collage. I also placed objects upon the drum heads to modify and interact further with playback, sometimes utilising feedback paths, and elsewhere allowing rice and chains to vibrate and rattle.  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/2015/fromnowon/",
+        "teaser": "http://localhost:4000/assets/images/portfolio/t_fromnowon.jpg"
+      },{
         "title": "Reactor Halls E14: Cables - Contact Mic Workshop",
         "excerpt":"Workshop conducted as part of the Rammel Club/Reactor Halls E14: Cables event.                                                                                                                              There is something inherently musical in the process of actually building and using audio technology. We tend to view music as the artefacts left behind (scores, recordings etc.) rather than as a complex of participatory social activities (playing intruments, listening, dancing etc.) Through workshops I aim to facilitate an exploration of an expanded rubric of improvised ‘musicking’ which incorporates the making and use of such technologies.   For ‘Cables’ I will be drawing upon recent workshops in Uganda, Nepal, Sheffield and Nottingham; offering a drop-in surgery for the humble ‘contact mic’. Materials and tools will be available to build and experiment with contact mics so come along and get involved.   Drop in/out surgery for contact mics. From building and improving through to different ways of using them for recording or live work.   A selection of materials were available for soldering and testing contact microphones along with various instruments and objects for exploring their possibilities.   Passers-by were invited to take part in an informal setting with many then going on to use contact mics as part of the ‘ANT Attack’ Noise Jam workshop.   Reactor Halls (Wayback Machine Link as site doesn’t support HTTPS)  ","categories": [],
         "tags": [],
@@ -100,6 +106,12 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/portfolio/2016/unite/",
         "teaser": "http://localhost:4000/assets/images/portfolio/t_unite-001.jpg"
+      },{
+        "title": "Peak Signal 2 Noise",
+        "excerpt":"I was asked to produce several short video pieces informed by my residency practice in Bangladesh [05:52–08:26 &amp; 22:36–23:59]               I also provided sound for Naval Cassidy’s animation [08:52-10:39]               ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/2016/ps2n/",
+        "teaser": "http://localhost:4000/assets/images/portfolio/t_ps2n.jpg"
       },{
         "title": "The House Organ",
         "excerpt":"The House Organ is a DIY label for audio and other artefacts from the No-Audience Underground. Primarily sounding across a spectrum of improvisation and noise, it has  taken a critical stance to digital-self-publishing whilst providing alternatives to dominant streaming and sharing models. For deep-thinkers who don’t take themselves too seriously.   Initially it shunned Bandcamp, focussing upon Crypto, Bitcoin, Torrents, Tor networks and p2p. Whilst still privacy conscious it has learned from the alienation these approaches create within the DIY music community. For more on these approaches, read An (Opinionated) Critical Guide to DIY Digital Publishing (kindly published by TQ).   The current version is exploring online streaming platforms and more user-friendly approaches with the aim of self-publishing and close-collaboration.   Releases   THO: Live Archive by The House Organ  Don&#39;t Give Up by The Sons of David Ginola  Live at Hatch, Sheffield, 2019/06/25 by Murray Royston-Ward  Palace der Republik by Benjamin Whitehill &amp; Murray Royston-Ward  Tour Split by Scree Fucking Junk &amp; Jehova&#39;s Fitness  Stop Stroking Your Chin! by Jehova&#39;s Fitness  Nabulsi by Murray Royston-Ward  An Excess Of Less by Murray Royston-Ward  Waterside Quests by The Sons of David Ginola  Dissolution Matrix in Afterthought of Skies by Murray Royston-Ward  Blood Too Thick Symptoms by The Sons of David Ginola  Improvisations 2014 by Murray Royston-Ward  My Neighbor Who Lives in the City of Mirrors near My House by Murray Royston-Ward ","categories": [],
